@@ -1,0 +1,31 @@
+Adding Central Value Network
+[93m[1m[Warning] [carb.gym.plugin] useGpu is set, forcing single scene (0 subscenes)
+Not connected to PVD
++++ Using GPU PhysX
+Physics Engine: PhysX
+Physics Device: cuda:0
+GPU Pipeline: enabled
+Using VHACD cache directory '/home/king/.isaacgym/vhacd'
+Started convex decomposition for mesh '/home/king/Isaac/IsaacGymEnvs/isaacgymenvs/../assets/trifinger/robot_properties_fingers/meshes/pro/int_sim.stl'
+Started convex decomposition for mesh '/home/king/Isaac/IsaacGymEnvs/isaacgymenvs/../assets/trifinger/robot_properties_fingers/meshes/pro/prox-sim.stl'
+Started convex decomposition for mesh '/home/king/Isaac/IsaacGymEnvs/isaacgymenvs/../assets/trifinger/robot_properties_fingers/meshes/pro/tip_link_sim.stl'
+Started convex decomposition for mesh '/home/king/Isaac/IsaacGymEnvs/isaacgymenvs/../assets/trifinger/robot_properties_fingers/meshes/pro/tip_sim.stl'
+Finished convex decomposition for mesh '/home/king/Isaac/IsaacGymEnvs/isaacgymenvs/../assets/trifinger/robot_properties_fingers/meshes/pro/tip_sim.stl': 1 hulls
+Finished convex decomposition for mesh '/home/king/Isaac/IsaacGymEnvs/isaacgymenvs/../assets/trifinger/robot_properties_fingers/meshes/pro/tip_link_sim.stl': 2 hulls
+Finished convex decomposition for mesh '/home/king/Isaac/IsaacGymEnvs/isaacgymenvs/../assets/trifinger/robot_properties_fingers/meshes/pro/int_sim.stl': 4 hulls
+Finished convex decomposition for mesh '/home/king/Isaac/IsaacGymEnvs/isaacgymenvs/../assets/trifinger/robot_properties_fingers/meshes/pro/prox-sim.stl': 6 hulls
+/home/king/miniconda3/envs/rlgpu/lib/python3.7/site-packages/gym/spaces/box.py:84: UserWarning: [33mWARN: Box bound precision lowered by casting to float32
+  logger.warn(f"Box bound precision lowered by casting to {self.dtype}")
+Started convex decomposition for mesh '/home/king/Isaac/IsaacGymEnvs/isaacgymenvs/../assets/trifinger/robot_properties_fingers/meshes/high_table_boundary.stl'
+Finished convex decomposition for mesh '/home/king/Isaac/IsaacGymEnvs/isaacgymenvs/../assets/trifinger/robot_properties_fingers/meshes/high_table_boundary.stl': 41 hulls
+Trifinger Robot Asset:
+	 Number of bodies: 23
+	 Number of shapes: 39
+	 Number of dofs: 9
+	 Number of actuated dofs: 9
+Trifinger Table Asset:
+	 Number of bodies: 2
+	 Number of shapes: 1
+Trifinger Boundary Asset:
+	 Number of bodies: 1
+	 Number of shapes: 41

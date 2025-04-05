@@ -1,0 +1,20 @@
+{
+    "os": "Linux-5.15.0-131-generic-x86_64-with-debian-bullseye-sid",
+    "python": "3.7.12",
+    "heartbeatAt": "2025-03-25T09:20:33.109715",
+    "startedAt": "2025-03-25T09:20:31.604967",
+    "docker": null,
+    "gpu": "NVIDIA GeForce RTX 3060 Laptop GPU",
+    "gpu_count": 1,
+    "cpu_count": 20,
+    "cuda": null,
+    "args": [
+        "task=Ant_new"
+    ],
+    "state": "running",
+    "program": "/home/king/Isaac/xArm_Ctrl/envs/train.py",
+    "codePath": "train.py",
+    "host": "king-ROG-Zephyrus-M16-GU603ZM-GU603ZM",
+    "username": "king",
+    "executable": "/home/king/miniconda3/envs/xarm/bin/python"
+}

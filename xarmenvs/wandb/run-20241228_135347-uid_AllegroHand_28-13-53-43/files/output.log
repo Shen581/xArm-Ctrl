@@ -1,0 +1,38 @@
+/home/king/miniconda3/envs/rlgpu/lib/python3.7/site-packages/gym/spaces/box.py:84: UserWarning: [33mWARN: Box bound precision lowered by casting to float32
+  logger.warn(f"Box bound precision lowered by casting to {self.dtype}")
+MESA-INTEL: warning: Performance support disabled, consider sysctl dev.i915.perf_stream_paranoid=0
+Obs type: full_state
+Not connected to PVD
+Physics Engine: PhysX
+Physics Device: cpu
+GPU Pipeline: disabled
+Num dofs:  16
+Max effort:  0.35
+Max effort:  0.35
+Max effort:  0.35
+Max effort:  0.35
+Max effort:  0.35
+Max effort:  0.35
+Max effort:  0.35
+Max effort:  0.35
+Max effort:  0.35
+Max effort:  0.35
+Max effort:  0.35
+Max effort:  0.35
+Max effort:  0.35
+Max effort:  0.35
+Max effort:  0.35
+Max effort:  0.35
+Subscene 0 has 4096 articulations
+Subscene 1 has 4096 articulations
+Subscene 2 has 4096 articulations
+Subscene 3 has 4096 articulations
+[93m[1m[Warning] [carb.gym.plugin] Acquiring DOF force tensor, but no actors have DOF force sensors enabled.
+[93m[1m[Warning] [carb.gym.plugin] -> Enabled DOF force sensors for all eligible actors.
+[93m[1mNum dofs:  16
+[93m[1mBox(-1.0, 1.0, (16,), float32) Box(-inf, inf, (88,), float32)
+[93m[1mWARNING: seq_len is deprecated, use seq_length instead
+[93m[1mseq_length: 4
+[93m[1mcurrent training device: cpu
+[93m[1mbuild mlp: 88
+[93m[1mRunningMeanStd:  (1,)

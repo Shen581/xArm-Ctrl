@@ -1,0 +1,33 @@
+
+
+
+
+'''
+    "AllegroHand": AllegroHand,
+    "AllegroKuka": resolve_allegro_kuka,
+    "AllegroKukaTwoArms": resolve_allegro_kuka_two_arms,
+    "AllegroHandManualDR": AllegroHandDextremeManualDR,
+    "AllegroHandADR": AllegroHandDextremeADR,
+    "Ant": Ant,
+    "Ant_new": Ant_new,
+    "Anymal": Anymal,
+    "AnymalTerrain": AnymalTerrain,
+    "BallBalance": BallBalance,
+    "Cartpole": Cartpole,
+    "FactoryTaskGears": FactoryTaskGears,
+    "FactoryTaskInsertion": FactoryTaskInsertion,
+    "FactoryTaskNutBoltPick": FactoryTaskNutBoltPick,
+    "FactoryTaskNutBoltPlace": FactoryTaskNutBoltPlace,
+    "FactoryTaskNutBoltScrew": FactoryTaskNutBoltScrew,
+    "IndustRealTaskPegsInsert": IndustRealTaskPegsInsert,
+    "IndustRealTaskGearsInsert": IndustRealTaskGearsInsert,
+    "FrankaCabinet": FrankaCabinet,
+    "FrankaCubeStack": FrankaCubeStack,
+    "Humanoid": Humanoid,
+    "HumanoidAMP": HumanoidAMP,
+    "Ingenuity": Ingenuity,
+    "Quadcopter": Quadcopter,
+    "ShadowHand": ShadowHand,
+    "Trifinger": Trifinger,
+    '''
+    

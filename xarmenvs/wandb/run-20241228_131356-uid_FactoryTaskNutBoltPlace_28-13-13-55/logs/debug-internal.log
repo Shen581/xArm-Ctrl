@@ -1,0 +1,104 @@
+2024-12-28 13:13:56,754 INFO    MainThread:18744 [internal.py:wandb_internal():93] W&B internal server running at pid: 18744, started at: 2024-12-28 13:13:56.753519
+2024-12-28 13:13:56,756 INFO    WriterThread:18744 [datastore.py:open_for_write():75] open: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_131356-uid_FactoryTaskNutBoltPlace_28-13-13-55/run-uid_FactoryTaskNutBoltPlace_28-13-13-55.wandb
+2024-12-28 13:13:56,756 DEBUG   SenderThread:18744 [sender.py:send():236] send: header
+2024-12-28 13:13:56,767 DEBUG   SenderThread:18744 [sender.py:send():236] send: run
+2024-12-28 13:13:56,768 INFO    SenderThread:18744 [sender.py:_maybe_setup_resume():494] checking resume status for 2238046709-sjtu/isaacgymenvs/uid_FactoryTaskNutBoltPlace_28-13-13-55
+2024-12-28 13:13:57,966 INFO    SenderThread:18744 [dir_watcher.py:__init__():216] watching files in: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_131356-uid_FactoryTaskNutBoltPlace_28-13-13-55/files
+2024-12-28 13:13:57,967 INFO    SenderThread:18744 [sender.py:_start_run_threads():818] run started: uid_FactoryTaskNutBoltPlace_28-13-13-55 with start time 1735362836
+2024-12-28 13:13:57,967 DEBUG   SenderThread:18744 [sender.py:send():236] send: summary
+2024-12-28 13:13:57,967 INFO    SenderThread:18744 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2024-12-28 13:13:57,970 DEBUG   HandlerThread:18744 [handler.py:handle_request():140] handle_request: check_version
+2024-12-28 13:13:57,970 DEBUG   SenderThread:18744 [sender.py:send_request():250] send_request: check_version
+2024-12-28 13:13:58,144 DEBUG   HandlerThread:18744 [handler.py:handle_request():140] handle_request: run_start
+2024-12-28 13:13:58,149 DEBUG   HandlerThread:18744 [meta.py:__init__():35] meta init
+2024-12-28 13:13:58,149 DEBUG   HandlerThread:18744 [meta.py:__init__():49] meta init done
+2024-12-28 13:13:58,149 DEBUG   HandlerThread:18744 [meta.py:probe():209] probe
+2024-12-28 13:13:58,157 DEBUG   HandlerThread:18744 [meta.py:_setup_git():199] setup git
+2024-12-28 13:13:58,184 DEBUG   HandlerThread:18744 [meta.py:_setup_git():206] setup git done
+2024-12-28 13:13:58,184 DEBUG   HandlerThread:18744 [meta.py:_save_pip():53] save pip
+2024-12-28 13:13:58,184 DEBUG   HandlerThread:18744 [meta.py:_save_pip():67] save pip done
+2024-12-28 13:13:58,184 DEBUG   HandlerThread:18744 [meta.py:_save_conda():74] save conda
+2024-12-28 13:13:58,737 DEBUG   HandlerThread:18744 [meta.py:_save_conda():84] save conda done
+2024-12-28 13:13:58,737 DEBUG   HandlerThread:18744 [meta.py:probe():247] probe done
+2024-12-28 13:13:58,739 DEBUG   SenderThread:18744 [sender.py:send():236] send: files
+2024-12-28 13:13:58,739 INFO    SenderThread:18744 [sender.py:_save_file():952] saving file wandb-metadata.json with policy now
+2024-12-28 13:13:58,742 DEBUG   HandlerThread:18744 [handler.py:handle_request():140] handle_request: stop_status
+2024-12-28 13:13:58,742 DEBUG   SenderThread:18744 [sender.py:send_request():250] send_request: stop_status
+2024-12-28 13:13:58,968 INFO    Thread-8  :18744 [dir_watcher.py:_on_file_created():269] file/dir created: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_131356-uid_FactoryTaskNutBoltPlace_28-13-13-55/files/wandb-summary.json
+2024-12-28 13:13:58,968 INFO    Thread-8  :18744 [dir_watcher.py:_on_file_created():269] file/dir created: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_131356-uid_FactoryTaskNutBoltPlace_28-13-13-55/files/output.log
+2024-12-28 13:13:58,968 INFO    Thread-8  :18744 [dir_watcher.py:_on_file_created():269] file/dir created: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_131356-uid_FactoryTaskNutBoltPlace_28-13-13-55/files/conda-environment.yaml
+2024-12-28 13:13:58,968 INFO    Thread-8  :18744 [dir_watcher.py:_on_file_created():269] file/dir created: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_131356-uid_FactoryTaskNutBoltPlace_28-13-13-55/files/requirements.txt
+2024-12-28 13:13:58,968 INFO    Thread-8  :18744 [dir_watcher.py:_on_file_created():269] file/dir created: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_131356-uid_FactoryTaskNutBoltPlace_28-13-13-55/files/wandb-metadata.json
+2024-12-28 13:13:59,596 DEBUG   SenderThread:18744 [sender.py:send():236] send: telemetry
+2024-12-28 13:13:59,596 DEBUG   SenderThread:18744 [sender.py:send():236] send: config
+2024-12-28 13:14:00,115 INFO    Thread-12 :18744 [upload_job.py:push():138] Uploaded file /tmp/tmpe9sqp06twandb/u4r80jau-wandb-metadata.json
+2024-12-28 13:14:01,967 INFO    Thread-8  :18744 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_131356-uid_FactoryTaskNutBoltPlace_28-13-13-55/files/output.log
+2024-12-28 13:14:03,046 INFO    HandlerThread:18744 [handler.py:handle_tbrecord():723] handling tbrecord: tbrecord {
+  log_dir: "runs/FactoryTaskNutBoltPlace_28-13-13-55/summaries"
+  save: true
+}
+
+2024-12-28 13:14:03,046 DEBUG   HandlerThread:18744 [config_util.py:dict_from_config_file():100] no default config file found in config-defaults.yaml
+2024-12-28 13:14:03,050 DEBUG   SenderThread:18744 [sender.py:send():236] send: tbrecord
+2024-12-28 13:14:03,051 DEBUG   SenderThread:18744 [sender.py:send():236] send: files
+2024-12-28 13:14:03,051 INFO    SenderThread:18744 [sender.py:_save_file():952] saving file events.out.tfevents.1735362843.king-ROG-Zephyrus-M16-GU603ZM-GU603ZM with policy live
+2024-12-28 13:14:03,968 INFO    Thread-8  :18744 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_131356-uid_FactoryTaskNutBoltPlace_28-13-13-55/files/output.log
+2024-12-28 13:14:03,968 INFO    Thread-8  :18744 [dir_watcher.py:_on_file_created():269] file/dir created: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_131356-uid_FactoryTaskNutBoltPlace_28-13-13-55/files/events.out.tfevents.1735362843.king-ROG-Zephyrus-M16-GU603ZM-GU603ZM
+2024-12-28 13:14:15,624 DEBUG   HandlerThread:18744 [handler.py:handle_request():140] handle_request: stop_status
+2024-12-28 13:14:15,624 DEBUG   SenderThread:18744 [sender.py:send_request():250] send_request: stop_status
+2024-12-28 13:14:17,972 INFO    Thread-8  :18744 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_131356-uid_FactoryTaskNutBoltPlace_28-13-13-55/files/output.log
+2024-12-28 13:14:26,355 DEBUG   SenderThread:18744 [sender.py:send():236] send: stats
+2024-12-28 13:14:26,562 WARNING MainThread:18744 [internal.py:wandb_internal():153] Internal process interrupt: 1
+2024-12-28 13:14:26,573 DEBUG   SenderThread:18744 [sender.py:send():236] send: telemetry
+2024-12-28 13:14:26,976 INFO    Thread-8  :18744 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_131356-uid_FactoryTaskNutBoltPlace_28-13-13-55/files/events.out.tfevents.1735362843.king-ROG-Zephyrus-M16-GU603ZM-GU603ZM
+2024-12-28 13:14:27,977 INFO    Thread-8  :18744 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_131356-uid_FactoryTaskNutBoltPlace_28-13-13-55/files/output.log
+2024-12-28 13:14:28,754 INFO    Thread-15 :18744 [upload_job.py:push():138] Uploaded file /tmp/tmpe9sqp06twandb/z8dkgifn-events.out.tfevents.1735362843.king-ROG-Zephyrus-M16-GU603ZM-GU603ZM
+2024-12-28 13:14:28,977 INFO    Thread-8  :18744 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_131356-uid_FactoryTaskNutBoltPlace_28-13-13-55/files/config.yaml
+2024-12-28 13:14:29,333 DEBUG   HandlerThread:18744 [handler.py:handle_request():140] handle_request: poll_exit
+2024-12-28 13:14:29,334 DEBUG   SenderThread:18744 [sender.py:send():236] send: exit
+2024-12-28 13:14:29,334 INFO    SenderThread:18744 [sender.py:send_exit():372] handling exit code: 255
+2024-12-28 13:14:29,334 INFO    SenderThread:18744 [sender.py:send_exit():374] handling runtime: 31
+2024-12-28 13:14:29,335 INFO    SenderThread:18744 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2024-12-28 13:14:29,335 INFO    SenderThread:18744 [sender.py:send_exit():380] send defer
+2024-12-28 13:14:29,335 DEBUG   SenderThread:18744 [sender.py:send_request():250] send_request: poll_exit
+2024-12-28 13:14:29,336 DEBUG   HandlerThread:18744 [handler.py:handle_request():140] handle_request: defer
+2024-12-28 13:14:29,336 INFO    HandlerThread:18744 [handler.py:handle_request_defer():163] handle defer: 0
+2024-12-28 13:14:29,336 DEBUG   SenderThread:18744 [sender.py:send_request():250] send_request: defer
+2024-12-28 13:14:29,336 INFO    SenderThread:18744 [sender.py:send_request_defer():389] handle sender defer: 0
+2024-12-28 13:14:29,336 INFO    SenderThread:18744 [sender.py:transition_state():393] send defer: 1
+2024-12-28 13:14:29,337 DEBUG   HandlerThread:18744 [handler.py:handle_request():140] handle_request: defer
+2024-12-28 13:14:29,337 INFO    HandlerThread:18744 [handler.py:handle_request_defer():163] handle defer: 1
+2024-12-28 13:14:29,397 DEBUG   SenderThread:18744 [sender.py:send_request():250] send_request: defer
+2024-12-28 13:14:29,397 INFO    SenderThread:18744 [sender.py:send_request_defer():389] handle sender defer: 1
+2024-12-28 13:14:29,397 INFO    SenderThread:18744 [sender.py:transition_state():393] send defer: 2
+2024-12-28 13:14:29,397 DEBUG   SenderThread:18744 [sender.py:send():236] send: stats
+2024-12-28 13:14:29,398 DEBUG   HandlerThread:18744 [handler.py:handle_request():140] handle_request: defer
+2024-12-28 13:14:29,398 INFO    HandlerThread:18744 [handler.py:handle_request_defer():163] handle defer: 2
+2024-12-28 13:14:29,398 DEBUG   SenderThread:18744 [sender.py:send_request():250] send_request: defer
+2024-12-28 13:14:29,398 INFO    SenderThread:18744 [sender.py:send_request_defer():389] handle sender defer: 2
+2024-12-28 13:14:29,398 INFO    SenderThread:18744 [sender.py:transition_state():393] send defer: 3
+2024-12-28 13:14:29,398 DEBUG   HandlerThread:18744 [handler.py:handle_request():140] handle_request: defer
+2024-12-28 13:14:29,398 INFO    HandlerThread:18744 [handler.py:handle_request_defer():163] handle defer: 3
+2024-12-28 13:14:29,978 INFO    Thread-8  :18744 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_131356-uid_FactoryTaskNutBoltPlace_28-13-13-55/files/wandb-summary.json
+2024-12-28 13:14:29,978 INFO    Thread-8  :18744 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_131356-uid_FactoryTaskNutBoltPlace_28-13-13-55/files/output.log
+2024-12-28 13:14:35,201 WARNING MainThread:18744 [internal.py:wandb_internal():153] Internal process interrupt: 2
+2024-12-28 13:14:35,201 ERROR   MainThread:18744 [internal.py:wandb_internal():156] Internal process interrupted.
+2024-12-28 13:14:35,398 INFO    WriterThread:18744 [datastore.py:close():279] close: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_131356-uid_FactoryTaskNutBoltPlace_28-13-13-55/run-uid_FactoryTaskNutBoltPlace_28-13-13-55.wandb
+2024-12-28 13:14:35,399 INFO    SenderThread:18744 [sender.py:finish():1114] shutting down sender
+2024-12-28 13:14:35,399 INFO    SenderThread:18744 [dir_watcher.py:finish():353] shutting down directory watcher
+2024-12-28 13:14:35,980 INFO    SenderThread:18744 [dir_watcher.py:finish():383] scan: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_131356-uid_FactoryTaskNutBoltPlace_28-13-13-55/files
+2024-12-28 13:14:35,981 INFO    SenderThread:18744 [dir_watcher.py:finish():397] scan save: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_131356-uid_FactoryTaskNutBoltPlace_28-13-13-55/files/conda-environment.yaml conda-environment.yaml
+2024-12-28 13:14:35,981 INFO    SenderThread:18744 [dir_watcher.py:finish():397] scan save: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_131356-uid_FactoryTaskNutBoltPlace_28-13-13-55/files/wandb-metadata.json wandb-metadata.json
+2024-12-28 13:14:35,981 INFO    SenderThread:18744 [dir_watcher.py:finish():397] scan save: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_131356-uid_FactoryTaskNutBoltPlace_28-13-13-55/files/output.log output.log
+2024-12-28 13:14:35,981 INFO    SenderThread:18744 [dir_watcher.py:finish():397] scan save: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_131356-uid_FactoryTaskNutBoltPlace_28-13-13-55/files/wandb-summary.json wandb-summary.json
+2024-12-28 13:14:35,981 INFO    SenderThread:18744 [dir_watcher.py:finish():397] scan save: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_131356-uid_FactoryTaskNutBoltPlace_28-13-13-55/files/events.out.tfevents.1735362843.king-ROG-Zephyrus-M16-GU603ZM-GU603ZM events.out.tfevents.1735362843.king-ROG-Zephyrus-M16-GU603ZM-GU603ZM
+2024-12-28 13:14:35,981 INFO    SenderThread:18744 [dir_watcher.py:finish():397] scan save: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_131356-uid_FactoryTaskNutBoltPlace_28-13-13-55/files/requirements.txt requirements.txt
+2024-12-28 13:14:35,982 INFO    SenderThread:18744 [dir_watcher.py:finish():397] scan save: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_131356-uid_FactoryTaskNutBoltPlace_28-13-13-55/files/config.yaml config.yaml
+2024-12-28 13:14:35,986 INFO    SenderThread:18744 [file_pusher.py:finish():171] shutting down file pusher
+2024-12-28 13:14:35,986 INFO    SenderThread:18744 [file_pusher.py:join():176] waiting for file pusher
+2024-12-28 13:14:36,087 INFO    HandlerThread:18744 [handler.py:finish():806] shutting down handler
+2024-12-28 13:14:37,016 INFO    Thread-18 :18744 [upload_job.py:push():138] Uploaded file /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_131356-uid_FactoryTaskNutBoltPlace_28-13-13-55/files/wandb-summary.json
+2024-12-28 13:14:37,077 INFO    Thread-16 :18744 [upload_job.py:push():138] Uploaded file /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_131356-uid_FactoryTaskNutBoltPlace_28-13-13-55/files/conda-environment.yaml
+2024-12-28 13:14:37,142 INFO    Thread-17 :18744 [upload_job.py:push():138] Uploaded file /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_131356-uid_FactoryTaskNutBoltPlace_28-13-13-55/files/output.log
+2024-12-28 13:14:37,175 INFO    Thread-20 :18744 [upload_job.py:push():138] Uploaded file /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_131356-uid_FactoryTaskNutBoltPlace_28-13-13-55/files/config.yaml
+2024-12-28 13:14:37,585 INFO    Thread-19 :18744 [upload_job.py:push():138] Uploaded file /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_131356-uid_FactoryTaskNutBoltPlace_28-13-13-55/files/requirements.txt

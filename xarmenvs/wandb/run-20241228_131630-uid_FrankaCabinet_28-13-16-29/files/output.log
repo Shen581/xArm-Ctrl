@@ -1,0 +1,26 @@
+/home/king/miniconda3/envs/rlgpu/lib/python3.7/site-packages/gym/spaces/box.py:84: UserWarning: [33mWARN: Box bound precision lowered by casting to float32
+  logger.warn(f"Box bound precision lowered by casting to {self.dtype}")
+MESA-INTEL: warning: Performance support disabled, consider sysctl dev.i915.perf_stream_paranoid=0
+[93m[1m[Warning] [carb.gym.plugin] useGpu is set, forcing single scene (0 subscenes)
+Not connected to PVD
++++ Using GPU PhysX
+Physics Engine: PhysX
+Physics Device: cuda:0
+GPU Pipeline: enabled
+num franka bodies:  10
+num franka dofs:  9
+num cabinet bodies:  5
+num cabinet dofs:  4
+Box(-1.0, 1.0, (9,), float32) Box(-inf, inf, (23,), float32)
+WARNING: seq_len is deprecated, use seq_length instead
+seq_length: 4
+current training device: cuda:0
+build mlp: 23
+RunningMeanStd:  (1,)
+RunningMeanStd:  (23,)
+fps step: 6614 fps step and policy inference: 6340 fps total: 6235 epoch: 1/1500 frames: 0
+fps step: 38576 fps step and policy inference: 38225 fps total: 34848 epoch: 2/1500 frames: 65536
+fps step: 100017 fps step and policy inference: 97381 fps total: 76828 epoch: 3/1500 frames: 131072
+fps step: 99289 fps step and policy inference: 97034 fps total: 78088 epoch: 4/1500 frames: 196608
+fps step: 98224 fps step and policy inference: 96218 fps total: 77419 epoch: 5/1500 frames: 262144
+fps step: 97564 fps step and policy inference: 95243 fps total: 76351 epoch: 6/1500 frames: 327680

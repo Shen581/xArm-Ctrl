@@ -1,0 +1,24 @@
+{
+    "os": "Linux-5.15.0-131-generic-x86_64-with-debian-bullseye-sid",
+    "python": "3.7.12",
+    "heartbeatAt": "2025-02-24T14:31:14.402003",
+    "startedAt": "2025-02-24T14:31:07.142819",
+    "docker": null,
+    "gpu": "NVIDIA GeForce RTX 3060 Laptop GPU",
+    "gpu_count": 1,
+    "cpu_count": 20,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "program": "/home/king/Isaac/IsaacGymEnvs/isaacgymenvs/train.py",
+    "codePath": "isaacgymenvs/train.py",
+    "git": {
+        "remote": "https://github.com/NVIDIA-Omniverse/IsaacGymEnvs.git",
+        "commit": "aeed298638a1f7b5421b38f5f3cc2d1079b6d9c3"
+    },
+    "email": null,
+    "root": "/home/king/Isaac/IsaacGymEnvs",
+    "host": "king-ROG-Zephyrus-M16-GU603ZM-GU603ZM",
+    "username": "king",
+    "executable": "/home/king/miniconda3/envs/rlgpu/bin/python"
+}

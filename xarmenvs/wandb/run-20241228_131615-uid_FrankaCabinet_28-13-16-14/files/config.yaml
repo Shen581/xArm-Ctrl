@@ -1,0 +1,245 @@
+wandb_version: 1
+
+_wandb:
+  desc: null
+  value:
+    cli_version: 0.12.21
+    framework: torch
+    is_jupyter_run: false
+    is_kaggle_kernel: false
+    python_version: 3.7.12
+    start_time: 1735362975
+    t:
+      1:
+      - 1
+      - 50
+      - 55
+      2:
+      - 1
+      - 50
+      - 55
+      3:
+      - 13
+      - 14
+      - 35
+      4: 3.7.12
+      5: 0.12.21
+      8:
+      - 6
+capture_video:
+  desc: null
+  value: false
+capture_video_freq:
+  desc: null
+  value: 1464
+capture_video_len:
+  desc: null
+  value: 100
+checkpoint:
+  desc: null
+  value: ''
+experiment:
+  desc: null
+  value: ''
+force_render:
+  desc: null
+  value: true
+graphics_device_id:
+  desc: null
+  value: 0
+headless:
+  desc: null
+  value: false
+max_iterations:
+  desc: null
+  value: ''
+multi_gpu:
+  desc: null
+  value: false
+num_envs:
+  desc: null
+  value: 2
+num_subscenes:
+  desc: null
+  value: 4
+num_threads:
+  desc: null
+  value: 4
+pbt:
+  desc: null
+  value:
+    enabled: false
+physics_engine:
+  desc: null
+  value: physx
+pipeline:
+  desc: null
+  value: gpu
+rl_device:
+  desc: null
+  value: cuda:0
+seed:
+  desc: null
+  value: 42
+sigma:
+  desc: null
+  value: ''
+sim_device:
+  desc: null
+  value: cuda:0
+solver_type:
+  desc: null
+  value: 1
+task:
+  desc: null
+  value:
+    env:
+      actionPenaltyScale: 0.01
+      actionScale: 7.5
+      aggregateMode: 3
+      aroundHandleRewardScale: 0.25
+      asset:
+        assetFileNameCabinet: urdf/sektion_cabinet_model/urdf/sektion_cabinet_2.urdf
+        assetFileNameFranka: urdf/franka_description/robots/franka_panda.urdf
+        assetRoot: ../../assets
+      clipActions: 1.0
+      clipObservations: 5.0
+      distRewardScale: 2.0
+      dofVelocityScale: 0.1
+      enableCameraSensors: false
+      enableDebugVis: false
+      envSpacing: 1.5
+      episodeLength: 500
+      fingerDistRewardScale: 5.0
+      numEnvs: 2
+      numProps: 16
+      openRewardScale: 7.5
+      rotRewardScale: 0.5
+      startPositionNoise: 0.0
+      startRotationNoise: 0.0
+    name: FrankaCabinet
+    physics_engine: physx
+    sim:
+      dt: 0.0166
+      gravity:
+      - 0.0
+      - 0.0
+      - -9.81
+      physx:
+        bounce_threshold_velocity: 0.2
+        contact_collection: 0
+        contact_offset: 0.005
+        default_buffer_size_multiplier: 5.0
+        max_depenetration_velocity: 1000.0
+        max_gpu_contact_pairs: 1048576
+        num_position_iterations: 12
+        num_subscenes: 4
+        num_threads: 4
+        num_velocity_iterations: 1
+        rest_offset: 0.0
+        solver_type: 1
+        use_gpu: true
+      substeps: 1
+      up_axis: z
+      use_gpu_pipeline: true
+    task:
+      randomize: false
+task_name:
+  desc: null
+  value: FrankaCabinet
+test:
+  desc: null
+  value: false
+torch_deterministic:
+  desc: null
+  value: false
+train:
+  desc: null
+  value:
+    params:
+      algo:
+        name: a2c_continuous
+      config:
+        bounds_loss_coef: 0.0001
+        clip_value: true
+        critic_coef: 4
+        e_clip: 0.2
+        entropy_coef: 0.0
+        env_name: rlgpu
+        full_experiment_name: FrankaCabinet
+        gamma: 0.99
+        grad_norm: 1.0
+        horizon_length: 16
+        kl_threshold: 0.008
+        learning_rate: 0.0005
+        lr_schedule: adaptive
+        max_epochs: 1500
+        mini_epochs: 8
+        minibatch_size: 8192
+        mixed_precision: false
+        multi_gpu: false
+        name: FrankaCabinet
+        normalize_advantage: true
+        normalize_input: true
+        normalize_value: true
+        num_actors: 2
+        ppo: true
+        print_stats: true
+        reward_shaper:
+          scale_value: 0.01
+        save_best_after: 200
+        save_frequency: 100
+        score_to_win: 10000
+        seq_len: 4
+        tau: 0.95
+        truncate_grads: true
+      load_checkpoint: false
+      load_path: ''
+      model:
+        name: continuous_a2c_logstd
+      network:
+        mlp:
+          activation: elu
+          d2rl: false
+          initializer:
+            name: default
+          regularizer:
+            name: None
+          units:
+          - 256
+          - 128
+          - 64
+        name: actor_critic
+        separate: false
+        space:
+          continuous:
+            fixed_sigma: true
+            mu_activation: None
+            mu_init:
+              name: default
+            sigma_activation: None
+            sigma_init:
+              name: const_initializer
+              val: 0
+      seed: 42
+wandb_activate:
+  desc: null
+  value: true
+wandb_entity:
+  desc: null
+  value: 2238046709-sjtu
+wandb_group:
+  desc: null
+  value: Isaac_2024
+wandb_logcode_dir:
+  desc: null
+  value: ''
+wandb_name:
+  desc: null
+  value: FrankaCabinet
+wandb_project:
+  desc: null
+  value: isaacgymenvs
+wandb_tags:
+  desc: null
+  value: []

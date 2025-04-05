@@ -1,0 +1,404 @@
+2024-12-28 13:21:51,254 INFO    MainThread:19874 [wandb_setup.py:_flush():76] Configure stats pid to 19874
+2024-12-28 13:21:51,254 INFO    MainThread:19874 [wandb_setup.py:_flush():76] Loading settings from /home/king/.config/wandb/settings
+2024-12-28 13:21:51,254 INFO    MainThread:19874 [wandb_setup.py:_flush():76] Loading settings from /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/settings
+2024-12-28 13:21:51,254 INFO    MainThread:19874 [wandb_setup.py:_flush():76] Loading settings from environment variables: {}
+2024-12-28 13:21:51,254 INFO    MainThread:19874 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program_relpath': 'isaacgymenvs/train.py', 'program': 'train.py'}
+2024-12-28 13:21:51,254 INFO    MainThread:19874 [wandb_init.py:_log_setup():461] Logging user logs to /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_132151-uid_HumanoidAMP_28-13-21-50/logs/debug.log
+2024-12-28 13:21:51,254 INFO    MainThread:19874 [wandb_init.py:_log_setup():462] Logging internal logs to /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_132151-uid_HumanoidAMP_28-13-21-50/logs/debug-internal.log
+2024-12-28 13:21:51,254 INFO    MainThread:19874 [wandb_init.py:init():495] calling init triggers
+2024-12-28 13:21:51,255 INFO    MainThread:19874 [wandb_init.py:init():499] wandb.init called with sweep_config: {}
+config: {}
+2024-12-28 13:21:51,255 INFO    MainThread:19874 [wandb_init.py:init():548] starting backend
+2024-12-28 13:21:51,255 INFO    MainThread:19874 [backend.py:_multiprocessing_setup():99] multiprocessing start_methods=fork,spawn,forkserver, using: fork
+2024-12-28 13:21:51,259 INFO    MainThread:19874 [backend.py:ensure_launched():217] starting backend process...
+2024-12-28 13:21:51,264 INFO    MainThread:19874 [backend.py:ensure_launched():222] started backend process with pid: 19899
+2024-12-28 13:21:51,265 INFO    MainThread:19874 [wandb_init.py:init():558] backend started and connected
+2024-12-28 13:21:51,269 INFO    MainThread:19899 [internal.py:wandb_internal():93] W&B internal server running at pid: 19899, started at: 2024-12-28 13:21:51.268992
+2024-12-28 13:21:51,270 INFO    MainThread:19874 [wandb_init.py:init():634] updated telemetry
+2024-12-28 13:21:51,271 INFO    WriterThread:19899 [datastore.py:open_for_write():75] open: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_132151-uid_HumanoidAMP_28-13-21-50/run-uid_HumanoidAMP_28-13-21-50.wandb
+2024-12-28 13:21:51,284 INFO    MainThread:19874 [wandb_init.py:init():666] communicating run to backend with 30 second timeout
+2024-12-28 13:21:51,286 INFO    SenderThread:19899 [sender.py:_maybe_setup_resume():494] checking resume status for 2238046709-sjtu/isaacgymenvs/uid_HumanoidAMP_28-13-21-50
+2024-12-28 13:21:52,594 INFO    SenderThread:19899 [dir_watcher.py:__init__():216] watching files in: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_132151-uid_HumanoidAMP_28-13-21-50/files
+2024-12-28 13:21:52,595 INFO    SenderThread:19899 [sender.py:_start_run_threads():818] run started: uid_HumanoidAMP_28-13-21-50 with start time 1735363311
+2024-12-28 13:21:52,595 INFO    SenderThread:19899 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2024-12-28 13:21:52,596 INFO    MainThread:19874 [wandb_run.py:_on_init():1919] communicating current version
+2024-12-28 13:21:53,101 INFO    MainThread:19874 [wandb_run.py:_on_init():1923] got version response upgrade_message: "wandb version 0.19.1 is available!  To upgrade, please run:\n $ pip install wandb --upgrade"
+
+2024-12-28 13:21:53,102 INFO    MainThread:19874 [wandb_init.py:init():700] starting run threads in backend
+2024-12-28 13:21:53,595 INFO    Thread-8  :19899 [dir_watcher.py:_on_file_created():269] file/dir created: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_132151-uid_HumanoidAMP_28-13-21-50/files/requirements.txt
+2024-12-28 13:21:53,596 INFO    Thread-8  :19899 [dir_watcher.py:_on_file_created():269] file/dir created: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_132151-uid_HumanoidAMP_28-13-21-50/files/wandb-summary.json
+2024-12-28 13:21:53,596 INFO    Thread-8  :19899 [dir_watcher.py:_on_file_created():269] file/dir created: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_132151-uid_HumanoidAMP_28-13-21-50/files/conda-environment.yaml
+2024-12-28 13:21:53,721 INFO    SenderThread:19899 [sender.py:_save_file():952] saving file wandb-metadata.json with policy now
+2024-12-28 13:21:53,723 INFO    MainThread:19874 [wandb_run.py:_console_start():1893] atexit reg
+2024-12-28 13:21:53,723 INFO    MainThread:19874 [wandb_run.py:_redirect():1766] redirect: SettingsConsole.REDIRECT
+2024-12-28 13:21:53,724 INFO    MainThread:19874 [wandb_run.py:_redirect():1771] Redirecting console.
+2024-12-28 13:21:53,725 INFO    MainThread:19874 [wandb_run.py:_redirect():1827] Redirects installed.
+2024-12-28 13:21:53,725 INFO    MainThread:19874 [wandb_init.py:init():732] run started, returning control to user process
+2024-12-28 13:21:53,737 INFO    MainThread:19874 [wandb_run.py:_config_callback():1131] config_cb None None {'task': {'name': 'HumanoidAMP', 'physics_engine': 'physx', 'env': {'numEnvs': 4096, 'envSpacing': 5, 'episodeLength': 300, 'cameraFollow': True, 'enableDebugVis': False, 'pdControl': True, 'powerScale': 1.0, 'controlFrequencyInv': 2, 'stateInit': 'Random', 'hybridInitProb': 0.5, 'numAMPObsSteps': 2, 'localRootObs': False, 'contactBodies': ['right_foot', 'left_foot'], 'terminationHeight': 0.5, 'enableEarlyTermination': True, 'motion_file': 'amp_humanoid_run.npy', 'asset': {'assetFileName': 'mjcf/amp_humanoid.xml'}, 'plane': {'staticFriction': 1.0, 'dynamicFriction': 1.0, 'restitution': 0.0}}, 'sim': {'dt': 0.0166, 'substeps': 2, 'up_axis': 'z', 'use_gpu_pipeline': True, 'gravity': [0.0, 0.0, -9.81], 'physx': {'num_threads': 4, 'solver_type': 1, 'use_gpu': True, 'num_position_iterations': 4, 'num_velocity_iterations': 0, 'contact_offset': 0.02, 'rest_offset': 0.0, 'bounce_threshold_velocity': 0.2, 'max_depenetration_velocity': 10.0, 'default_buffer_size_multiplier': 5.0, 'max_gpu_contact_pairs': 8388608, 'num_subscenes': 4, 'contact_collection': 2}}, 'task': {'randomize': False, 'randomization_params': {'frequency': 600, 'observations': {'range': [0, 0.002], 'operation': 'additive', 'distribution': 'gaussian'}, 'actions': {'range': [0.0, 0.02], 'operation': 'additive', 'distribution': 'gaussian'}, 'sim_params': {'gravity': {'range': [0, 0.4], 'operation': 'additive', 'distribution': 'gaussian', 'schedule': 'linear', 'schedule_steps': 3000}}, 'actor_params': {'humanoid': {'color': True, 'rigid_body_properties': {'mass': {'range': [0.5, 1.5], 'operation': 'scaling', 'distribution': 'uniform', 'setup_only': True, 'schedule': 'linear', 'schedule_steps': 3000}}, 'rigid_shape_properties': {'friction': {'num_buckets': 500, 'range': [0.7, 1.3], 'operation': 'scaling', 'distribution': 'uniform', 'schedule': 'linear', 'schedule_steps': 3000}, 'restitution': {'range': [0.0, 0.7], 'operation': 'scaling', 'distribution': 'uniform', 'schedule': 'linear', 'schedule_steps': 3000}}, 'dof_properties': {'damping': {'range': [0.5, 1.5], 'operation': 'scaling', 'distribution': 'uniform', 'schedule': 'linear', 'schedule_steps': 3000}, 'stiffness': {'range': [0.5, 1.5], 'operation': 'scaling', 'distribution': 'uniform', 'schedule': 'linear', 'schedule_steps': 3000}, 'lower': {'range': [0, 0.01], 'operation': 'additive', 'distribution': 'gaussian', 'schedule': 'linear', 'schedule_steps': 3000}, 'upper': {'range': [0, 0.01], 'operation': 'additive', 'distribution': 'gaussian', 'schedule': 'linear', 'schedule_steps': 3000}}}}}}}, 'train': {'params': {'seed': 42, 'algo': {'name': 'amp_continuous'}, 'model': {'name': 'continuous_amp'}, 'network': {'name': 'amp', 'separate': True, 'space': {'continuous': {'mu_activation': 'None', 'sigma_activation': 'None', 'mu_init': {'name': 'default'}, 'sigma_init': {'name': 'const_initializer', 'val': -2.9}, 'fixed_sigma': True, 'learn_sigma': False}}, 'mlp': {'units': [1024, 512], 'activation': 'relu', 'd2rl': False, 'initializer': {'name': 'default'}, 'regularizer': {'name': 'None'}}, 'disc': {'units': [1024, 512], 'activation': 'relu', 'initializer': {'name': 'default'}}}, 'load_checkpoint': False, 'load_path': '', 'config': {'name': 'HumanoidAMP', 'full_experiment_name': 'HumanoidAMP', 'env_name': 'rlgpu', 'ppo': True, 'multi_gpu': False, 'mixed_precision': False, 'normalize_input': True, 'normalize_value': True, 'value_bootstrap': True, 'num_actors': 4096, 'reward_shaper': {'scale_value': 1}, 'normalize_advantage': True, 'gamma': 0.99, 'tau': 0.95, 'learning_rate': 5e-05, 'lr_schedule': 'constant', 'kl_threshold': 0.008, 'score_to_win': 20000, 'max_epochs': 5000, 'save_best_after': 100, 'save_frequency': 50, 'print_stats': True, 'grad_norm': 1.0, 'entropy_coef': 0.0, 'truncate_grads': False, 'e_clip': 0.2, 'horizon_length': 16, 'minibatch_size': 32768, 'mini_epochs': 6, 'critic_coef': 5, 'clip_value': False, 'seq_len': 4, 'bounds_loss_coef': 10, 'amp_obs_demo_buffer_size': 200000, 'amp_replay_buffer_size': 1000000, 'amp_replay_keep_prob': 0.01, 'amp_batch_size': 512, 'amp_minibatch_size': 4096, 'disc_coef': 5, 'disc_logit_reg': 0.05, 'disc_grad_penalty': 5, 'disc_reward_scale': 2, 'disc_weight_decay': 0.0001, 'normalize_amp_input': True, 'task_reward_w': 0.0, 'disc_reward_w': 1.0}}}, 'pbt': {'enabled': False}, 'task_name': 'HumanoidAMP', 'experiment': '', 'num_envs': '', 'seed': 42, 'torch_deterministic': False, 'max_iterations': '', 'physics_engine': 'physx', 'pipeline': 'gpu', 'sim_device': 'cuda:0', 'rl_device': 'cuda:0', 'graphics_device_id': 0, 'num_threads': 4, 'solver_type': 1, 'num_subscenes': 4, 'test': False, 'checkpoint': '', 'sigma': '', 'multi_gpu': False, 'wandb_activate': True, 'wandb_group': 'Isaac_2024', 'wandb_name': 'HumanoidAMP', 'wandb_entity': '2238046709-sjtu', 'wandb_project': 'isaacgymenvs', 'wandb_tags': [], 'wandb_logcode_dir': '', 'capture_video': False, 'capture_video_freq': 1464, 'capture_video_len': 100, 'force_render': True, 'headless': False}
+2024-12-28 13:21:54,595 INFO    Thread-8  :19899 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_132151-uid_HumanoidAMP_28-13-21-50/files/conda-environment.yaml
+2024-12-28 13:21:54,598 INFO    Thread-8  :19899 [dir_watcher.py:_on_file_created():269] file/dir created: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_132151-uid_HumanoidAMP_28-13-21-50/files/output.log
+2024-12-28 13:21:54,598 INFO    Thread-8  :19899 [dir_watcher.py:_on_file_created():269] file/dir created: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_132151-uid_HumanoidAMP_28-13-21-50/files/wandb-metadata.json
+2024-12-28 13:21:56,265 INFO    MainThread:19874 [wandb_run.py:_tensorboard_callback():1239] tensorboard callback: runs/HumanoidAMP_28-13-21-50/summaries, True
+2024-12-28 13:21:56,266 INFO    HandlerThread:19899 [handler.py:handle_tbrecord():723] handling tbrecord: tbrecord {
+  log_dir: "runs/HumanoidAMP_28-13-21-50/summaries"
+  save: true
+}
+
+2024-12-28 13:21:56,272 INFO    SenderThread:19899 [sender.py:_save_file():952] saving file events.out.tfevents.1735363316.king-ROG-Zephyrus-M16-GU603ZM-GU603ZM with policy live
+2024-12-28 13:21:56,280 INFO    MainThread:19874 [wandb_run.py:_atexit_cleanup():1862] got exitcode: 1
+2024-12-28 13:21:56,280 INFO    MainThread:19874 [wandb_run.py:_restore():1834] restore
+2024-12-28 13:21:56,574 INFO    Thread-12 :19899 [upload_job.py:push():138] Uploaded file /tmp/tmpuistoaaxwandb/lapfxrzp-wandb-metadata.json
+2024-12-28 13:21:56,596 INFO    Thread-8  :19899 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_132151-uid_HumanoidAMP_28-13-21-50/files/output.log
+2024-12-28 13:21:56,596 INFO    Thread-8  :19899 [dir_watcher.py:_on_file_created():269] file/dir created: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_132151-uid_HumanoidAMP_28-13-21-50/files/events.out.tfevents.1735363316.king-ROG-Zephyrus-M16-GU603ZM-GU603ZM
+2024-12-28 13:21:57,596 INFO    Thread-8  :19899 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_132151-uid_HumanoidAMP_28-13-21-50/files/output.log
+2024-12-28 13:21:57,807 INFO    Thread-15 :19899 [upload_job.py:push():138] Uploaded file /tmp/tmpuistoaaxwandb/effod7jx-events.out.tfevents.1735363316.king-ROG-Zephyrus-M16-GU603ZM-GU603ZM
+2024-12-28 13:21:58,552 INFO    SenderThread:19899 [sender.py:send_exit():372] handling exit code: 1
+2024-12-28 13:21:58,553 INFO    SenderThread:19899 [sender.py:send_exit():374] handling runtime: 5
+2024-12-28 13:21:58,553 INFO    SenderThread:19899 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2024-12-28 13:21:58,554 INFO    SenderThread:19899 [sender.py:send_exit():380] send defer
+2024-12-28 13:21:58,555 INFO    HandlerThread:19899 [handler.py:handle_request_defer():163] handle defer: 0
+2024-12-28 13:21:58,555 INFO    SenderThread:19899 [sender.py:send_request_defer():389] handle sender defer: 0
+2024-12-28 13:21:58,555 INFO    SenderThread:19899 [sender.py:transition_state():393] send defer: 1
+2024-12-28 13:21:58,556 INFO    MainThread:19874 [wandb_run.py:_on_finish():1991] got exit ret: file_counts {
+  wandb_count: 1
+  other_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 862
+  total_bytes: 862
+}
+
+2024-12-28 13:21:58,556 INFO    HandlerThread:19899 [handler.py:handle_request_defer():163] handle defer: 1
+2024-12-28 13:21:58,597 INFO    Thread-8  :19899 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_132151-uid_HumanoidAMP_28-13-21-50/files/wandb-summary.json
+2024-12-28 13:21:58,597 INFO    Thread-8  :19899 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_132151-uid_HumanoidAMP_28-13-21-50/files/output.log
+2024-12-28 13:21:58,667 INFO    SenderThread:19899 [sender.py:send_request_defer():389] handle sender defer: 1
+2024-12-28 13:21:58,667 INFO    SenderThread:19899 [sender.py:transition_state():393] send defer: 2
+2024-12-28 13:21:58,668 INFO    HandlerThread:19899 [handler.py:handle_request_defer():163] handle defer: 2
+2024-12-28 13:21:58,668 INFO    MainThread:19874 [wandb_run.py:_on_finish():1991] got exit ret: file_counts {
+  wandb_count: 1
+  other_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 862
+  total_bytes: 862
+}
+
+2024-12-28 13:21:58,668 INFO    SenderThread:19899 [sender.py:send_request_defer():389] handle sender defer: 2
+2024-12-28 13:21:58,668 INFO    SenderThread:19899 [sender.py:transition_state():393] send defer: 3
+2024-12-28 13:21:58,668 INFO    HandlerThread:19899 [handler.py:handle_request_defer():163] handle defer: 3
+2024-12-28 13:22:03,768 INFO    MainThread:19874 [wandb_run.py:_on_finish():1991] got exit ret: None
+2024-12-28 13:22:05,269 INFO    SenderThread:19899 [sender.py:send_request_defer():389] handle sender defer: 3
+2024-12-28 13:22:05,269 INFO    SenderThread:19899 [sender.py:transition_state():393] send defer: 4
+2024-12-28 13:22:05,270 INFO    HandlerThread:19899 [handler.py:handle_request_defer():163] handle defer: 4
+2024-12-28 13:22:05,270 INFO    MainThread:19874 [wandb_run.py:_on_finish():1991] got exit ret: file_counts {
+  wandb_count: 1
+  other_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 862
+  total_bytes: 862
+}
+
+2024-12-28 13:22:05,271 INFO    SenderThread:19899 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2024-12-28 13:22:05,271 INFO    SenderThread:19899 [sender.py:send_request_defer():389] handle sender defer: 4
+2024-12-28 13:22:05,271 INFO    SenderThread:19899 [sender.py:transition_state():393] send defer: 5
+2024-12-28 13:22:05,272 INFO    HandlerThread:19899 [handler.py:handle_request_defer():163] handle defer: 5
+2024-12-28 13:22:05,272 INFO    SenderThread:19899 [sender.py:send_request_defer():389] handle sender defer: 5
+2024-12-28 13:22:05,600 INFO    Thread-8  :19899 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_132151-uid_HumanoidAMP_28-13-21-50/files/wandb-summary.json
+2024-12-28 13:22:06,027 INFO    SenderThread:19899 [sender.py:transition_state():393] send defer: 6
+2024-12-28 13:22:06,028 INFO    HandlerThread:19899 [handler.py:handle_request_defer():163] handle defer: 6
+2024-12-28 13:22:06,028 INFO    MainThread:19874 [wandb_run.py:_on_finish():1991] got exit ret: file_counts {
+  wandb_count: 1
+  other_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 862
+  total_bytes: 862
+}
+
+2024-12-28 13:22:06,028 INFO    SenderThread:19899 [sender.py:send_request_defer():389] handle sender defer: 6
+2024-12-28 13:22:06,028 INFO    SenderThread:19899 [dir_watcher.py:finish():353] shutting down directory watcher
+2024-12-28 13:22:06,601 INFO    Thread-8  :19899 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_132151-uid_HumanoidAMP_28-13-21-50/files/config.yaml
+2024-12-28 13:22:06,602 INFO    SenderThread:19899 [dir_watcher.py:finish():383] scan: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_132151-uid_HumanoidAMP_28-13-21-50/files
+2024-12-28 13:22:06,602 INFO    SenderThread:19899 [dir_watcher.py:finish():397] scan save: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_132151-uid_HumanoidAMP_28-13-21-50/files/events.out.tfevents.1735363316.king-ROG-Zephyrus-M16-GU603ZM-GU603ZM events.out.tfevents.1735363316.king-ROG-Zephyrus-M16-GU603ZM-GU603ZM
+2024-12-28 13:22:06,602 INFO    SenderThread:19899 [dir_watcher.py:finish():397] scan save: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_132151-uid_HumanoidAMP_28-13-21-50/files/conda-environment.yaml conda-environment.yaml
+2024-12-28 13:22:06,603 INFO    SenderThread:19899 [dir_watcher.py:finish():397] scan save: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_132151-uid_HumanoidAMP_28-13-21-50/files/wandb-metadata.json wandb-metadata.json
+2024-12-28 13:22:06,603 INFO    SenderThread:19899 [dir_watcher.py:finish():397] scan save: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_132151-uid_HumanoidAMP_28-13-21-50/files/output.log output.log
+2024-12-28 13:22:06,603 INFO    SenderThread:19899 [dir_watcher.py:finish():397] scan save: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_132151-uid_HumanoidAMP_28-13-21-50/files/wandb-summary.json wandb-summary.json
+2024-12-28 13:22:06,604 INFO    SenderThread:19899 [dir_watcher.py:finish():397] scan save: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_132151-uid_HumanoidAMP_28-13-21-50/files/requirements.txt requirements.txt
+2024-12-28 13:22:06,604 INFO    SenderThread:19899 [dir_watcher.py:finish():397] scan save: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_132151-uid_HumanoidAMP_28-13-21-50/files/config.yaml config.yaml
+2024-12-28 13:22:06,613 INFO    SenderThread:19899 [sender.py:transition_state():393] send defer: 7
+2024-12-28 13:22:06,621 INFO    MainThread:19874 [wandb_run.py:_on_finish():1991] got exit ret: file_counts {
+  wandb_count: 5
+  other_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 862
+  total_bytes: 11512
+}
+
+2024-12-28 13:22:06,622 INFO    HandlerThread:19899 [handler.py:handle_request_defer():163] handle defer: 7
+2024-12-28 13:22:06,626 INFO    SenderThread:19899 [sender.py:send_request_defer():389] handle sender defer: 7
+2024-12-28 13:22:06,626 INFO    SenderThread:19899 [file_pusher.py:finish():171] shutting down file pusher
+2024-12-28 13:22:06,723 INFO    MainThread:19874 [wandb_run.py:_on_finish():1991] got exit ret: file_counts {
+  wandb_count: 6
+  other_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 862
+  total_bytes: 19076
+}
+
+2024-12-28 13:22:06,825 INFO    MainThread:19874 [wandb_run.py:_on_finish():1991] got exit ret: file_counts {
+  wandb_count: 6
+  other_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 862
+  total_bytes: 19076
+}
+
+2024-12-28 13:22:06,927 INFO    MainThread:19874 [wandb_run.py:_on_finish():1991] got exit ret: file_counts {
+  wandb_count: 6
+  other_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 862
+  total_bytes: 19076
+}
+
+2024-12-28 13:22:07,029 INFO    MainThread:19874 [wandb_run.py:_on_finish():1991] got exit ret: file_counts {
+  wandb_count: 6
+  other_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 862
+  total_bytes: 19076
+}
+
+2024-12-28 13:22:07,131 INFO    MainThread:19874 [wandb_run.py:_on_finish():1991] got exit ret: file_counts {
+  wandb_count: 6
+  other_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 862
+  total_bytes: 19076
+}
+
+2024-12-28 13:22:07,233 INFO    MainThread:19874 [wandb_run.py:_on_finish():1991] got exit ret: file_counts {
+  wandb_count: 6
+  other_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 862
+  total_bytes: 19076
+}
+
+2024-12-28 13:22:07,335 INFO    MainThread:19874 [wandb_run.py:_on_finish():1991] got exit ret: file_counts {
+  wandb_count: 6
+  other_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 862
+  total_bytes: 19076
+}
+
+2024-12-28 13:22:07,437 INFO    MainThread:19874 [wandb_run.py:_on_finish():1991] got exit ret: file_counts {
+  wandb_count: 6
+  other_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 862
+  total_bytes: 19076
+}
+
+2024-12-28 13:22:07,538 INFO    MainThread:19874 [wandb_run.py:_on_finish():1991] got exit ret: file_counts {
+  wandb_count: 6
+  other_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 888
+  total_bytes: 19076
+}
+
+2024-12-28 13:22:07,640 INFO    MainThread:19874 [wandb_run.py:_on_finish():1991] got exit ret: file_counts {
+  wandb_count: 6
+  other_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 13967
+  total_bytes: 19076
+}
+
+2024-12-28 13:22:07,742 INFO    MainThread:19874 [wandb_run.py:_on_finish():1991] got exit ret: file_counts {
+  wandb_count: 6
+  other_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 13967
+  total_bytes: 19076
+}
+
+2024-12-28 13:22:07,845 INFO    MainThread:19874 [wandb_run.py:_on_finish():1991] got exit ret: file_counts {
+  wandb_count: 6
+  other_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 13967
+  total_bytes: 19076
+}
+
+2024-12-28 13:22:07,943 INFO    Thread-18 :19899 [upload_job.py:push():138] Uploaded file /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_132151-uid_HumanoidAMP_28-13-21-50/files/wandb-summary.json
+2024-12-28 13:22:07,946 INFO    Thread-19 :19899 [upload_job.py:push():138] Uploaded file /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_132151-uid_HumanoidAMP_28-13-21-50/files/requirements.txt
+2024-12-28 13:22:07,946 INFO    Thread-17 :19899 [upload_job.py:push():138] Uploaded file /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_132151-uid_HumanoidAMP_28-13-21-50/files/output.log
+2024-12-28 13:22:07,948 INFO    MainThread:19874 [wandb_run.py:_on_finish():1991] got exit ret: file_counts {
+  wandb_count: 6
+  other_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 13967
+  total_bytes: 19076
+}
+
+2024-12-28 13:22:07,975 INFO    Thread-20 :19899 [upload_job.py:push():138] Uploaded file /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_132151-uid_HumanoidAMP_28-13-21-50/files/config.yaml
+2024-12-28 13:22:08,051 INFO    MainThread:19874 [wandb_run.py:_on_finish():1991] got exit ret: file_counts {
+  wandb_count: 6
+  other_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 13967
+  total_bytes: 19076
+}
+
+2024-12-28 13:22:08,154 INFO    MainThread:19874 [wandb_run.py:_on_finish():1991] got exit ret: file_counts {
+  wandb_count: 6
+  other_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 13967
+  total_bytes: 19076
+}
+
+2024-12-28 13:22:08,256 INFO    MainThread:19874 [wandb_run.py:_on_finish():1991] got exit ret: file_counts {
+  wandb_count: 6
+  other_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 13967
+  total_bytes: 19076
+}
+
+2024-12-28 13:22:08,359 INFO    MainThread:19874 [wandb_run.py:_on_finish():1991] got exit ret: file_counts {
+  wandb_count: 6
+  other_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 13967
+  total_bytes: 19076
+}
+
+2024-12-28 13:22:08,461 INFO    MainThread:19874 [wandb_run.py:_on_finish():1991] got exit ret: file_counts {
+  wandb_count: 6
+  other_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 13967
+  total_bytes: 19076
+}
+
+2024-12-28 13:22:08,564 INFO    MainThread:19874 [wandb_run.py:_on_finish():1991] got exit ret: file_counts {
+  wandb_count: 6
+  other_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 19076
+  total_bytes: 19076
+}
+
+2024-12-28 13:22:08,666 INFO    MainThread:19874 [wandb_run.py:_on_finish():1991] got exit ret: file_counts {
+  wandb_count: 6
+  other_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 19076
+  total_bytes: 19076
+}
+
+2024-12-28 13:22:08,769 INFO    MainThread:19874 [wandb_run.py:_on_finish():1991] got exit ret: file_counts {
+  wandb_count: 6
+  other_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 19076
+  total_bytes: 19076
+}
+
+2024-12-28 13:22:08,871 INFO    MainThread:19874 [wandb_run.py:_on_finish():1991] got exit ret: file_counts {
+  wandb_count: 6
+  other_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 19076
+  total_bytes: 19076
+}
+
+2024-12-28 13:22:08,967 INFO    Thread-16 :19899 [upload_job.py:push():138] Uploaded file /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_132151-uid_HumanoidAMP_28-13-21-50/files/conda-environment.yaml
+2024-12-28 13:22:08,974 INFO    MainThread:19874 [wandb_run.py:_on_finish():1991] got exit ret: file_counts {
+  wandb_count: 6
+  other_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 19076
+  total_bytes: 19076
+}
+
+2024-12-28 13:22:09,076 INFO    MainThread:19874 [wandb_run.py:_on_finish():1991] got exit ret: file_counts {
+  wandb_count: 6
+  other_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 19076
+  total_bytes: 19076
+}
+
+2024-12-28 13:22:09,168 INFO    Thread-7  :19899 [sender.py:transition_state():393] send defer: 8
+2024-12-28 13:22:09,169 INFO    HandlerThread:19899 [handler.py:handle_request_defer():163] handle defer: 8
+2024-12-28 13:22:09,169 INFO    SenderThread:19899 [sender.py:send_request_defer():389] handle sender defer: 8
+2024-12-28 13:22:09,579 INFO    SenderThread:19899 [sender.py:transition_state():393] send defer: 9
+2024-12-28 13:22:09,580 INFO    HandlerThread:19899 [handler.py:handle_request_defer():163] handle defer: 9
+2024-12-28 13:22:09,581 INFO    SenderThread:19899 [sender.py:send_request_defer():389] handle sender defer: 9
+2024-12-28 13:22:09,581 INFO    SenderThread:19899 [sender.py:transition_state():393] send defer: 10
+2024-12-28 13:22:09,581 INFO    MainThread:19874 [wandb_run.py:_on_finish():1991] got exit ret: file_counts {
+  wandb_count: 6
+  other_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 19076
+  total_bytes: 19076
+}
+
+2024-12-28 13:22:09,581 INFO    HandlerThread:19899 [handler.py:handle_request_defer():163] handle defer: 10
+2024-12-28 13:22:09,581 INFO    SenderThread:19899 [sender.py:send_request_defer():389] handle sender defer: 10
+2024-12-28 13:22:09,683 INFO    SenderThread:19899 [file_pusher.py:join():176] waiting for file pusher
+2024-12-28 13:22:10,942 INFO    MainThread:19874 [wandb_run.py:_on_finish():1991] got exit ret: done: true
+exit_result {
+}
+file_counts {
+  wandb_count: 6
+  other_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 19076
+  total_bytes: 19076
+}
+local_info {
+}
+
+2024-12-28 13:22:11,047 INFO    HandlerThread:19899 [handler.py:finish():806] shutting down handler
+2024-12-28 13:22:11,582 INFO    WriterThread:19899 [datastore.py:close():279] close: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_132151-uid_HumanoidAMP_28-13-21-50/run-uid_HumanoidAMP_28-13-21-50.wandb
+2024-12-28 13:22:11,941 INFO    SenderThread:19899 [sender.py:finish():1114] shutting down sender
+2024-12-28 13:22:11,941 INFO    SenderThread:19899 [file_pusher.py:finish():171] shutting down file pusher
+2024-12-28 13:22:11,941 INFO    SenderThread:19899 [file_pusher.py:join():176] waiting for file pusher
+2024-12-28 13:22:12,049 INFO    MainThread:19874 [wandb_run.py:_footer_history_summary_info():3099] rendering history
+2024-12-28 13:22:12,049 INFO    MainThread:19874 [wandb_run.py:_footer_history_summary_info():3131] rendering summary
+2024-12-28 13:22:12,052 INFO    MainThread:19874 [wandb_run.py:_footer_sync_info():3055] logging synced files

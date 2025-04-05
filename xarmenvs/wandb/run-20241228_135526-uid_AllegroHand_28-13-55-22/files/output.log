@@ -1,0 +1,44 @@
+/home/king/miniconda3/envs/rlgpu/lib/python3.7/site-packages/gym/spaces/box.py:84: UserWarning: [33mWARN: Box bound precision lowered by casting to float32
+  logger.warn(f"Box bound precision lowered by casting to {self.dtype}")
+MESA-INTEL: warning: Performance support disabled, consider sysctl dev.i915.perf_stream_paranoid=0
+Obs type: full_state
+GPU Pipeline can only be used with GPU simulation. Forcing CPU Pipeline.
+Not connected to PVD
+Physics Engine: PhysX
+Physics Device: cpu
+GPU Pipeline: disabled
+Num dofs:  16
+Max effort:  0.35
+Max effort:  0.35
+Max effort:  0.35
+Max effort:  0.35
+Max effort:  0.35
+Max effort:  0.35
+Max effort:  0.35
+Max effort:  0.35
+Max effort:  0.35
+Max effort:  0.35
+Max effort:  0.35
+Max effort:  0.35
+Max effort:  0.35
+Max effort:  0.35
+Max effort:  0.35
+Max effort:  0.35
+Subscene 0 has 4096 articulations
+Subscene 1 has 4096 articulations
+Subscene 2 has 4096 articulations
+Subscene 3 has 4096 articulations
+[93m[1m[Warning] [carb.gym.plugin] Acquiring DOF force tensor, but no actors have DOF force sensors enabled.
+[93m[1m[Warning] [carb.gym.plugin] -> Enabled DOF force sensors for all eligible actors.
+[93m[1mNum dofs:  16
+[93m[1mBox(-1.0, 1.0, (16,), float32) Box(-inf, inf, (88,), float32)
+[93m[1mWARNING: seq_len is deprecated, use seq_length instead
+[93m[1mseq_length: 4
+[93m[1mcurrent training device: cuda:0
+[93m[1mbuild mlp: 88
+[93m[1mRunningMeanStd:  (1,)
+[93m[1mRunningMeanStd:  (88,)
+fps step: 14665 fps step and policy inference: 14093 fps total: 13795 epoch: 1/5000 frames: 0
+fps step: 20818 fps step and policy inference: 20785 fps total: 20095 epoch: 2/5000 frames: 131072
+fps step: 25010 fps step and policy inference: 24964 fps total: 23926 epoch: 3/5000 frames: 262144
+fps step: 24496 fps step and policy inference: 24444 fps total: 23563 epoch: 4/5000 frames: 393216

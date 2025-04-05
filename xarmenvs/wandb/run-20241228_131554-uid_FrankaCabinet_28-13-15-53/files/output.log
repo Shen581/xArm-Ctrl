@@ -1,0 +1,57 @@
+
+[93m[1m[Warning] [carb.gym.plugin] useGpu is set, forcing single scene (0 subscenes)
+/home/king/miniconda3/envs/rlgpu/lib/python3.7/site-packages/gym/spaces/box.py:84: UserWarning: [33mWARN: Box bound precision lowered by casting to float32
+  logger.warn(f"Box bound precision lowered by casting to {self.dtype}")
+Not connected to PVD
++++ Using GPU PhysX
+Physics Engine: PhysX
+Physics Device: cuda:0
+GPU Pipeline: enabled
+num franka bodies:  10
+num franka dofs:  9
+num cabinet bodies:  5
+num cabinet dofs:  4
+Box(-1.0, 1.0, (9,), float32) Box(-inf, inf, (23,), float32)
+WARNING: seq_len is deprecated, use seq_length instead
+seq_length: 4
+current training device: cuda:0
+MESA-INTEL: warning: Performance support disabled, consider sysctl dev.i915.perf_stream_paranoid=0
+Error executing job with overrides: ['task=FrankaCabinet', 'num_envs=32']
+Traceback (most recent call last):
+  File "train.py", line 219, in <module>
+    launch_rlg_hydra()
+  File "/home/king/miniconda3/envs/rlgpu/lib/python3.7/site-packages/hydra/main.py", line 99, in decorated_main
+    config_name=config_name,
+  File "/home/king/miniconda3/envs/rlgpu/lib/python3.7/site-packages/hydra/_internal/utils.py", line 401, in _run_hydra
+    overrides=overrides,
+  File "/home/king/miniconda3/envs/rlgpu/lib/python3.7/site-packages/hydra/_internal/utils.py", line 458, in _run_app
+    lambda: hydra.run(
+  File "/home/king/miniconda3/envs/rlgpu/lib/python3.7/site-packages/hydra/_internal/utils.py", line 223, in run_and_report
+    raise ex
+  File "/home/king/miniconda3/envs/rlgpu/lib/python3.7/site-packages/hydra/_internal/utils.py", line 220, in run_and_report
+    return func()
+  File "/home/king/miniconda3/envs/rlgpu/lib/python3.7/site-packages/hydra/_internal/utils.py", line 461, in <lambda>
+    overrides=overrides,
+  File "/home/king/miniconda3/envs/rlgpu/lib/python3.7/site-packages/hydra/_internal/hydra.py", line 132, in run
+    _ = ret.return_value
+  File "/home/king/miniconda3/envs/rlgpu/lib/python3.7/site-packages/hydra/core/utils.py", line 260, in return_value
+    raise self._return_value
+  File "/home/king/miniconda3/envs/rlgpu/lib/python3.7/site-packages/hydra/core/utils.py", line 186, in run_job
+    ret.return_value = task_function(task_cfg)
+  File "train.py", line 214, in launch_rlg_hydra
+    'sigma': cfg.sigma if cfg.sigma != '' else None
+  File "/home/king/miniconda3/envs/rlgpu/lib/python3.7/site-packages/rl_games/torch_runner.py", line 133, in run
+    self.run_train(args)
+  File "/home/king/miniconda3/envs/rlgpu/lib/python3.7/site-packages/rl_games/torch_runner.py", line 113, in run_train
+    agent = self.algo_factory.create(self.algo_name, base_name='run', params=self.params)
+  File "/home/king/miniconda3/envs/rlgpu/lib/python3.7/site-packages/rl_games/common/object_factory.py", line 15, in create
+    return builder(**kwargs)
+  File "/home/king/miniconda3/envs/rlgpu/lib/python3.7/site-packages/rl_games/torch_runner.py", line 37, in <lambda>
+    self.algo_factory.register_builder('a2c_continuous', lambda **kwargs : a2c_continuous.A2CAgent(**kwargs))
+  File "/home/king/miniconda3/envs/rlgpu/lib/python3.7/site-packages/rl_games/algos_torch/a2c_continuous.py", line 15, in __init__
+    a2c_common.ContinuousA2CBase.__init__(self, base_name, params)
+  File "/home/king/miniconda3/envs/rlgpu/lib/python3.7/site-packages/rl_games/common/a2c_common.py", line 1143, in __init__
+    A2CBase.__init__(self, base_name, params)
+  File "/home/king/miniconda3/envs/rlgpu/lib/python3.7/site-packages/rl_games/common/a2c_common.py", line 249, in __init__
+    assert(self.batch_size % self.minibatch_size == 0)
+AssertionError

@@ -1,0 +1,108 @@
+2024-12-28 13:04:11,750 INFO    MainThread:17282 [internal.py:wandb_internal():93] W&B internal server running at pid: 17282, started at: 2024-12-28 13:04:11.750246
+2024-12-28 13:04:11,752 DEBUG   SenderThread:17282 [sender.py:send():236] send: header
+2024-12-28 13:04:11,752 INFO    WriterThread:17282 [datastore.py:open_for_write():75] open: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_130411-uid_Cartpole_28-13-04-10/run-uid_Cartpole_28-13-04-10.wandb
+2024-12-28 13:04:11,762 DEBUG   SenderThread:17282 [sender.py:send():236] send: run
+2024-12-28 13:04:11,763 INFO    SenderThread:17282 [sender.py:_maybe_setup_resume():494] checking resume status for 2238046709-sjtu/isaacgymenvs/uid_Cartpole_28-13-04-10
+2024-12-28 13:04:14,904 INFO    SenderThread:17282 [dir_watcher.py:__init__():216] watching files in: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_130411-uid_Cartpole_28-13-04-10/files
+2024-12-28 13:04:14,904 INFO    SenderThread:17282 [sender.py:_start_run_threads():818] run started: uid_Cartpole_28-13-04-10 with start time 1735362251
+2024-12-28 13:04:14,904 DEBUG   SenderThread:17282 [sender.py:send():236] send: summary
+2024-12-28 13:04:14,905 INFO    SenderThread:17282 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2024-12-28 13:04:14,906 DEBUG   HandlerThread:17282 [handler.py:handle_request():140] handle_request: check_version
+2024-12-28 13:04:14,906 DEBUG   SenderThread:17282 [sender.py:send_request():250] send_request: check_version
+2024-12-28 13:04:15,907 INFO    Thread-8  :17282 [dir_watcher.py:_on_file_created():269] file/dir created: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_130411-uid_Cartpole_28-13-04-10/files/wandb-summary.json
+2024-12-28 13:04:16,251 DEBUG   HandlerThread:17282 [handler.py:handle_request():140] handle_request: run_start
+2024-12-28 13:04:16,255 DEBUG   HandlerThread:17282 [meta.py:__init__():35] meta init
+2024-12-28 13:04:16,255 DEBUG   HandlerThread:17282 [meta.py:__init__():49] meta init done
+2024-12-28 13:04:16,255 DEBUG   HandlerThread:17282 [meta.py:probe():209] probe
+2024-12-28 13:04:16,263 DEBUG   HandlerThread:17282 [meta.py:_setup_git():199] setup git
+2024-12-28 13:04:16,293 DEBUG   HandlerThread:17282 [meta.py:_setup_git():206] setup git done
+2024-12-28 13:04:16,293 DEBUG   HandlerThread:17282 [meta.py:_save_pip():53] save pip
+2024-12-28 13:04:16,294 DEBUG   HandlerThread:17282 [meta.py:_save_pip():67] save pip done
+2024-12-28 13:04:16,294 DEBUG   HandlerThread:17282 [meta.py:_save_conda():74] save conda
+2024-12-28 13:04:16,842 DEBUG   HandlerThread:17282 [meta.py:_save_conda():84] save conda done
+2024-12-28 13:04:16,842 DEBUG   HandlerThread:17282 [meta.py:probe():247] probe done
+2024-12-28 13:04:16,844 DEBUG   SenderThread:17282 [sender.py:send():236] send: files
+2024-12-28 13:04:16,844 INFO    SenderThread:17282 [sender.py:_save_file():952] saving file wandb-metadata.json with policy now
+2024-12-28 13:04:16,848 DEBUG   HandlerThread:17282 [handler.py:handle_request():140] handle_request: stop_status
+2024-12-28 13:04:16,848 DEBUG   SenderThread:17282 [sender.py:send_request():250] send_request: stop_status
+2024-12-28 13:04:16,905 INFO    Thread-8  :17282 [dir_watcher.py:_on_file_created():269] file/dir created: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_130411-uid_Cartpole_28-13-04-10/files/conda-environment.yaml
+2024-12-28 13:04:16,905 INFO    Thread-8  :17282 [dir_watcher.py:_on_file_created():269] file/dir created: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_130411-uid_Cartpole_28-13-04-10/files/output.log
+2024-12-28 13:04:16,905 INFO    Thread-8  :17282 [dir_watcher.py:_on_file_created():269] file/dir created: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_130411-uid_Cartpole_28-13-04-10/files/wandb-metadata.json
+2024-12-28 13:04:16,905 INFO    Thread-8  :17282 [dir_watcher.py:_on_file_created():269] file/dir created: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_130411-uid_Cartpole_28-13-04-10/files/requirements.txt
+2024-12-28 13:04:18,394 INFO    Thread-12 :17282 [upload_job.py:push():138] Uploaded file /tmp/tmprwi1o3e1wandb/c9ro2vaa-wandb-metadata.json
+2024-12-28 13:04:18,437 INFO    HandlerThread:17282 [handler.py:handle_tbrecord():723] handling tbrecord: tbrecord {
+  log_dir: "runs/Cartpole_28-13-04-10/summaries"
+  save: true
+}
+
+2024-12-28 13:04:18,437 DEBUG   HandlerThread:17282 [config_util.py:dict_from_config_file():100] no default config file found in config-defaults.yaml
+2024-12-28 13:04:18,607 DEBUG   SenderThread:17282 [sender.py:send():236] send: telemetry
+2024-12-28 13:04:18,607 DEBUG   SenderThread:17282 [sender.py:send():236] send: config
+2024-12-28 13:04:18,608 DEBUG   SenderThread:17282 [sender.py:send():236] send: tbrecord
+2024-12-28 13:04:18,608 DEBUG   SenderThread:17282 [sender.py:send():236] send: files
+2024-12-28 13:04:18,608 INFO    SenderThread:17282 [sender.py:_save_file():952] saving file events.out.tfevents.1735362258.king-ROG-Zephyrus-M16-GU603ZM-GU603ZM with policy live
+2024-12-28 13:04:18,905 INFO    Thread-8  :17282 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_130411-uid_Cartpole_28-13-04-10/files/output.log
+2024-12-28 13:04:18,905 INFO    Thread-8  :17282 [dir_watcher.py:_on_file_created():269] file/dir created: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_130411-uid_Cartpole_28-13-04-10/files/events.out.tfevents.1735362258.king-ROG-Zephyrus-M16-GU603ZM-GU603ZM
+2024-12-28 13:04:19,906 INFO    Thread-8  :17282 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_130411-uid_Cartpole_28-13-04-10/files/output.log
+2024-12-28 13:04:20,906 INFO    Thread-8  :17282 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_130411-uid_Cartpole_28-13-04-10/files/events.out.tfevents.1735362258.king-ROG-Zephyrus-M16-GU603ZM-GU603ZM
+2024-12-28 13:04:21,906 INFO    Thread-8  :17282 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_130411-uid_Cartpole_28-13-04-10/files/output.log
+2024-12-28 13:04:21,907 INFO    Thread-8  :17282 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_130411-uid_Cartpole_28-13-04-10/files/events.out.tfevents.1735362258.king-ROG-Zephyrus-M16-GU603ZM-GU603ZM
+2024-12-28 13:04:22,369 INFO    Thread-15 :17282 [upload_job.py:push():138] Uploaded file /tmp/tmprwi1o3e1wandb/boftk89u-events.out.tfevents.1735362258.king-ROG-Zephyrus-M16-GU603ZM-GU603ZM
+2024-12-28 13:04:22,907 INFO    Thread-8  :17282 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_130411-uid_Cartpole_28-13-04-10/files/events.out.tfevents.1735362258.king-ROG-Zephyrus-M16-GU603ZM-GU603ZM
+2024-12-28 13:04:23,907 INFO    Thread-8  :17282 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_130411-uid_Cartpole_28-13-04-10/files/output.log
+2024-12-28 13:04:23,907 INFO    Thread-8  :17282 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_130411-uid_Cartpole_28-13-04-10/files/events.out.tfevents.1735362258.king-ROG-Zephyrus-M16-GU603ZM-GU603ZM
+2024-12-28 13:04:24,907 INFO    Thread-8  :17282 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_130411-uid_Cartpole_28-13-04-10/files/events.out.tfevents.1735362258.king-ROG-Zephyrus-M16-GU603ZM-GU603ZM
+2024-12-28 13:04:25,078 DEBUG   SenderThread:17282 [sender.py:send():236] send: telemetry
+2024-12-28 13:04:25,908 INFO    Thread-8  :17282 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_130411-uid_Cartpole_28-13-04-10/files/output.log
+2024-12-28 13:04:25,908 INFO    Thread-8  :17282 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_130411-uid_Cartpole_28-13-04-10/files/events.out.tfevents.1735362258.king-ROG-Zephyrus-M16-GU603ZM-GU603ZM
+2024-12-28 13:04:26,908 INFO    Thread-8  :17282 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_130411-uid_Cartpole_28-13-04-10/files/output.log
+2024-12-28 13:04:27,970 DEBUG   HandlerThread:17282 [handler.py:handle_request():140] handle_request: poll_exit
+2024-12-28 13:04:27,971 DEBUG   SenderThread:17282 [sender.py:send():236] send: exit
+2024-12-28 13:04:27,971 INFO    SenderThread:17282 [sender.py:send_exit():372] handling exit code: 0
+2024-12-28 13:04:27,971 INFO    SenderThread:17282 [sender.py:send_exit():374] handling runtime: 11
+2024-12-28 13:04:27,973 INFO    SenderThread:17282 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2024-12-28 13:04:27,973 INFO    SenderThread:17282 [sender.py:send_exit():380] send defer
+2024-12-28 13:04:27,973 DEBUG   SenderThread:17282 [sender.py:send_request():250] send_request: poll_exit
+2024-12-28 13:04:27,973 DEBUG   HandlerThread:17282 [handler.py:handle_request():140] handle_request: defer
+2024-12-28 13:04:27,973 INFO    HandlerThread:17282 [handler.py:handle_request_defer():163] handle defer: 0
+2024-12-28 13:04:27,974 DEBUG   SenderThread:17282 [sender.py:send_request():250] send_request: defer
+2024-12-28 13:04:27,974 INFO    SenderThread:17282 [sender.py:send_request_defer():389] handle sender defer: 0
+2024-12-28 13:04:27,974 INFO    SenderThread:17282 [sender.py:transition_state():393] send defer: 1
+2024-12-28 13:04:27,974 DEBUG   HandlerThread:17282 [handler.py:handle_request():140] handle_request: defer
+2024-12-28 13:04:27,974 INFO    HandlerThread:17282 [handler.py:handle_request_defer():163] handle defer: 1
+2024-12-28 13:04:28,062 DEBUG   SenderThread:17282 [sender.py:send_request():250] send_request: defer
+2024-12-28 13:04:28,062 INFO    SenderThread:17282 [sender.py:send_request_defer():389] handle sender defer: 1
+2024-12-28 13:04:28,062 INFO    SenderThread:17282 [sender.py:transition_state():393] send defer: 2
+2024-12-28 13:04:28,062 DEBUG   SenderThread:17282 [sender.py:send():236] send: stats
+2024-12-28 13:04:28,063 DEBUG   HandlerThread:17282 [handler.py:handle_request():140] handle_request: defer
+2024-12-28 13:04:28,063 INFO    HandlerThread:17282 [handler.py:handle_request_defer():163] handle defer: 2
+2024-12-28 13:04:28,063 DEBUG   SenderThread:17282 [sender.py:send_request():250] send_request: defer
+2024-12-28 13:04:28,063 INFO    SenderThread:17282 [sender.py:send_request_defer():389] handle sender defer: 2
+2024-12-28 13:04:28,063 INFO    SenderThread:17282 [sender.py:transition_state():393] send defer: 3
+2024-12-28 13:04:28,063 DEBUG   HandlerThread:17282 [handler.py:handle_request():140] handle_request: defer
+2024-12-28 13:04:28,063 INFO    HandlerThread:17282 [handler.py:handle_request_defer():163] handle defer: 3
+2024-12-28 13:04:28,767 WARNING MainThread:17282 [internal.py:wandb_internal():153] Internal process interrupt: 1
+2024-12-28 13:04:28,909 INFO    Thread-8  :17282 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_130411-uid_Cartpole_28-13-04-10/files/output.log
+2024-12-28 13:04:28,909 INFO    Thread-8  :17282 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_130411-uid_Cartpole_28-13-04-10/files/wandb-summary.json
+2024-12-28 13:04:29,768 WARNING MainThread:17282 [internal.py:is_dead():388] Internal process exiting, parent pid 17258 disappeared
+2024-12-28 13:04:29,768 ERROR   MainThread:17282 [internal.py:wandb_internal():149] Internal process shutdown.
+2024-12-28 13:04:30,063 INFO    WriterThread:17282 [datastore.py:close():279] close: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_130411-uid_Cartpole_28-13-04-10/run-uid_Cartpole_28-13-04-10.wandb
+2024-12-28 13:04:30,063 INFO    SenderThread:17282 [sender.py:finish():1114] shutting down sender
+2024-12-28 13:04:30,063 INFO    SenderThread:17282 [dir_watcher.py:finish():353] shutting down directory watcher
+2024-12-28 13:04:30,910 INFO    SenderThread:17282 [dir_watcher.py:finish():383] scan: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_130411-uid_Cartpole_28-13-04-10/files
+2024-12-28 13:04:30,910 INFO    SenderThread:17282 [dir_watcher.py:finish():397] scan save: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_130411-uid_Cartpole_28-13-04-10/files/conda-environment.yaml conda-environment.yaml
+2024-12-28 13:04:30,911 INFO    SenderThread:17282 [dir_watcher.py:finish():397] scan save: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_130411-uid_Cartpole_28-13-04-10/files/events.out.tfevents.1735362258.king-ROG-Zephyrus-M16-GU603ZM-GU603ZM events.out.tfevents.1735362258.king-ROG-Zephyrus-M16-GU603ZM-GU603ZM
+2024-12-28 13:04:30,915 INFO    SenderThread:17282 [dir_watcher.py:finish():397] scan save: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_130411-uid_Cartpole_28-13-04-10/files/wandb-metadata.json wandb-metadata.json
+2024-12-28 13:04:30,919 INFO    SenderThread:17282 [dir_watcher.py:finish():397] scan save: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_130411-uid_Cartpole_28-13-04-10/files/output.log output.log
+2024-12-28 13:04:30,919 INFO    SenderThread:17282 [dir_watcher.py:finish():397] scan save: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_130411-uid_Cartpole_28-13-04-10/files/wandb-summary.json wandb-summary.json
+2024-12-28 13:04:30,919 INFO    SenderThread:17282 [dir_watcher.py:finish():397] scan save: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_130411-uid_Cartpole_28-13-04-10/files/requirements.txt requirements.txt
+2024-12-28 13:04:30,919 INFO    SenderThread:17282 [dir_watcher.py:finish():397] scan save: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_130411-uid_Cartpole_28-13-04-10/files/config.yaml config.yaml
+2024-12-28 13:04:30,919 INFO    SenderThread:17282 [file_pusher.py:finish():171] shutting down file pusher
+2024-12-28 13:04:30,919 INFO    SenderThread:17282 [file_pusher.py:join():176] waiting for file pusher
+2024-12-28 13:04:32,454 INFO    Thread-19 :17282 [upload_job.py:push():138] Uploaded file /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_130411-uid_Cartpole_28-13-04-10/files/wandb-summary.json
+2024-12-28 13:04:32,595 INFO    Thread-21 :17282 [upload_job.py:push():138] Uploaded file /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_130411-uid_Cartpole_28-13-04-10/files/config.yaml
+2024-12-28 13:04:32,917 INFO    Thread-17 :17282 [upload_job.py:push():138] Uploaded file /tmp/tmprwi1o3e1wandb/svdntbsg-events.out.tfevents.1735362258.king-ROG-Zephyrus-M16-GU603ZM-GU603ZM
+2024-12-28 13:04:33,008 INFO    Thread-20 :17282 [upload_job.py:push():138] Uploaded file /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_130411-uid_Cartpole_28-13-04-10/files/requirements.txt
+2024-12-28 13:04:33,034 INFO    Thread-18 :17282 [upload_job.py:push():138] Uploaded file /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_130411-uid_Cartpole_28-13-04-10/files/output.log
+2024-12-28 13:04:34,471 INFO    Thread-16 :17282 [upload_job.py:push():138] Uploaded file /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_130411-uid_Cartpole_28-13-04-10/files/conda-environment.yaml
+2024-12-28 13:04:34,494 INFO    HandlerThread:17282 [handler.py:finish():806] shutting down handler

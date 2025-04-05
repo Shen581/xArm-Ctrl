@@ -1,0 +1,45 @@
+/home/king/miniconda3/envs/rlgpu/lib/python3.7/site-packages/gym/spaces/box.py:84: UserWarning: [33mWARN: Box bound precision lowered by casting to float32
+  logger.warn(f"Box bound precision lowered by casting to {self.dtype}")
+Adding Central Value Network
+[93m[1m[Warning] [carb.gym.plugin] useGpu is set, forcing single scene (0 subscenes)
+Not connected to PVD
++++ Using GPU PhysX
+Physics Engine: PhysX
+Physics Device: cuda:0
+GPU Pipeline: enabled
+Num dofs:  16
+MESA-INTEL: warning: Performance support disabled, consider sysctl dev.i915.perf_stream_paranoid=0
+initialising weights for random network
+Initializing domain randomization for hand env=0
+Initializing domain randomization for object env=0
+Initializing domain randomization for hand env=1000
+Initializing domain randomization for object env=1000
+Initializing domain randomization for hand env=2000
+Initializing domain randomization for object env=2000
+Initializing domain randomization for hand env=3000
+Initializing domain randomization for object env=3000
+Initializing domain randomization for hand env=4000
+Initializing domain randomization for object env=4000
+Initializing domain randomization for hand env=5000
+Initializing domain randomization for object env=5000
+Initializing domain randomization for hand env=6000
+Initializing domain randomization for object env=6000
+Initializing domain randomization for hand env=7000
+Initializing domain randomization for object env=7000
+Initializing domain randomization for hand env=8000
+Initializing domain randomization for object env=8000
+Initializing domain randomization for hand env=9000
+Initializing domain randomization for object env=9000
+Initializing domain randomization for hand env=10000
+Initializing domain randomization for object env=10000
+Initializing domain randomization for hand env=11000
+Initializing domain randomization for object env=11000
+Initializing domain randomization for hand env=12000
+Initializing domain randomization for object env=12000
+Initializing domain randomization for hand env=13000
+Initializing domain randomization for object env=13000
+Initializing domain randomization for hand env=14000
+Initializing domain randomization for object env=14000
+Initializing domain randomization for hand env=15000
+Initializing domain randomization for object env=15000
+Initializing domain randomization for hand env=16000

@@ -1,0 +1,11 @@
+Obs type: full_state
+[93m[1m[Warning] [carb.gym.plugin] useGpu is set, forcing single scene (0 subscenes)
+Not connected to PVD
++++ Using GPU PhysX
+Physics Engine: PhysX
+Physics Device: cuda:0
+GPU Pipeline: enabled
+Num dofs:  16
+Max effort:  0.35
+Max effort:  0.35
+Max effort:  0.35

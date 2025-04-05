@@ -1,0 +1,173 @@
+2024-12-28 13:03:09,286 INFO    MainThread:17118 [internal.py:wandb_internal():93] W&B internal server running at pid: 17118, started at: 2024-12-28 13:03:09.286055
+2024-12-28 13:03:09,288 DEBUG   SenderThread:17118 [sender.py:send():236] send: header
+2024-12-28 13:03:09,288 INFO    WriterThread:17118 [datastore.py:open_for_write():75] open: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_130309-uid_Anymal_28-13-03-06/run-uid_Anymal_28-13-03-06.wandb
+2024-12-28 13:03:09,299 DEBUG   SenderThread:17118 [sender.py:send():236] send: run
+2024-12-28 13:03:09,300 INFO    SenderThread:17118 [sender.py:_maybe_setup_resume():494] checking resume status for 2238046709-sjtu/isaacgymenvs/uid_Anymal_28-13-03-06
+2024-12-28 13:03:11,258 INFO    SenderThread:17118 [dir_watcher.py:__init__():216] watching files in: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_130309-uid_Anymal_28-13-03-06/files
+2024-12-28 13:03:11,258 INFO    SenderThread:17118 [sender.py:_start_run_threads():818] run started: uid_Anymal_28-13-03-06 with start time 1735362189
+2024-12-28 13:03:11,258 DEBUG   SenderThread:17118 [sender.py:send():236] send: summary
+2024-12-28 13:03:11,258 INFO    SenderThread:17118 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2024-12-28 13:03:11,259 DEBUG   HandlerThread:17118 [handler.py:handle_request():140] handle_request: check_version
+2024-12-28 13:03:11,259 DEBUG   SenderThread:17118 [sender.py:send_request():250] send_request: check_version
+2024-12-28 13:03:12,028 DEBUG   HandlerThread:17118 [handler.py:handle_request():140] handle_request: run_start
+2024-12-28 13:03:12,032 DEBUG   HandlerThread:17118 [meta.py:__init__():35] meta init
+2024-12-28 13:03:12,032 DEBUG   HandlerThread:17118 [meta.py:__init__():49] meta init done
+2024-12-28 13:03:12,032 DEBUG   HandlerThread:17118 [meta.py:probe():209] probe
+2024-12-28 13:03:12,040 DEBUG   HandlerThread:17118 [meta.py:_setup_git():199] setup git
+2024-12-28 13:03:12,070 DEBUG   HandlerThread:17118 [meta.py:_setup_git():206] setup git done
+2024-12-28 13:03:12,070 DEBUG   HandlerThread:17118 [meta.py:_save_pip():53] save pip
+2024-12-28 13:03:12,070 DEBUG   HandlerThread:17118 [meta.py:_save_pip():67] save pip done
+2024-12-28 13:03:12,070 DEBUG   HandlerThread:17118 [meta.py:_save_conda():74] save conda
+2024-12-28 13:03:12,259 INFO    Thread-8  :17118 [dir_watcher.py:_on_file_created():269] file/dir created: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_130309-uid_Anymal_28-13-03-06/files/wandb-summary.json
+2024-12-28 13:03:12,259 INFO    Thread-8  :17118 [dir_watcher.py:_on_file_created():269] file/dir created: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_130309-uid_Anymal_28-13-03-06/files/conda-environment.yaml
+2024-12-28 13:03:12,259 INFO    Thread-8  :17118 [dir_watcher.py:_on_file_created():269] file/dir created: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_130309-uid_Anymal_28-13-03-06/files/requirements.txt
+2024-12-28 13:03:12,648 DEBUG   HandlerThread:17118 [meta.py:_save_conda():84] save conda done
+2024-12-28 13:03:12,648 DEBUG   HandlerThread:17118 [meta.py:probe():247] probe done
+2024-12-28 13:03:12,649 DEBUG   SenderThread:17118 [sender.py:send():236] send: files
+2024-12-28 13:03:12,649 INFO    SenderThread:17118 [sender.py:_save_file():952] saving file wandb-metadata.json with policy now
+2024-12-28 13:03:12,653 DEBUG   HandlerThread:17118 [handler.py:handle_request():140] handle_request: stop_status
+2024-12-28 13:03:12,653 DEBUG   SenderThread:17118 [sender.py:send_request():250] send_request: stop_status
+2024-12-28 13:03:13,258 INFO    Thread-8  :17118 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_130309-uid_Anymal_28-13-03-06/files/conda-environment.yaml
+2024-12-28 13:03:13,258 INFO    Thread-8  :17118 [dir_watcher.py:_on_file_created():269] file/dir created: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_130309-uid_Anymal_28-13-03-06/files/wandb-metadata.json
+2024-12-28 13:03:13,259 INFO    Thread-8  :17118 [dir_watcher.py:_on_file_created():269] file/dir created: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_130309-uid_Anymal_28-13-03-06/files/output.log
+2024-12-28 13:03:13,379 DEBUG   SenderThread:17118 [sender.py:send():236] send: telemetry
+2024-12-28 13:03:13,379 DEBUG   SenderThread:17118 [sender.py:send():236] send: config
+2024-12-28 13:03:14,270 INFO    Thread-12 :17118 [upload_job.py:push():138] Uploaded file /tmp/tmpuqof3x00wandb/j13hsdch-wandb-metadata.json
+2024-12-28 13:03:16,018 DEBUG   SenderThread:17118 [sender.py:send():236] send: telemetry
+2024-12-28 13:03:18,260 INFO    Thread-8  :17118 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_130309-uid_Anymal_28-13-03-06/files/output.log
+2024-12-28 13:03:18,373 DEBUG   HandlerThread:17118 [handler.py:handle_request():140] handle_request: poll_exit
+2024-12-28 13:03:18,373 DEBUG   SenderThread:17118 [sender.py:send():236] send: exit
+2024-12-28 13:03:18,373 INFO    SenderThread:17118 [sender.py:send_exit():372] handling exit code: 1
+2024-12-28 13:03:18,374 INFO    SenderThread:17118 [sender.py:send_exit():374] handling runtime: 6
+2024-12-28 13:03:18,374 INFO    SenderThread:17118 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2024-12-28 13:03:18,375 INFO    SenderThread:17118 [sender.py:send_exit():380] send defer
+2024-12-28 13:03:18,375 DEBUG   SenderThread:17118 [sender.py:send_request():250] send_request: poll_exit
+2024-12-28 13:03:18,375 DEBUG   HandlerThread:17118 [handler.py:handle_request():140] handle_request: defer
+2024-12-28 13:03:18,376 INFO    HandlerThread:17118 [handler.py:handle_request_defer():163] handle defer: 0
+2024-12-28 13:03:18,376 DEBUG   SenderThread:17118 [sender.py:send_request():250] send_request: defer
+2024-12-28 13:03:18,376 INFO    SenderThread:17118 [sender.py:send_request_defer():389] handle sender defer: 0
+2024-12-28 13:03:18,376 INFO    SenderThread:17118 [sender.py:transition_state():393] send defer: 1
+2024-12-28 13:03:18,376 DEBUG   HandlerThread:17118 [handler.py:handle_request():140] handle_request: defer
+2024-12-28 13:03:18,377 INFO    HandlerThread:17118 [handler.py:handle_request_defer():163] handle defer: 1
+2024-12-28 13:03:18,409 DEBUG   SenderThread:17118 [sender.py:send_request():250] send_request: defer
+2024-12-28 13:03:18,409 INFO    SenderThread:17118 [sender.py:send_request_defer():389] handle sender defer: 1
+2024-12-28 13:03:18,409 INFO    SenderThread:17118 [sender.py:transition_state():393] send defer: 2
+2024-12-28 13:03:18,409 DEBUG   SenderThread:17118 [sender.py:send():236] send: stats
+2024-12-28 13:03:18,410 DEBUG   HandlerThread:17118 [handler.py:handle_request():140] handle_request: defer
+2024-12-28 13:03:18,410 INFO    HandlerThread:17118 [handler.py:handle_request_defer():163] handle defer: 2
+2024-12-28 13:03:18,410 DEBUG   SenderThread:17118 [sender.py:send_request():250] send_request: defer
+2024-12-28 13:03:18,410 INFO    SenderThread:17118 [sender.py:send_request_defer():389] handle sender defer: 2
+2024-12-28 13:03:18,410 INFO    SenderThread:17118 [sender.py:transition_state():393] send defer: 3
+2024-12-28 13:03:18,410 DEBUG   HandlerThread:17118 [handler.py:handle_request():140] handle_request: defer
+2024-12-28 13:03:18,410 INFO    HandlerThread:17118 [handler.py:handle_request_defer():163] handle defer: 3
+2024-12-28 13:03:18,411 DEBUG   SenderThread:17118 [sender.py:send_request():250] send_request: defer
+2024-12-28 13:03:18,411 INFO    SenderThread:17118 [sender.py:send_request_defer():389] handle sender defer: 3
+2024-12-28 13:03:18,411 INFO    SenderThread:17118 [sender.py:transition_state():393] send defer: 4
+2024-12-28 13:03:18,411 DEBUG   HandlerThread:17118 [handler.py:handle_request():140] handle_request: defer
+2024-12-28 13:03:18,411 INFO    HandlerThread:17118 [handler.py:handle_request_defer():163] handle defer: 4
+2024-12-28 13:03:18,411 DEBUG   SenderThread:17118 [sender.py:send():236] send: summary
+2024-12-28 13:03:18,411 INFO    SenderThread:17118 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2024-12-28 13:03:18,412 DEBUG   SenderThread:17118 [sender.py:send_request():250] send_request: defer
+2024-12-28 13:03:18,412 INFO    SenderThread:17118 [sender.py:send_request_defer():389] handle sender defer: 4
+2024-12-28 13:03:18,412 INFO    SenderThread:17118 [sender.py:transition_state():393] send defer: 5
+2024-12-28 13:03:18,412 DEBUG   HandlerThread:17118 [handler.py:handle_request():140] handle_request: defer
+2024-12-28 13:03:18,412 INFO    HandlerThread:17118 [handler.py:handle_request_defer():163] handle defer: 5
+2024-12-28 13:03:18,412 DEBUG   SenderThread:17118 [sender.py:send_request():250] send_request: defer
+2024-12-28 13:03:18,412 INFO    SenderThread:17118 [sender.py:send_request_defer():389] handle sender defer: 5
+2024-12-28 13:03:18,477 DEBUG   HandlerThread:17118 [handler.py:handle_request():140] handle_request: poll_exit
+2024-12-28 13:03:19,153 INFO    SenderThread:17118 [sender.py:transition_state():393] send defer: 6
+2024-12-28 13:03:19,153 DEBUG   SenderThread:17118 [sender.py:send_request():250] send_request: poll_exit
+2024-12-28 13:03:19,153 DEBUG   HandlerThread:17118 [handler.py:handle_request():140] handle_request: defer
+2024-12-28 13:03:19,153 INFO    HandlerThread:17118 [handler.py:handle_request_defer():163] handle defer: 6
+2024-12-28 13:03:19,153 DEBUG   SenderThread:17118 [sender.py:send_request():250] send_request: defer
+2024-12-28 13:03:19,153 INFO    SenderThread:17118 [sender.py:send_request_defer():389] handle sender defer: 6
+2024-12-28 13:03:19,153 INFO    SenderThread:17118 [dir_watcher.py:finish():353] shutting down directory watcher
+2024-12-28 13:03:19,255 DEBUG   HandlerThread:17118 [handler.py:handle_request():140] handle_request: poll_exit
+2024-12-28 13:03:19,260 INFO    Thread-8  :17118 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_130309-uid_Anymal_28-13-03-06/files/wandb-summary.json
+2024-12-28 13:03:19,261 INFO    SenderThread:17118 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_130309-uid_Anymal_28-13-03-06/files/config.yaml
+2024-12-28 13:03:19,261 INFO    SenderThread:17118 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_130309-uid_Anymal_28-13-03-06/files/output.log
+2024-12-28 13:03:19,261 INFO    SenderThread:17118 [dir_watcher.py:finish():383] scan: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_130309-uid_Anymal_28-13-03-06/files
+2024-12-28 13:03:19,262 INFO    SenderThread:17118 [dir_watcher.py:finish():397] scan save: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_130309-uid_Anymal_28-13-03-06/files/conda-environment.yaml conda-environment.yaml
+2024-12-28 13:03:19,262 INFO    SenderThread:17118 [dir_watcher.py:finish():397] scan save: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_130309-uid_Anymal_28-13-03-06/files/wandb-metadata.json wandb-metadata.json
+2024-12-28 13:03:19,262 INFO    SenderThread:17118 [dir_watcher.py:finish():397] scan save: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_130309-uid_Anymal_28-13-03-06/files/output.log output.log
+2024-12-28 13:03:19,262 INFO    SenderThread:17118 [dir_watcher.py:finish():397] scan save: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_130309-uid_Anymal_28-13-03-06/files/wandb-summary.json wandb-summary.json
+2024-12-28 13:03:19,262 INFO    SenderThread:17118 [dir_watcher.py:finish():397] scan save: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_130309-uid_Anymal_28-13-03-06/files/requirements.txt requirements.txt
+2024-12-28 13:03:19,262 INFO    SenderThread:17118 [dir_watcher.py:finish():397] scan save: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_130309-uid_Anymal_28-13-03-06/files/config.yaml config.yaml
+2024-12-28 13:03:19,262 INFO    SenderThread:17118 [sender.py:transition_state():393] send defer: 7
+2024-12-28 13:03:19,263 DEBUG   SenderThread:17118 [sender.py:send_request():250] send_request: poll_exit
+2024-12-28 13:03:19,267 DEBUG   HandlerThread:17118 [handler.py:handle_request():140] handle_request: defer
+2024-12-28 13:03:19,267 INFO    HandlerThread:17118 [handler.py:handle_request_defer():163] handle defer: 7
+2024-12-28 13:03:19,271 DEBUG   SenderThread:17118 [sender.py:send_request():250] send_request: defer
+2024-12-28 13:03:19,271 INFO    SenderThread:17118 [sender.py:send_request_defer():389] handle sender defer: 7
+2024-12-28 13:03:19,279 INFO    SenderThread:17118 [file_pusher.py:finish():171] shutting down file pusher
+2024-12-28 13:03:19,373 DEBUG   HandlerThread:17118 [handler.py:handle_request():140] handle_request: poll_exit
+2024-12-28 13:03:19,373 DEBUG   SenderThread:17118 [sender.py:send_request():250] send_request: poll_exit
+2024-12-28 13:03:19,475 DEBUG   HandlerThread:17118 [handler.py:handle_request():140] handle_request: poll_exit
+2024-12-28 13:03:19,476 DEBUG   SenderThread:17118 [sender.py:send_request():250] send_request: poll_exit
+2024-12-28 13:03:19,578 DEBUG   HandlerThread:17118 [handler.py:handle_request():140] handle_request: poll_exit
+2024-12-28 13:03:19,578 DEBUG   SenderThread:17118 [sender.py:send_request():250] send_request: poll_exit
+2024-12-28 13:03:19,680 DEBUG   HandlerThread:17118 [handler.py:handle_request():140] handle_request: poll_exit
+2024-12-28 13:03:19,681 DEBUG   SenderThread:17118 [sender.py:send_request():250] send_request: poll_exit
+2024-12-28 13:03:19,784 DEBUG   HandlerThread:17118 [handler.py:handle_request():140] handle_request: poll_exit
+2024-12-28 13:03:19,785 DEBUG   SenderThread:17118 [sender.py:send_request():250] send_request: poll_exit
+2024-12-28 13:03:19,887 DEBUG   HandlerThread:17118 [handler.py:handle_request():140] handle_request: poll_exit
+2024-12-28 13:03:19,887 DEBUG   SenderThread:17118 [sender.py:send_request():250] send_request: poll_exit
+2024-12-28 13:03:19,989 DEBUG   HandlerThread:17118 [handler.py:handle_request():140] handle_request: poll_exit
+2024-12-28 13:03:19,990 DEBUG   SenderThread:17118 [sender.py:send_request():250] send_request: poll_exit
+2024-12-28 13:03:20,092 DEBUG   HandlerThread:17118 [handler.py:handle_request():140] handle_request: poll_exit
+2024-12-28 13:03:20,092 DEBUG   SenderThread:17118 [sender.py:send_request():250] send_request: poll_exit
+2024-12-28 13:03:20,194 DEBUG   HandlerThread:17118 [handler.py:handle_request():140] handle_request: poll_exit
+2024-12-28 13:03:20,195 DEBUG   SenderThread:17118 [sender.py:send_request():250] send_request: poll_exit
+2024-12-28 13:03:20,297 DEBUG   HandlerThread:17118 [handler.py:handle_request():140] handle_request: poll_exit
+2024-12-28 13:03:20,297 DEBUG   SenderThread:17118 [sender.py:send_request():250] send_request: poll_exit
+2024-12-28 13:03:20,399 DEBUG   HandlerThread:17118 [handler.py:handle_request():140] handle_request: poll_exit
+2024-12-28 13:03:20,400 DEBUG   SenderThread:17118 [sender.py:send_request():250] send_request: poll_exit
+2024-12-28 13:03:20,502 DEBUG   HandlerThread:17118 [handler.py:handle_request():140] handle_request: poll_exit
+2024-12-28 13:03:20,503 DEBUG   SenderThread:17118 [sender.py:send_request():250] send_request: poll_exit
+2024-12-28 13:03:20,529 INFO    Thread-16 :17118 [upload_job.py:push():138] Uploaded file /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_130309-uid_Anymal_28-13-03-06/files/requirements.txt
+2024-12-28 13:03:20,532 INFO    Thread-14 :17118 [upload_job.py:push():138] Uploaded file /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_130309-uid_Anymal_28-13-03-06/files/output.log
+2024-12-28 13:03:20,545 INFO    Thread-15 :17118 [upload_job.py:push():138] Uploaded file /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_130309-uid_Anymal_28-13-03-06/files/wandb-summary.json
+2024-12-28 13:03:20,604 DEBUG   HandlerThread:17118 [handler.py:handle_request():140] handle_request: poll_exit
+2024-12-28 13:03:20,605 DEBUG   SenderThread:17118 [sender.py:send_request():250] send_request: poll_exit
+2024-12-28 13:03:20,706 DEBUG   HandlerThread:17118 [handler.py:handle_request():140] handle_request: poll_exit
+2024-12-28 13:03:20,707 DEBUG   SenderThread:17118 [sender.py:send_request():250] send_request: poll_exit
+2024-12-28 13:03:20,809 DEBUG   HandlerThread:17118 [handler.py:handle_request():140] handle_request: poll_exit
+2024-12-28 13:03:20,809 DEBUG   SenderThread:17118 [sender.py:send_request():250] send_request: poll_exit
+2024-12-28 13:03:20,876 INFO    Thread-13 :17118 [upload_job.py:push():138] Uploaded file /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_130309-uid_Anymal_28-13-03-06/files/conda-environment.yaml
+2024-12-28 13:03:20,912 DEBUG   HandlerThread:17118 [handler.py:handle_request():140] handle_request: poll_exit
+2024-12-28 13:03:20,912 DEBUG   SenderThread:17118 [sender.py:send_request():250] send_request: poll_exit
+2024-12-28 13:03:20,916 INFO    Thread-17 :17118 [upload_job.py:push():138] Uploaded file /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_130309-uid_Anymal_28-13-03-06/files/config.yaml
+2024-12-28 13:03:21,014 DEBUG   HandlerThread:17118 [handler.py:handle_request():140] handle_request: poll_exit
+2024-12-28 13:03:21,014 DEBUG   SenderThread:17118 [sender.py:send_request():250] send_request: poll_exit
+2024-12-28 13:03:21,115 DEBUG   HandlerThread:17118 [handler.py:handle_request():140] handle_request: poll_exit
+2024-12-28 13:03:21,115 DEBUG   SenderThread:17118 [sender.py:send_request():250] send_request: poll_exit
+2024-12-28 13:03:21,117 INFO    Thread-7  :17118 [sender.py:transition_state():393] send defer: 8
+2024-12-28 13:03:21,117 DEBUG   HandlerThread:17118 [handler.py:handle_request():140] handle_request: defer
+2024-12-28 13:03:21,117 INFO    HandlerThread:17118 [handler.py:handle_request_defer():163] handle defer: 8
+2024-12-28 13:03:21,117 DEBUG   SenderThread:17118 [sender.py:send_request():250] send_request: defer
+2024-12-28 13:03:21,117 INFO    SenderThread:17118 [sender.py:send_request_defer():389] handle sender defer: 8
+2024-12-28 13:03:21,216 DEBUG   HandlerThread:17118 [handler.py:handle_request():140] handle_request: poll_exit
+2024-12-28 13:03:21,671 INFO    SenderThread:17118 [sender.py:transition_state():393] send defer: 9
+2024-12-28 13:03:21,671 DEBUG   SenderThread:17118 [sender.py:send_request():250] send_request: poll_exit
+2024-12-28 13:03:21,672 DEBUG   HandlerThread:17118 [handler.py:handle_request():140] handle_request: defer
+2024-12-28 13:03:21,672 INFO    HandlerThread:17118 [handler.py:handle_request_defer():163] handle defer: 9
+2024-12-28 13:03:21,672 DEBUG   SenderThread:17118 [sender.py:send_request():250] send_request: defer
+2024-12-28 13:03:21,672 INFO    SenderThread:17118 [sender.py:send_request_defer():389] handle sender defer: 9
+2024-12-28 13:03:21,672 INFO    SenderThread:17118 [sender.py:transition_state():393] send defer: 10
+2024-12-28 13:03:21,673 DEBUG   HandlerThread:17118 [handler.py:handle_request():140] handle_request: defer
+2024-12-28 13:03:21,673 DEBUG   SenderThread:17118 [sender.py:send():236] send: final
+2024-12-28 13:03:21,674 DEBUG   SenderThread:17118 [sender.py:send():236] send: footer
+2024-12-28 13:03:21,673 INFO    HandlerThread:17118 [handler.py:handle_request_defer():163] handle defer: 10
+2024-12-28 13:03:21,674 DEBUG   SenderThread:17118 [sender.py:send_request():250] send_request: defer
+2024-12-28 13:03:21,674 INFO    SenderThread:17118 [sender.py:send_request_defer():389] handle sender defer: 10
+2024-12-28 13:03:21,773 DEBUG   HandlerThread:17118 [handler.py:handle_request():140] handle_request: poll_exit
+2024-12-28 13:03:21,773 DEBUG   SenderThread:17118 [sender.py:send_request():250] send_request: poll_exit
+2024-12-28 13:03:21,773 INFO    SenderThread:17118 [file_pusher.py:join():176] waiting for file pusher
+2024-12-28 13:03:23,264 DEBUG   HandlerThread:17118 [handler.py:handle_request():140] handle_request: sampled_history
+2024-12-28 13:03:23,266 DEBUG   HandlerThread:17118 [handler.py:handle_request():140] handle_request: get_summary
+2024-12-28 13:03:23,267 DEBUG   HandlerThread:17118 [handler.py:handle_request():140] handle_request: shutdown
+2024-12-28 13:03:23,267 INFO    HandlerThread:17118 [handler.py:finish():806] shutting down handler
+2024-12-28 13:03:23,674 INFO    WriterThread:17118 [datastore.py:close():279] close: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_130309-uid_Anymal_28-13-03-06/run-uid_Anymal_28-13-03-06.wandb
+2024-12-28 13:03:24,163 INFO    SenderThread:17118 [sender.py:finish():1114] shutting down sender
+2024-12-28 13:03:24,163 INFO    SenderThread:17118 [file_pusher.py:finish():171] shutting down file pusher
+2024-12-28 13:03:24,163 INFO    SenderThread:17118 [file_pusher.py:join():176] waiting for file pusher

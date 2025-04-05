@@ -1,0 +1,384 @@
+2024-12-28 15:04:08,285 INFO    MainThread:30613 [wandb_setup.py:_flush():76] Configure stats pid to 30613
+2024-12-28 15:04:08,285 INFO    MainThread:30613 [wandb_setup.py:_flush():76] Loading settings from /home/king/.config/wandb/settings
+2024-12-28 15:04:08,285 INFO    MainThread:30613 [wandb_setup.py:_flush():76] Loading settings from /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/settings
+2024-12-28 15:04:08,285 INFO    MainThread:30613 [wandb_setup.py:_flush():76] Loading settings from environment variables: {}
+2024-12-28 15:04:08,285 INFO    MainThread:30613 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program_relpath': 'isaacgymenvs/train.py', 'program': 'train.py'}
+2024-12-28 15:04:08,285 INFO    MainThread:30613 [wandb_init.py:_log_setup():461] Logging user logs to /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_150408-uid_Ant_28-15-04-05/logs/debug.log
+2024-12-28 15:04:08,285 INFO    MainThread:30613 [wandb_init.py:_log_setup():462] Logging internal logs to /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_150408-uid_Ant_28-15-04-05/logs/debug-internal.log
+2024-12-28 15:04:08,285 INFO    MainThread:30613 [wandb_init.py:init():495] calling init triggers
+2024-12-28 15:04:08,285 INFO    MainThread:30613 [wandb_init.py:init():499] wandb.init called with sweep_config: {}
+config: {}
+2024-12-28 15:04:08,285 INFO    MainThread:30613 [wandb_init.py:init():548] starting backend
+2024-12-28 15:04:08,285 INFO    MainThread:30613 [backend.py:_multiprocessing_setup():99] multiprocessing start_methods=fork,spawn,forkserver, using: fork
+2024-12-28 15:04:08,287 INFO    MainThread:30613 [backend.py:ensure_launched():217] starting backend process...
+2024-12-28 15:04:08,291 INFO    MainThread:30613 [backend.py:ensure_launched():222] started backend process with pid: 30646
+2024-12-28 15:04:08,292 INFO    MainThread:30613 [wandb_init.py:init():558] backend started and connected
+2024-12-28 15:04:08,296 INFO    MainThread:30613 [wandb_init.py:init():634] updated telemetry
+2024-12-28 15:04:08,303 INFO    MainThread:30646 [internal.py:wandb_internal():93] W&B internal server running at pid: 30646, started at: 2024-12-28 15:04:08.303240
+2024-12-28 15:04:08,306 INFO    WriterThread:30646 [datastore.py:open_for_write():75] open: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_150408-uid_Ant_28-15-04-05/run-uid_Ant_28-15-04-05.wandb
+2024-12-28 15:04:08,309 INFO    MainThread:30613 [wandb_init.py:init():666] communicating run to backend with 30 second timeout
+2024-12-28 15:04:08,311 INFO    SenderThread:30646 [sender.py:_maybe_setup_resume():494] checking resume status for 2238046709-sjtu/isaacgymenvs/uid_Ant_28-15-04-05
+2024-12-28 15:04:10,972 INFO    SenderThread:30646 [dir_watcher.py:__init__():216] watching files in: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_150408-uid_Ant_28-15-04-05/files
+2024-12-28 15:04:10,972 INFO    SenderThread:30646 [sender.py:_start_run_threads():818] run started: uid_Ant_28-15-04-05 with start time 1735369448
+2024-12-28 15:04:10,973 INFO    SenderThread:30646 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2024-12-28 15:04:10,973 INFO    MainThread:30613 [wandb_run.py:_on_init():1919] communicating current version
+2024-12-28 15:04:11,655 INFO    MainThread:30613 [wandb_run.py:_on_init():1923] got version response upgrade_message: "wandb version 0.19.1 is available!  To upgrade, please run:\n $ pip install wandb --upgrade"
+
+2024-12-28 15:04:11,655 INFO    MainThread:30613 [wandb_init.py:init():700] starting run threads in backend
+2024-12-28 15:04:11,973 INFO    Thread-8  :30646 [dir_watcher.py:_on_file_created():269] file/dir created: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_150408-uid_Ant_28-15-04-05/files/wandb-summary.json
+2024-12-28 15:04:11,973 INFO    Thread-8  :30646 [dir_watcher.py:_on_file_created():269] file/dir created: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_150408-uid_Ant_28-15-04-05/files/requirements.txt
+2024-12-28 15:04:11,973 INFO    Thread-8  :30646 [dir_watcher.py:_on_file_created():269] file/dir created: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_150408-uid_Ant_28-15-04-05/files/conda-environment.yaml
+2024-12-28 15:04:12,231 INFO    SenderThread:30646 [sender.py:_save_file():952] saving file wandb-metadata.json with policy now
+2024-12-28 15:04:12,233 INFO    MainThread:30613 [wandb_run.py:_console_start():1893] atexit reg
+2024-12-28 15:04:12,233 INFO    MainThread:30613 [wandb_run.py:_redirect():1766] redirect: SettingsConsole.REDIRECT
+2024-12-28 15:04:12,233 INFO    MainThread:30613 [wandb_run.py:_redirect():1771] Redirecting console.
+2024-12-28 15:04:12,235 INFO    MainThread:30613 [wandb_run.py:_redirect():1827] Redirects installed.
+2024-12-28 15:04:12,235 INFO    MainThread:30613 [wandb_init.py:init():732] run started, returning control to user process
+2024-12-28 15:04:12,246 INFO    MainThread:30613 [wandb_run.py:_config_callback():1131] config_cb None None {'task': {'name': 'Ant', 'physics_engine': 'physx', 'env': {'numEnvs': 4096, 'envSpacing': 5, 'episodeLength': 1000, 'enableDebugVis': False, 'clipActions': 1.0, 'powerScale': 1.0, 'controlFrequencyInv': 1, 'headingWeight': 0.5, 'upWeight': 0.1, 'actionsCost': 0.005, 'energyCost': 0.05, 'dofVelocityScale': 0.2, 'contactForceScale': 0.1, 'jointsAtLimitCost': 0.1, 'deathCost': -2.0, 'terminationHeight': 0.31, 'plane': {'staticFriction': 1.0, 'dynamicFriction': 1.0, 'restitution': 0.0}, 'asset': {'assetFileName': 'mjcf/nv_ant.xml'}, 'enableCameraSensors': False}, 'sim': {'dt': 0.0166, 'substeps': 2, 'up_axis': 'z', 'use_gpu_pipeline': True, 'gravity': [0.0, 0.0, -9.81], 'physx': {'num_threads': 4, 'solver_type': 1, 'use_gpu': True, 'num_position_iterations': 4, 'num_velocity_iterations': 0, 'contact_offset': 0.02, 'rest_offset': 0.0, 'bounce_threshold_velocity': 0.2, 'max_depenetration_velocity': 10.0, 'default_buffer_size_multiplier': 5.0, 'max_gpu_contact_pairs': 8388608, 'num_subscenes': 4, 'contact_collection': 0}}, 'task': {'randomize': False, 'randomization_params': {'frequency': 600, 'observations': {'range': [0, 0.002], 'operation': 'additive', 'distribution': 'gaussian'}, 'actions': {'range': [0.0, 0.02], 'operation': 'additive', 'distribution': 'gaussian'}, 'actor_params': {'ant': {'color': True, 'rigid_body_properties': {'mass': {'range': [0.5, 1.5], 'operation': 'scaling', 'distribution': 'uniform', 'setup_only': True}}, 'dof_properties': {'damping': {'range': [0.5, 1.5], 'operation': 'scaling', 'distribution': 'uniform'}, 'stiffness': {'range': [0.5, 1.5], 'operation': 'scaling', 'distribution': 'uniform'}, 'lower': {'range': [0, 0.01], 'operation': 'additive', 'distribution': 'gaussian'}, 'upper': {'range': [0, 0.01], 'operation': 'additive', 'distribution': 'gaussian'}}}}}}}, 'train': {'params': {'seed': 42, 'algo': {'name': 'a2c_continuous'}, 'model': {'name': 'continuous_a2c_logstd'}, 'network': {'name': 'actor_critic', 'separate': False, 'space': {'continuous': {'mu_activation': 'None', 'sigma_activation': 'None', 'mu_init': {'name': 'default'}, 'sigma_init': {'name': 'const_initializer', 'val': 0}, 'fixed_sigma': True}}, 'mlp': {'units': [256, 128, 64], 'activation': 'elu', 'd2rl': False, 'initializer': {'name': 'default'}, 'regularizer': {'name': 'None'}}}, 'load_checkpoint': False, 'load_path': '', 'config': {'name': 'Ant', 'full_experiment_name': 'Ant', 'env_name': 'rlgpu', 'multi_gpu': False, 'ppo': True, 'mixed_precision': True, 'normalize_input': True, 'normalize_value': True, 'value_bootstrap': True, 'num_actors': 4096, 'reward_shaper': {'scale_value': 0.01}, 'normalize_advantage': True, 'gamma': 0.99, 'tau': 0.95, 'learning_rate': 0.0003, 'lr_schedule': 'adaptive', 'schedule_type': 'legacy', 'kl_threshold': 0.008, 'score_to_win': 20000, 'max_epochs': 500, 'save_best_after': 200, 'save_frequency': 50, 'grad_norm': 1.0, 'entropy_coef': 0.0, 'truncate_grads': False, 'e_clip': 0.2, 'horizon_length': 16, 'minibatch_size': 32768, 'mini_epochs': 4, 'critic_coef': 2, 'clip_value': True, 'seq_len': 4, 'bounds_loss_coef': 0.0001}}}, 'pbt': {'enabled': False}, 'task_name': 'Ant', 'experiment': '', 'num_envs': '', 'seed': 42, 'torch_deterministic': False, 'max_iterations': '', 'physics_engine': 'physx', 'pipeline': 'gpu', 'sim_device': 'cuda:0', 'rl_device': 'cuda:0', 'graphics_device_id': 0, 'num_threads': 4, 'solver_type': 1, 'num_subscenes': 4, 'test': False, 'checkpoint': '', 'sigma': '', 'multi_gpu': False, 'wandb_activate': True, 'wandb_group': 'Isaac_2024', 'wandb_name': 'Ant', 'wandb_entity': '2238046709-sjtu', 'wandb_project': 'isaacgymenvs', 'wandb_tags': [], 'wandb_logcode_dir': '', 'capture_video': False, 'capture_video_freq': 1464, 'capture_video_len': 100, 'force_render': True, 'headless': False}
+2024-12-28 15:04:12,973 INFO    Thread-8  :30646 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_150408-uid_Ant_28-15-04-05/files/conda-environment.yaml
+2024-12-28 15:04:12,973 INFO    Thread-8  :30646 [dir_watcher.py:_on_file_created():269] file/dir created: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_150408-uid_Ant_28-15-04-05/files/output.log
+2024-12-28 15:04:12,973 INFO    Thread-8  :30646 [dir_watcher.py:_on_file_created():269] file/dir created: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_150408-uid_Ant_28-15-04-05/files/wandb-metadata.json
+2024-12-28 15:04:14,221 INFO    Thread-12 :30646 [upload_job.py:push():138] Uploaded file /tmp/tmpbo9c4c9ywandb/hspgcdae-wandb-metadata.json
+2024-12-28 15:04:14,370 INFO    MainThread:30613 [wandb_run.py:_tensorboard_callback():1239] tensorboard callback: runs/Ant_28-15-04-05/summaries, True
+2024-12-28 15:04:14,370 INFO    HandlerThread:30646 [handler.py:handle_tbrecord():723] handling tbrecord: tbrecord {
+  log_dir: "runs/Ant_28-15-04-05/summaries"
+  save: true
+}
+
+2024-12-28 15:04:14,376 INFO    SenderThread:30646 [sender.py:_save_file():952] saving file events.out.tfevents.1735369454.king-ROG-Zephyrus-M16-GU603ZM-GU603ZM with policy live
+2024-12-28 15:04:14,973 INFO    Thread-8  :30646 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_150408-uid_Ant_28-15-04-05/files/output.log
+2024-12-28 15:04:14,973 INFO    Thread-8  :30646 [dir_watcher.py:_on_file_created():269] file/dir created: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_150408-uid_Ant_28-15-04-05/files/events.out.tfevents.1735369454.king-ROG-Zephyrus-M16-GU603ZM-GU603ZM
+2024-12-28 15:04:16,974 INFO    Thread-8  :30646 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_150408-uid_Ant_28-15-04-05/files/output.log
+2024-12-28 15:04:20,976 INFO    Thread-8  :30646 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_150408-uid_Ant_28-15-04-05/files/output.log
+2024-12-28 15:04:24,977 INFO    Thread-8  :30646 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_150408-uid_Ant_28-15-04-05/files/output.log
+2024-12-28 15:04:26,978 INFO    Thread-8  :30646 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_150408-uid_Ant_28-15-04-05/files/output.log
+2024-12-28 15:04:28,978 INFO    Thread-8  :30646 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_150408-uid_Ant_28-15-04-05/files/events.out.tfevents.1735369454.king-ROG-Zephyrus-M16-GU603ZM-GU603ZM
+2024-12-28 15:04:29,638 INFO    SenderThread:30646 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2024-12-28 15:04:29,641 INFO    SenderThread:30646 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2024-12-28 15:04:29,641 INFO    SenderThread:30646 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2024-12-28 15:04:29,642 INFO    SenderThread:30646 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2024-12-28 15:04:29,642 INFO    SenderThread:30646 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2024-12-28 15:04:29,642 INFO    SenderThread:30646 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2024-12-28 15:04:29,979 INFO    Thread-8  :30646 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_150408-uid_Ant_28-15-04-05/files/wandb-summary.json
+2024-12-28 15:04:30,275 INFO    Thread-15 :30646 [upload_job.py:push():138] Uploaded file /tmp/tmpbo9c4c9ywandb/0w0wti3r-events.out.tfevents.1735369454.king-ROG-Zephyrus-M16-GU603ZM-GU603ZM
+2024-12-28 15:04:30,979 INFO    Thread-8  :30646 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_150408-uid_Ant_28-15-04-05/files/output.log
+2024-12-28 15:04:32,980 INFO    Thread-8  :30646 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_150408-uid_Ant_28-15-04-05/files/events.out.tfevents.1735369454.king-ROG-Zephyrus-M16-GU603ZM-GU603ZM
+2024-12-28 15:04:32,980 INFO    Thread-8  :30646 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_150408-uid_Ant_28-15-04-05/files/output.log
+2024-12-28 15:04:33,426 INFO    SenderThread:30646 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2024-12-28 15:04:33,429 INFO    SenderThread:30646 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2024-12-28 15:04:33,430 INFO    SenderThread:30646 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2024-12-28 15:04:33,430 INFO    SenderThread:30646 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2024-12-28 15:04:33,430 INFO    SenderThread:30646 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2024-12-28 15:04:33,430 INFO    SenderThread:30646 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2024-12-28 15:04:33,431 INFO    SenderThread:30646 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2024-12-28 15:04:33,431 INFO    SenderThread:30646 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2024-12-28 15:04:33,431 INFO    SenderThread:30646 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2024-12-28 15:04:33,431 INFO    SenderThread:30646 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2024-12-28 15:04:33,432 INFO    SenderThread:30646 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2024-12-28 15:04:33,432 INFO    SenderThread:30646 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2024-12-28 15:04:33,432 INFO    SenderThread:30646 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2024-12-28 15:04:33,432 INFO    SenderThread:30646 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2024-12-28 15:04:33,432 INFO    SenderThread:30646 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2024-12-28 15:04:33,433 INFO    SenderThread:30646 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2024-12-28 15:04:33,433 INFO    SenderThread:30646 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2024-12-28 15:04:33,433 INFO    SenderThread:30646 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2024-12-28 15:04:33,433 INFO    SenderThread:30646 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2024-12-28 15:04:33,433 INFO    SenderThread:30646 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2024-12-28 15:04:33,434 INFO    SenderThread:30646 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2024-12-28 15:04:33,434 INFO    SenderThread:30646 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2024-12-28 15:04:33,434 INFO    SenderThread:30646 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2024-12-28 15:04:33,434 INFO    SenderThread:30646 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2024-12-28 15:04:33,980 INFO    Thread-8  :30646 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_150408-uid_Ant_28-15-04-05/files/wandb-summary.json
+2024-12-28 15:04:33,981 INFO    Thread-8  :30646 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_150408-uid_Ant_28-15-04-05/files/events.out.tfevents.1735369454.king-ROG-Zephyrus-M16-GU603ZM-GU603ZM
+2024-12-28 15:04:34,437 INFO    SenderThread:30646 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2024-12-28 15:04:34,440 INFO    SenderThread:30646 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2024-12-28 15:04:34,441 INFO    SenderThread:30646 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2024-12-28 15:04:34,441 INFO    SenderThread:30646 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2024-12-28 15:04:34,441 INFO    SenderThread:30646 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2024-12-28 15:04:34,442 INFO    SenderThread:30646 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2024-12-28 15:04:34,442 INFO    SenderThread:30646 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2024-12-28 15:04:34,442 INFO    SenderThread:30646 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2024-12-28 15:04:34,442 INFO    SenderThread:30646 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2024-12-28 15:04:34,443 INFO    SenderThread:30646 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2024-12-28 15:04:34,443 INFO    SenderThread:30646 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2024-12-28 15:04:34,443 INFO    SenderThread:30646 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2024-12-28 15:04:34,981 INFO    Thread-8  :30646 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_150408-uid_Ant_28-15-04-05/files/wandb-summary.json
+2024-12-28 15:04:34,981 INFO    Thread-8  :30646 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_150408-uid_Ant_28-15-04-05/files/events.out.tfevents.1735369454.king-ROG-Zephyrus-M16-GU603ZM-GU603ZM
+2024-12-28 15:04:34,981 INFO    Thread-8  :30646 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_150408-uid_Ant_28-15-04-05/files/output.log
+2024-12-28 15:04:35,455 INFO    SenderThread:30646 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2024-12-28 15:04:35,459 INFO    SenderThread:30646 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2024-12-28 15:04:35,459 INFO    SenderThread:30646 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2024-12-28 15:04:35,460 INFO    SenderThread:30646 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2024-12-28 15:04:35,460 INFO    SenderThread:30646 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2024-12-28 15:04:35,461 INFO    SenderThread:30646 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2024-12-28 15:04:35,461 INFO    SenderThread:30646 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2024-12-28 15:04:35,462 INFO    SenderThread:30646 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2024-12-28 15:04:35,462 INFO    SenderThread:30646 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2024-12-28 15:04:35,463 INFO    SenderThread:30646 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2024-12-28 15:04:35,463 INFO    SenderThread:30646 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2024-12-28 15:04:35,464 INFO    SenderThread:30646 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2024-12-28 15:04:35,464 INFO    SenderThread:30646 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2024-12-28 15:04:35,464 INFO    SenderThread:30646 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2024-12-28 15:04:35,465 INFO    SenderThread:30646 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2024-12-28 15:04:35,465 INFO    SenderThread:30646 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2024-12-28 15:04:35,466 INFO    SenderThread:30646 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2024-12-28 15:04:35,466 INFO    SenderThread:30646 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2024-12-28 15:04:35,466 INFO    SenderThread:30646 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2024-12-28 15:04:35,467 INFO    SenderThread:30646 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2024-12-28 15:04:35,467 INFO    SenderThread:30646 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2024-12-28 15:04:35,467 INFO    SenderThread:30646 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2024-12-28 15:04:35,467 INFO    SenderThread:30646 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2024-12-28 15:04:35,468 INFO    SenderThread:30646 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2024-12-28 15:04:35,981 INFO    Thread-8  :30646 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_150408-uid_Ant_28-15-04-05/files/wandb-summary.json
+2024-12-28 15:04:35,981 INFO    Thread-8  :30646 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_150408-uid_Ant_28-15-04-05/files/events.out.tfevents.1735369454.king-ROG-Zephyrus-M16-GU603ZM-GU603ZM
+2024-12-28 15:04:36,480 INFO    SenderThread:30646 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2024-12-28 15:04:36,481 INFO    SenderThread:30646 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2024-12-28 15:04:36,482 INFO    SenderThread:30646 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2024-12-28 15:04:36,482 INFO    SenderThread:30646 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2024-12-28 15:04:36,482 INFO    SenderThread:30646 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2024-12-28 15:04:36,483 INFO    SenderThread:30646 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2024-12-28 15:04:36,483 INFO    SenderThread:30646 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2024-12-28 15:04:36,483 INFO    SenderThread:30646 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2024-12-28 15:04:36,484 INFO    SenderThread:30646 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2024-12-28 15:04:36,981 INFO    Thread-8  :30646 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_150408-uid_Ant_28-15-04-05/files/wandb-summary.json
+2024-12-28 15:04:36,982 INFO    Thread-8  :30646 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_150408-uid_Ant_28-15-04-05/files/events.out.tfevents.1735369454.king-ROG-Zephyrus-M16-GU603ZM-GU603ZM
+2024-12-28 15:04:36,982 INFO    Thread-8  :30646 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_150408-uid_Ant_28-15-04-05/files/output.log
+2024-12-28 15:04:37,491 INFO    SenderThread:30646 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2024-12-28 15:04:37,495 INFO    SenderThread:30646 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2024-12-28 15:04:37,495 INFO    SenderThread:30646 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2024-12-28 15:04:37,982 INFO    Thread-8  :30646 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_150408-uid_Ant_28-15-04-05/files/wandb-summary.json
+2024-12-28 15:04:37,982 INFO    Thread-8  :30646 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_150408-uid_Ant_28-15-04-05/files/events.out.tfevents.1735369454.king-ROG-Zephyrus-M16-GU603ZM-GU603ZM
+2024-12-28 15:04:38,982 INFO    Thread-8  :30646 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_150408-uid_Ant_28-15-04-05/files/events.out.tfevents.1735369454.king-ROG-Zephyrus-M16-GU603ZM-GU603ZM
+2024-12-28 15:04:38,982 INFO    Thread-8  :30646 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_150408-uid_Ant_28-15-04-05/files/output.log
+2024-12-28 15:04:39,458 INFO    SenderThread:30646 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2024-12-28 15:04:39,461 INFO    SenderThread:30646 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2024-12-28 15:04:39,462 INFO    SenderThread:30646 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2024-12-28 15:04:39,462 INFO    SenderThread:30646 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2024-12-28 15:04:39,462 INFO    SenderThread:30646 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2024-12-28 15:04:39,463 INFO    SenderThread:30646 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2024-12-28 15:04:39,520 INFO    SenderThread:30646 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2024-12-28 15:04:39,522 INFO    SenderThread:30646 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2024-12-28 15:04:39,522 INFO    SenderThread:30646 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2024-12-28 15:04:39,982 INFO    Thread-8  :30646 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_150408-uid_Ant_28-15-04-05/files/wandb-summary.json
+2024-12-28 15:04:39,982 INFO    Thread-8  :30646 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_150408-uid_Ant_28-15-04-05/files/events.out.tfevents.1735369454.king-ROG-Zephyrus-M16-GU603ZM-GU603ZM
+2024-12-28 15:04:39,982 INFO    Thread-8  :30646 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_150408-uid_Ant_28-15-04-05/files/config.yaml
+2024-12-28 15:04:40,535 INFO    SenderThread:30646 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2024-12-28 15:04:40,539 INFO    SenderThread:30646 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2024-12-28 15:04:40,539 INFO    SenderThread:30646 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2024-12-28 15:04:40,539 INFO    SenderThread:30646 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2024-12-28 15:04:40,540 INFO    SenderThread:30646 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2024-12-28 15:04:40,540 INFO    SenderThread:30646 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2024-12-28 15:04:40,983 INFO    Thread-8  :30646 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_150408-uid_Ant_28-15-04-05/files/wandb-summary.json
+2024-12-28 15:04:40,983 INFO    Thread-8  :30646 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_150408-uid_Ant_28-15-04-05/files/events.out.tfevents.1735369454.king-ROG-Zephyrus-M16-GU603ZM-GU603ZM
+2024-12-28 15:04:40,983 INFO    Thread-8  :30646 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_150408-uid_Ant_28-15-04-05/files/output.log
+2024-12-28 15:04:41,544 INFO    SenderThread:30646 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2024-12-28 15:04:41,545 INFO    SenderThread:30646 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2024-12-28 15:04:41,983 INFO    Thread-8  :30646 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_150408-uid_Ant_28-15-04-05/files/wandb-summary.json
+2024-12-28 15:04:41,983 INFO    Thread-8  :30646 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_150408-uid_Ant_28-15-04-05/files/events.out.tfevents.1735369454.king-ROG-Zephyrus-M16-GU603ZM-GU603ZM
+2024-12-28 15:04:42,555 INFO    SenderThread:30646 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2024-12-28 15:04:42,559 INFO    SenderThread:30646 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2024-12-28 15:04:42,560 INFO    SenderThread:30646 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2024-12-28 15:04:42,983 INFO    Thread-8  :30646 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_150408-uid_Ant_28-15-04-05/files/wandb-summary.json
+2024-12-28 15:04:42,983 INFO    Thread-8  :30646 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_150408-uid_Ant_28-15-04-05/files/events.out.tfevents.1735369454.king-ROG-Zephyrus-M16-GU603ZM-GU603ZM
+2024-12-28 15:04:42,983 INFO    Thread-8  :30646 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_150408-uid_Ant_28-15-04-05/files/output.log
+2024-12-28 15:04:43,580 INFO    SenderThread:30646 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2024-12-28 15:04:43,584 INFO    SenderThread:30646 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2024-12-28 15:04:43,584 INFO    SenderThread:30646 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2024-12-28 15:04:43,584 INFO    SenderThread:30646 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2024-12-28 15:04:43,585 INFO    SenderThread:30646 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2024-12-28 15:04:43,585 INFO    SenderThread:30646 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2024-12-28 15:04:43,983 INFO    Thread-8  :30646 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_150408-uid_Ant_28-15-04-05/files/wandb-summary.json
+2024-12-28 15:04:43,983 INFO    Thread-8  :30646 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_150408-uid_Ant_28-15-04-05/files/events.out.tfevents.1735369454.king-ROG-Zephyrus-M16-GU603ZM-GU603ZM
+2024-12-28 15:04:44,591 INFO    SenderThread:30646 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2024-12-28 15:04:44,592 INFO    SenderThread:30646 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2024-12-28 15:04:44,593 INFO    SenderThread:30646 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2024-12-28 15:04:44,984 INFO    Thread-8  :30646 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_150408-uid_Ant_28-15-04-05/files/wandb-summary.json
+2024-12-28 15:04:44,984 INFO    Thread-8  :30646 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_150408-uid_Ant_28-15-04-05/files/events.out.tfevents.1735369454.king-ROG-Zephyrus-M16-GU603ZM-GU603ZM
+2024-12-28 15:04:44,984 INFO    Thread-8  :30646 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_150408-uid_Ant_28-15-04-05/files/output.log
+2024-12-28 15:04:45,613 INFO    SenderThread:30646 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2024-12-28 15:04:45,617 INFO    SenderThread:30646 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2024-12-28 15:04:45,617 INFO    SenderThread:30646 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2024-12-28 15:04:45,618 INFO    SenderThread:30646 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2024-12-28 15:04:45,619 INFO    SenderThread:30646 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2024-12-28 15:04:45,619 INFO    SenderThread:30646 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2024-12-28 15:04:45,984 INFO    Thread-8  :30646 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_150408-uid_Ant_28-15-04-05/files/wandb-summary.json
+2024-12-28 15:04:45,984 INFO    Thread-8  :30646 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_150408-uid_Ant_28-15-04-05/files/events.out.tfevents.1735369454.king-ROG-Zephyrus-M16-GU603ZM-GU603ZM
+2024-12-28 15:04:46,625 INFO    SenderThread:30646 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2024-12-28 15:04:46,629 INFO    SenderThread:30646 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2024-12-28 15:04:46,629 INFO    SenderThread:30646 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2024-12-28 15:04:46,984 INFO    Thread-8  :30646 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_150408-uid_Ant_28-15-04-05/files/wandb-summary.json
+2024-12-28 15:04:46,984 INFO    Thread-8  :30646 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_150408-uid_Ant_28-15-04-05/files/events.out.tfevents.1735369454.king-ROG-Zephyrus-M16-GU603ZM-GU603ZM
+2024-12-28 15:04:46,984 INFO    Thread-8  :30646 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_150408-uid_Ant_28-15-04-05/files/output.log
+2024-12-28 15:04:47,635 INFO    SenderThread:30646 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2024-12-28 15:04:47,638 INFO    SenderThread:30646 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2024-12-28 15:04:47,638 INFO    SenderThread:30646 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2024-12-28 15:04:47,984 INFO    Thread-8  :30646 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_150408-uid_Ant_28-15-04-05/files/wandb-summary.json
+2024-12-28 15:04:47,985 INFO    Thread-8  :30646 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_150408-uid_Ant_28-15-04-05/files/events.out.tfevents.1735369454.king-ROG-Zephyrus-M16-GU603ZM-GU603ZM
+2024-12-28 15:04:48,640 INFO    SenderThread:30646 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2024-12-28 15:04:48,643 INFO    SenderThread:30646 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2024-12-28 15:04:48,644 INFO    SenderThread:30646 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2024-12-28 15:04:48,985 INFO    Thread-8  :30646 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_150408-uid_Ant_28-15-04-05/files/wandb-summary.json
+2024-12-28 15:04:48,985 INFO    Thread-8  :30646 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_150408-uid_Ant_28-15-04-05/files/events.out.tfevents.1735369454.king-ROG-Zephyrus-M16-GU603ZM-GU603ZM
+2024-12-28 15:04:48,985 INFO    Thread-8  :30646 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_150408-uid_Ant_28-15-04-05/files/output.log
+2024-12-28 15:04:49,662 INFO    SenderThread:30646 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2024-12-28 15:04:49,665 INFO    SenderThread:30646 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2024-12-28 15:04:49,666 INFO    SenderThread:30646 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2024-12-28 15:04:49,666 INFO    SenderThread:30646 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2024-12-28 15:04:49,667 INFO    SenderThread:30646 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2024-12-28 15:04:49,667 INFO    SenderThread:30646 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2024-12-28 15:04:49,985 INFO    Thread-8  :30646 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_150408-uid_Ant_28-15-04-05/files/wandb-summary.json
+2024-12-28 15:04:49,985 INFO    Thread-8  :30646 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_150408-uid_Ant_28-15-04-05/files/events.out.tfevents.1735369454.king-ROG-Zephyrus-M16-GU603ZM-GU603ZM
+2024-12-28 15:04:50,692 INFO    SenderThread:30646 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2024-12-28 15:04:50,696 INFO    SenderThread:30646 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2024-12-28 15:04:50,697 INFO    SenderThread:30646 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2024-12-28 15:04:50,697 INFO    SenderThread:30646 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2024-12-28 15:04:50,697 INFO    SenderThread:30646 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2024-12-28 15:04:50,985 INFO    Thread-8  :30646 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_150408-uid_Ant_28-15-04-05/files/wandb-summary.json
+2024-12-28 15:04:50,986 INFO    Thread-8  :30646 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_150408-uid_Ant_28-15-04-05/files/events.out.tfevents.1735369454.king-ROG-Zephyrus-M16-GU603ZM-GU603ZM
+2024-12-28 15:04:50,986 INFO    Thread-8  :30646 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_150408-uid_Ant_28-15-04-05/files/output.log
+2024-12-28 15:04:51,714 INFO    SenderThread:30646 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2024-12-28 15:04:51,718 INFO    SenderThread:30646 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2024-12-28 15:04:51,718 INFO    SenderThread:30646 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2024-12-28 15:04:51,986 INFO    Thread-8  :30646 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_150408-uid_Ant_28-15-04-05/files/wandb-summary.json
+2024-12-28 15:04:51,986 INFO    Thread-8  :30646 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_150408-uid_Ant_28-15-04-05/files/events.out.tfevents.1735369454.king-ROG-Zephyrus-M16-GU603ZM-GU603ZM
+2024-12-28 15:04:52,724 INFO    SenderThread:30646 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2024-12-28 15:04:52,725 INFO    SenderThread:30646 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2024-12-28 15:04:52,725 INFO    SenderThread:30646 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2024-12-28 15:04:52,986 INFO    Thread-8  :30646 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_150408-uid_Ant_28-15-04-05/files/wandb-summary.json
+2024-12-28 15:04:52,986 INFO    Thread-8  :30646 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_150408-uid_Ant_28-15-04-05/files/events.out.tfevents.1735369454.king-ROG-Zephyrus-M16-GU603ZM-GU603ZM
+2024-12-28 15:04:52,986 INFO    Thread-8  :30646 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_150408-uid_Ant_28-15-04-05/files/output.log
+2024-12-28 15:04:53,749 INFO    SenderThread:30646 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2024-12-28 15:04:53,753 INFO    SenderThread:30646 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2024-12-28 15:04:53,753 INFO    SenderThread:30646 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2024-12-28 15:04:53,754 INFO    SenderThread:30646 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2024-12-28 15:04:53,754 INFO    SenderThread:30646 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2024-12-28 15:04:53,754 INFO    SenderThread:30646 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2024-12-28 15:04:53,986 INFO    Thread-8  :30646 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_150408-uid_Ant_28-15-04-05/files/wandb-summary.json
+2024-12-28 15:04:53,986 INFO    Thread-8  :30646 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_150408-uid_Ant_28-15-04-05/files/events.out.tfevents.1735369454.king-ROG-Zephyrus-M16-GU603ZM-GU603ZM
+2024-12-28 15:04:54,762 INFO    SenderThread:30646 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2024-12-28 15:04:54,765 INFO    SenderThread:30646 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2024-12-28 15:04:54,765 INFO    SenderThread:30646 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2024-12-28 15:04:54,986 INFO    Thread-8  :30646 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_150408-uid_Ant_28-15-04-05/files/wandb-summary.json
+2024-12-28 15:04:54,987 INFO    Thread-8  :30646 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_150408-uid_Ant_28-15-04-05/files/events.out.tfevents.1735369454.king-ROG-Zephyrus-M16-GU603ZM-GU603ZM
+2024-12-28 15:04:54,987 INFO    Thread-8  :30646 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_150408-uid_Ant_28-15-04-05/files/output.log
+2024-12-28 15:04:55,792 INFO    SenderThread:30646 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2024-12-28 15:04:55,794 INFO    SenderThread:30646 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2024-12-28 15:04:55,795 INFO    SenderThread:30646 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2024-12-28 15:04:55,795 INFO    SenderThread:30646 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2024-12-28 15:04:55,796 INFO    SenderThread:30646 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2024-12-28 15:04:55,796 INFO    SenderThread:30646 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2024-12-28 15:04:55,987 INFO    Thread-8  :30646 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_150408-uid_Ant_28-15-04-05/files/wandb-summary.json
+2024-12-28 15:04:55,987 INFO    Thread-8  :30646 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_150408-uid_Ant_28-15-04-05/files/events.out.tfevents.1735369454.king-ROG-Zephyrus-M16-GU603ZM-GU603ZM
+2024-12-28 15:04:56,804 INFO    SenderThread:30646 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2024-12-28 15:04:56,808 INFO    SenderThread:30646 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2024-12-28 15:04:56,808 INFO    SenderThread:30646 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2024-12-28 15:04:56,987 INFO    Thread-8  :30646 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_150408-uid_Ant_28-15-04-05/files/wandb-summary.json
+2024-12-28 15:04:56,987 INFO    Thread-8  :30646 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_150408-uid_Ant_28-15-04-05/files/events.out.tfevents.1735369454.king-ROG-Zephyrus-M16-GU603ZM-GU603ZM
+2024-12-28 15:04:56,987 INFO    Thread-8  :30646 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_150408-uid_Ant_28-15-04-05/files/output.log
+2024-12-28 15:04:57,829 INFO    SenderThread:30646 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2024-12-28 15:04:57,832 INFO    SenderThread:30646 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2024-12-28 15:04:57,833 INFO    SenderThread:30646 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2024-12-28 15:04:57,833 INFO    SenderThread:30646 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2024-12-28 15:04:57,833 INFO    SenderThread:30646 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2024-12-28 15:04:57,833 INFO    SenderThread:30646 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2024-12-28 15:04:57,987 INFO    Thread-8  :30646 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_150408-uid_Ant_28-15-04-05/files/wandb-summary.json
+2024-12-28 15:04:57,987 INFO    Thread-8  :30646 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_150408-uid_Ant_28-15-04-05/files/events.out.tfevents.1735369454.king-ROG-Zephyrus-M16-GU603ZM-GU603ZM
+2024-12-28 15:04:58,844 INFO    SenderThread:30646 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2024-12-28 15:04:58,848 INFO    SenderThread:30646 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2024-12-28 15:04:58,988 INFO    Thread-8  :30646 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_150408-uid_Ant_28-15-04-05/files/wandb-summary.json
+2024-12-28 15:04:58,988 INFO    Thread-8  :30646 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_150408-uid_Ant_28-15-04-05/files/events.out.tfevents.1735369454.king-ROG-Zephyrus-M16-GU603ZM-GU603ZM
+2024-12-28 15:04:58,988 INFO    Thread-8  :30646 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_150408-uid_Ant_28-15-04-05/files/output.log
+2024-12-28 15:04:59,860 INFO    SenderThread:30646 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2024-12-28 15:04:59,864 INFO    SenderThread:30646 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2024-12-28 15:04:59,864 INFO    SenderThread:30646 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2024-12-28 15:04:59,865 INFO    SenderThread:30646 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2024-12-28 15:04:59,866 INFO    SenderThread:30646 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2024-12-28 15:04:59,866 INFO    SenderThread:30646 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2024-12-28 15:04:59,988 INFO    Thread-8  :30646 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_150408-uid_Ant_28-15-04-05/files/wandb-summary.json
+2024-12-28 15:04:59,988 INFO    Thread-8  :30646 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_150408-uid_Ant_28-15-04-05/files/events.out.tfevents.1735369454.king-ROG-Zephyrus-M16-GU603ZM-GU603ZM
+2024-12-28 15:05:00,988 INFO    Thread-8  :30646 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_150408-uid_Ant_28-15-04-05/files/events.out.tfevents.1735369454.king-ROG-Zephyrus-M16-GU603ZM-GU603ZM
+2024-12-28 15:05:00,988 INFO    Thread-8  :30646 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_150408-uid_Ant_28-15-04-05/files/output.log
+2024-12-28 15:05:01,988 INFO    Thread-8  :30646 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_150408-uid_Ant_28-15-04-05/files/events.out.tfevents.1735369454.king-ROG-Zephyrus-M16-GU603ZM-GU603ZM
+2024-12-28 15:05:02,989 INFO    Thread-8  :30646 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_150408-uid_Ant_28-15-04-05/files/events.out.tfevents.1735369454.king-ROG-Zephyrus-M16-GU603ZM-GU603ZM
+2024-12-28 15:05:02,989 INFO    Thread-8  :30646 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_150408-uid_Ant_28-15-04-05/files/output.log
+2024-12-28 15:05:03,989 INFO    Thread-8  :30646 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_150408-uid_Ant_28-15-04-05/files/events.out.tfevents.1735369454.king-ROG-Zephyrus-M16-GU603ZM-GU603ZM
+2024-12-28 15:05:04,989 INFO    Thread-8  :30646 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_150408-uid_Ant_28-15-04-05/files/events.out.tfevents.1735369454.king-ROG-Zephyrus-M16-GU603ZM-GU603ZM
+2024-12-28 15:05:04,989 INFO    Thread-8  :30646 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_150408-uid_Ant_28-15-04-05/files/output.log
+2024-12-28 15:05:05,280 WARNING MainThread:30646 [internal.py:wandb_internal():153] Internal process interrupt: 1
+2024-12-28 15:05:05,283 INFO    MainThread:30613 [wandb_run.py:_atexit_cleanup():1862] got exitcode: 255
+2024-12-28 15:05:05,283 INFO    MainThread:30613 [wandb_run.py:_restore():1834] restore
+2024-12-28 15:05:05,990 INFO    Thread-8  :30646 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_150408-uid_Ant_28-15-04-05/files/events.out.tfevents.1735369454.king-ROG-Zephyrus-M16-GU603ZM-GU603ZM
+2024-12-28 15:05:06,990 INFO    Thread-8  :30646 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_150408-uid_Ant_28-15-04-05/files/output.log
+2024-12-28 15:05:07,162 INFO    SenderThread:30646 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2024-12-28 15:05:07,166 INFO    SenderThread:30646 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2024-12-28 15:05:07,166 INFO    SenderThread:30646 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2024-12-28 15:05:07,166 INFO    SenderThread:30646 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2024-12-28 15:05:07,167 INFO    SenderThread:30646 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2024-12-28 15:05:07,167 INFO    SenderThread:30646 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2024-12-28 15:05:07,167 INFO    SenderThread:30646 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2024-12-28 15:05:07,167 INFO    SenderThread:30646 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2024-12-28 15:05:07,167 INFO    SenderThread:30646 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2024-12-28 15:05:07,168 INFO    SenderThread:30646 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2024-12-28 15:05:07,168 INFO    SenderThread:30646 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2024-12-28 15:05:07,168 INFO    SenderThread:30646 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2024-12-28 15:05:07,168 INFO    SenderThread:30646 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2024-12-28 15:05:07,169 INFO    SenderThread:30646 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2024-12-28 15:05:07,169 INFO    SenderThread:30646 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2024-12-28 15:05:07,169 INFO    SenderThread:30646 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2024-12-28 15:05:07,169 INFO    SenderThread:30646 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2024-12-28 15:05:07,169 INFO    SenderThread:30646 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2024-12-28 15:05:07,170 INFO    SenderThread:30646 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2024-12-28 15:05:07,170 INFO    SenderThread:30646 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2024-12-28 15:05:07,170 INFO    SenderThread:30646 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2024-12-28 15:05:07,170 INFO    SenderThread:30646 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2024-12-28 15:05:07,171 INFO    SenderThread:30646 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2024-12-28 15:05:07,171 INFO    SenderThread:30646 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2024-12-28 15:05:07,171 INFO    SenderThread:30646 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2024-12-28 15:05:07,739 INFO    SenderThread:30646 [sender.py:send_exit():372] handling exit code: 255
+2024-12-28 15:05:07,739 INFO    SenderThread:30646 [sender.py:send_exit():374] handling runtime: 56
+2024-12-28 15:05:07,740 INFO    SenderThread:30646 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2024-12-28 15:05:07,740 INFO    SenderThread:30646 [sender.py:send_exit():380] send defer
+2024-12-28 15:05:07,740 INFO    HandlerThread:30646 [handler.py:handle_request_defer():163] handle defer: 0
+2024-12-28 15:05:07,741 INFO    MainThread:30613 [wandb_run.py:_on_finish():1991] got exit ret: file_counts {
+  wandb_count: 1
+  other_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 4909
+  total_bytes: 4909
+}
+
+2024-12-28 15:05:07,741 INFO    SenderThread:30646 [sender.py:send_request_defer():389] handle sender defer: 0
+2024-12-28 15:05:07,741 INFO    SenderThread:30646 [sender.py:transition_state():393] send defer: 1
+2024-12-28 15:05:07,741 INFO    HandlerThread:30646 [handler.py:handle_request_defer():163] handle defer: 1
+2024-12-28 15:05:07,810 INFO    SenderThread:30646 [sender.py:send_request_defer():389] handle sender defer: 1
+2024-12-28 15:05:07,811 INFO    SenderThread:30646 [sender.py:transition_state():393] send defer: 2
+2024-12-28 15:05:07,811 INFO    HandlerThread:30646 [handler.py:handle_request_defer():163] handle defer: 2
+2024-12-28 15:05:07,811 INFO    SenderThread:30646 [sender.py:send_request_defer():389] handle sender defer: 2
+2024-12-28 15:05:07,811 INFO    SenderThread:30646 [sender.py:transition_state():393] send defer: 3
+2024-12-28 15:05:07,812 INFO    HandlerThread:30646 [handler.py:handle_request_defer():163] handle defer: 3
+2024-12-28 15:05:07,991 INFO    Thread-8  :30646 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_150408-uid_Ant_28-15-04-05/files/wandb-summary.json
+2024-12-28 15:05:07,991 INFO    Thread-8  :30646 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_150408-uid_Ant_28-15-04-05/files/output.log
+2024-12-28 15:05:10,177 WARNING MainThread:30646 [internal.py:wandb_internal():153] Internal process interrupt: 2
+2024-12-28 15:05:10,177 ERROR   MainThread:30646 [internal.py:wandb_internal():156] Internal process interrupted.
+2024-12-28 15:05:10,811 INFO    WriterThread:30646 [datastore.py:close():279] close: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_150408-uid_Ant_28-15-04-05/run-uid_Ant_28-15-04-05.wandb
+2024-12-28 15:05:10,992 INFO    Thread-8  :30646 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_150408-uid_Ant_28-15-04-05/files/config.yaml
+2024-12-28 15:05:11,986 INFO    SenderThread:30646 [sender.py:finish():1114] shutting down sender
+2024-12-28 15:05:11,986 INFO    SenderThread:30646 [dir_watcher.py:finish():353] shutting down directory watcher
+2024-12-28 15:05:11,992 INFO    SenderThread:30646 [dir_watcher.py:finish():383] scan: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_150408-uid_Ant_28-15-04-05/files
+2024-12-28 15:05:11,992 INFO    SenderThread:30646 [dir_watcher.py:finish():397] scan save: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_150408-uid_Ant_28-15-04-05/files/conda-environment.yaml conda-environment.yaml
+2024-12-28 15:05:11,992 INFO    SenderThread:30646 [dir_watcher.py:finish():397] scan save: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_150408-uid_Ant_28-15-04-05/files/wandb-metadata.json wandb-metadata.json
+2024-12-28 15:05:11,992 INFO    SenderThread:30646 [dir_watcher.py:finish():397] scan save: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_150408-uid_Ant_28-15-04-05/files/output.log output.log
+2024-12-28 15:05:11,992 INFO    SenderThread:30646 [dir_watcher.py:finish():397] scan save: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_150408-uid_Ant_28-15-04-05/files/wandb-summary.json wandb-summary.json
+2024-12-28 15:05:11,993 INFO    SenderThread:30646 [dir_watcher.py:finish():397] scan save: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_150408-uid_Ant_28-15-04-05/files/events.out.tfevents.1735369454.king-ROG-Zephyrus-M16-GU603ZM-GU603ZM events.out.tfevents.1735369454.king-ROG-Zephyrus-M16-GU603ZM-GU603ZM
+2024-12-28 15:05:11,993 INFO    SenderThread:30646 [dir_watcher.py:finish():397] scan save: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_150408-uid_Ant_28-15-04-05/files/requirements.txt requirements.txt
+2024-12-28 15:05:11,993 INFO    SenderThread:30646 [dir_watcher.py:finish():397] scan save: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_150408-uid_Ant_28-15-04-05/files/config.yaml config.yaml
+2024-12-28 15:05:11,993 INFO    SenderThread:30646 [file_pusher.py:finish():171] shutting down file pusher
+2024-12-28 15:05:11,993 INFO    SenderThread:30646 [file_pusher.py:join():176] waiting for file pusher
+2024-12-28 15:05:13,358 INFO    Thread-17 :30646 [upload_job.py:push():138] Uploaded file /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_150408-uid_Ant_28-15-04-05/files/output.log
+2024-12-28 15:05:13,373 INFO    Thread-18 :30646 [upload_job.py:push():138] Uploaded file /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_150408-uid_Ant_28-15-04-05/files/wandb-summary.json
+2024-12-28 15:05:13,398 INFO    Thread-16 :30646 [upload_job.py:push():138] Uploaded file /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_150408-uid_Ant_28-15-04-05/files/conda-environment.yaml
+2024-12-28 15:05:13,400 INFO    Thread-20 :30646 [upload_job.py:push():138] Uploaded file /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_150408-uid_Ant_28-15-04-05/files/requirements.txt
+2024-12-28 15:05:13,425 INFO    Thread-21 :30646 [upload_job.py:push():138] Uploaded file /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_150408-uid_Ant_28-15-04-05/files/config.yaml
+2024-12-28 15:05:13,960 INFO    HandlerThread:30646 [handler.py:finish():806] shutting down handler
+2024-12-28 15:05:14,154 INFO    Thread-19 :30646 [upload_job.py:push():138] Uploaded file /tmp/tmpbo9c4c9ywandb/a3vrqhil-events.out.tfevents.1735369454.king-ROG-Zephyrus-M16-GU603ZM-GU603ZM

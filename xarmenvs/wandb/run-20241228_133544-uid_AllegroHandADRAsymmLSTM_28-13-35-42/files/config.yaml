@@ -1,0 +1,739 @@
+wandb_version: 1
+
+_wandb:
+  desc: null
+  value:
+    cli_version: 0.12.21
+    framework: torch
+    is_jupyter_run: false
+    is_kaggle_kernel: false
+    python_version: 3.7.12
+    start_time: 1735364144
+    t:
+      1:
+      - 1
+      - 50
+      - 55
+      3:
+      - 13
+      - 14
+      - 35
+      4: 3.7.12
+      5: 0.12.21
+      8:
+      - 6
+capture_video:
+  desc: null
+  value: false
+capture_video_freq:
+  desc: null
+  value: 1464
+capture_video_len:
+  desc: null
+  value: 100
+checkpoint:
+  desc: null
+  value: ''
+experiment:
+  desc: null
+  value: ''
+force_render:
+  desc: null
+  value: true
+graphics_device_id:
+  desc: null
+  value: 0
+headless:
+  desc: null
+  value: false
+max_iterations:
+  desc: null
+  value: ''
+multi_gpu:
+  desc: null
+  value: false
+num_envs:
+  desc: null
+  value: ''
+num_subscenes:
+  desc: null
+  value: 4
+num_threads:
+  desc: null
+  value: 4
+pbt:
+  desc: null
+  value:
+    enabled: false
+physics_engine:
+  desc: null
+  value: physx
+pipeline:
+  desc: null
+  value: gpu
+rl_device:
+  desc: null
+  value: cuda:0
+seed:
+  desc: null
+  value: 42
+sigma:
+  desc: null
+  value: ''
+sim_device:
+  desc: null
+  value: cuda:0
+solver_type:
+  desc: null
+  value: 1
+task:
+  desc: null
+  value:
+    env:
+      actionDelayProbMax: 0.3
+      actionDeltaPenaltyScale: -0.2
+      actionLatencyMax: 15
+      actionLatencyScheduledSteps: 2000000
+      actionPenaltyScale: -0.001
+      actionsMovingAverage:
+        range:
+        - 0.15
+        - 0.2
+        schedule_freq: 500
+        schedule_steps: 1000000
+      aggregateMode: 1
+      asset:
+        assetFileName: urdf/kuka_allegro_description/allegro_touch_sensor.urdf
+        assetFileNameBlock: urdf/objects/cube_multicolor_allegro.urdf
+        assetFileNameEgg: mjcf/open_ai_assets/hand/egg.xml
+        assetFileNamePen: mjcf/open_ai_assets/hand/pen.xml
+      asymmetric_observations: true
+      clipActions: 1.0
+      clipObservations: 50.0
+      controlFrequencyInv: 2
+      cubeObsDelayProb: 0.3
+      discreteActions: false
+      distRewardScale: -10.0
+      dofSpeedScale: 20.0
+      enableCameraSensors: false
+      enableDebugVis: false
+      envSpacing: 0.75
+      episodeLength: 320
+      fallDistance: 0.24
+      fallPenalty: 0.0
+      forceDecay: 0.99
+      forceDecayInterval: 0.08
+      forceLimitScale: 1.0
+      forceProbRange:
+      - 0.001
+      - 0.1
+      forceScale: 2.0
+      maxConsecutiveSuccesses: 50
+      maxObjectSkipObs: 2
+      max_dof_radians_per_second: 6.2832
+      max_effort: 0.5
+      numEnvs: 16384
+      num_success_hold_steps: 0
+      objectType: block
+      observationType: no_vel
+      printNumSuccesses: false
+      random_cube_observation:
+        enable: true
+        prob: 0.3
+      random_network_adversary:
+        enable: true
+        weight_sample_freq: 1000
+      reachGoalBonus: 250
+      resetDofPosRandomInterval: 0.2
+      resetDofVelRandomInterval: 0.0
+      resetPositionNoise: 0.03
+      resetPositionNoiseZ: 0.01
+      resetRotationNoise: 0.0
+      resetTime: 8
+      rotEps: 0.1
+      rotRewardScale: 1.0
+      startObjectPoseDY: -0.15
+      startObjectPoseDZ: 0.06
+      startPositionNoise: 0.01
+      startRotationNoise: 0.0
+      stiffnessScale: 1.0
+      successTolerance: 0.1
+      useRelativeControl: false
+      use_capped_dof_control: false
+    name: AllegroHandADR
+    physics_engine: physx
+    sim:
+      dt: 0.01667
+      gravity:
+      - 0.0
+      - 0.0
+      - -9.81
+      physx:
+        bounce_threshold_velocity: 0.2
+        contact_collection: 0
+        contact_offset: 0.002
+        default_buffer_size_multiplier: 20.0
+        max_depenetration_velocity: 1.0
+        max_gpu_contact_pairs: 8388608
+        num_position_iterations: 8
+        num_subscenes: 4
+        num_threads: 4
+        num_velocity_iterations: 0
+        rest_offset: 0.0
+        solver_type: 1
+        use_gpu: true
+      substeps: 2
+      up_axis: z
+      use_gpu_pipeline: true
+    task:
+      adr:
+        adr_extended_boundary_sample: false
+        adr_load_from_checkpoint: false
+        adr_objective_threshold_high: 20
+        adr_objective_threshold_low: 5
+        adr_queue_threshold_length: 256
+        adr_rollout_perf_alpha: 0.99
+        clear_other_queues: false
+        params:
+          action_delay_prob:
+            delta: 0.01
+            delta_style: additive
+            init_range:
+            - 0.0
+            - 0.05
+            limits:
+            - 0.0
+            - 0.7
+          action_latency:
+            delta: 0.1
+            delta_style: additive
+            init_range:
+            - 0.0
+            - 0.0
+            limits:
+            - 0
+            - 60
+          affine_action_additive:
+            delta: 0.01
+            delta_style: additive
+            init_range:
+            - 0.0
+            - 0.04
+            limits:
+            - 0.0
+            - 4.0
+          affine_action_scaling:
+            delta: 0.0
+            delta_style: additive
+            init_range:
+            - 0.0
+            - 0.0
+            limits:
+            - 0.0
+            - 4.0
+          affine_action_white:
+            delta: 0.01
+            delta_style: additive
+            init_range:
+            - 0.0
+            - 0.04
+            limits:
+            - 0.0
+            - 4.0
+          affine_cube_pose_additive:
+            delta: 0.01
+            delta_style: additive
+            init_range:
+            - 0.0
+            - 0.04
+            limits:
+            - 0.0
+            - 4.0
+          affine_cube_pose_scaling:
+            delta: 0.0
+            delta_style: additive
+            init_range:
+            - 0.0
+            - 0.0
+            limits:
+            - 0.0
+            - 4.0
+          affine_cube_pose_white:
+            delta: 0.01
+            delta_style: additive
+            init_range:
+            - 0.0
+            - 0.04
+            limits:
+            - 0.0
+            - 4.0
+          affine_dof_pos_additive:
+            delta: 0.01
+            delta_style: additive
+            init_range:
+            - 0.0
+            - 0.04
+            limits:
+            - 0.0
+            - 4.0
+          affine_dof_pos_scaling:
+            delta: 0.0
+            delta_style: additive
+            init_range:
+            - 0.0
+            - 0.0
+            limits:
+            - 0.0
+            - 4.0
+          affine_dof_pos_white:
+            delta: 0.01
+            delta_style: additive
+            init_range:
+            - 0.0
+            - 0.04
+            limits:
+            - 0.0
+            - 4.0
+          cube_obs_delay_prob:
+            delta: 0.01
+            delta_style: additive
+            init_range:
+            - 0.0
+            - 0.05
+            limits:
+            - 0.0
+            - 0.7
+          cube_pose_refresh_rate:
+            delta: 0.2
+            delta_style: additive
+            init_range:
+            - 1.0
+            - 1.0
+            limits:
+            - 1.0
+            - 6.0
+          hand_armature:
+            delta: 0.01
+            delta_style: additive
+            init_range:
+            - 0.8
+            - 1.2
+            limits:
+            - 0.0
+            - 10.0
+            range_path: actor_params.hand.dof_properties.armature.range
+          hand_damping:
+            delta: 0.01
+            delta_style: additive
+            init_range:
+            - 0.5
+            - 2.0
+            limits:
+            - 0.01
+            - 20.0
+            range_path: actor_params.hand.dof_properties.damping.range
+          hand_effort:
+            delta: 0.01
+            delta_style: additive
+            init_range:
+            - 0.9
+            - 1.1
+            limits:
+            - 0.4
+            - 10.0
+            range_path: actor_params.hand.dof_properties.effort.range
+          hand_friction_fingertips:
+            delta: 0.01
+            delta_style: additive
+            init_range:
+            - 0.9
+            - 1.1
+            limits:
+            - 0.1
+            - 2.0
+            range_path: actor_params.hand.rigid_shape_properties.friction.range
+          hand_joint_friction:
+            delta: 0.01
+            delta_style: additive
+            init_range:
+            - 0.8
+            - 1.2
+            limits:
+            - 0.0
+            - 10.0
+            range_path: actor_params.hand.dof_properties.friction.range
+          hand_lower:
+            delta: 0.02
+            delta_style: additive
+            init_range:
+            - 0.0
+            - 0.0
+            limits:
+            - -5.0
+            - 5.0
+            range_path: actor_params.hand.dof_properties.lower.range
+          hand_mass:
+            delta: 0.01
+            delta_style: additive
+            init_range:
+            - 0.8
+            - 1.2
+            limits:
+            - 0.01
+            - 10.0
+            range_path: actor_params.hand.rigid_body_properties.mass.range
+          hand_restitution:
+            delta: 0.01
+            delta_style: additive
+            init_range:
+            - 0.0
+            - 0.1
+            limits:
+            - 0.0
+            - 1.0
+            range_path: actor_params.hand.rigid_shape_properties.restitution.range
+          hand_stiffness:
+            delta: 0.01
+            delta_style: additive
+            init_range:
+            - 0.8
+            - 1.2
+            limits:
+            - 0.01
+            - 20.0
+            range_path: actor_params.hand.dof_properties.stiffness.range
+          hand_upper:
+            delta: 0.02
+            delta_style: additive
+            init_range:
+            - 0.0
+            - 0.0
+            limits:
+            - -5.0
+            - 5.0
+            range_path: actor_params.hand.dof_properties.upper.range
+          object_friction:
+            delta: 0.01
+            delta_style: additive
+            init_range:
+            - 0.4
+            - 0.8
+            limits:
+            - 0.01
+            - 2.0
+            range_path: actor_params.object.rigid_shape_properties.friction.range
+          object_mass:
+            delta: 0.01
+            delta_style: additive
+            init_range:
+            - 0.8
+            - 1.2
+            limits:
+            - 0.01
+            - 10.0
+            range_path: actor_params.object.rigid_body_properties.mass.range
+          object_restitution:
+            delta: 0.01
+            delta_style: additive
+            init_range:
+            - 0.0
+            - 0.1
+            limits:
+            - 0.0
+            - 1.0
+            range_path: actor_params.object.rigid_shape_properties.restitution.range
+          rna_alpha:
+            delta: 0.01
+            delta_style: additive
+            init_range:
+            - 0.0
+            - 0.0
+            limits:
+            - 0.0
+            - 1.0
+        update_adr_ranges: true
+        use_adr: true
+        worker_adr_boundary_fraction: 0.4
+      randomization_params:
+        actor_params:
+          hand:
+            color: true
+            dof_properties:
+              armature:
+                distribution: uniform
+                operation: scaling
+                range:
+                - 0.0
+                - 10.0
+              damping:
+                distribution: loguniform
+                operation: scaling
+                range:
+                - 0.01
+                - 20.0
+              effort:
+                distribution: uniform
+                operation: scaling
+                range:
+                - 0.4
+                - 10.0
+              friction:
+                distribution: uniform
+                operation: scaling
+                range:
+                - 0.0
+                - 10.0
+              lower:
+                distribution: uniform
+                operation: additive
+                range:
+                - -5.0
+                - 5.0
+              stiffness:
+                distribution: loguniform
+                operation: scaling
+                range:
+                - 0.01
+                - 20.0
+              upper:
+                distribution: uniform
+                operation: additive
+                range:
+                - -5.0
+                - 5.0
+            rigid_body_properties:
+              mass:
+                distribution: uniform
+                operation: scaling
+                range:
+                - 0.4
+                - 1.6
+                setup_only: false
+            rigid_shape_properties:
+              friction:
+                distribution: uniform
+                num_buckets: 250
+                operation: scaling
+                range:
+                - 0.01
+                - 2.0
+              restitution:
+                distribution: uniform
+                num_buckets: 100
+                operation: additive
+                range:
+                - 0.0
+                - 0.5
+            scale:
+              distribution: uniform
+              operation: scaling
+              range:
+              - 0.95
+              - 1.05
+              setup_only: true
+          object:
+            rigid_body_properties:
+              mass:
+                distribution: uniform
+                operation: scaling
+                range:
+                - 0.3
+                - 1.7
+                setup_only: false
+            rigid_shape_properties:
+              friction:
+                distribution: uniform
+                num_buckets: 250
+                operation: scaling
+                range:
+                - 0.01
+                - 2.0
+              restitution:
+                distribution: uniform
+                num_buckets: 100
+                operation: additive
+                range:
+                - 0.0
+                - 0.5
+            scale:
+              distribution: uniform
+              operation: scaling
+              range:
+              - 0.95
+              - 1.05
+              setup_only: true
+        frequency: 720
+        sim_params:
+          gravity:
+            distribution: gaussian
+            operation: additive
+            range:
+            - 0
+            - 0.6
+      randomize: true
+task_name:
+  desc: null
+  value: AllegroHandADR
+test:
+  desc: null
+  value: false
+torch_deterministic:
+  desc: null
+  value: false
+train:
+  desc: null
+  value:
+    params:
+      algo:
+        name: a2c_continuous
+      config:
+        bound_loss_type: regularization
+        bounds_loss_coef: 0.005
+        central_value_config:
+          clip_value: true
+          kl_threshold: 0.016
+          learning_rate: 5.0e-05
+          mini_epochs: 4
+          minibatch_size: 16384
+          network:
+            central_value: true
+            inputs:
+              affine_params: {}
+              cube_random_params: {}
+              dof_force: {}
+              dof_pos: {}
+              dof_vel: {}
+              ft_force_torques: {}
+              ft_states: {}
+              goal_pose: {}
+              goal_relative_rot: {}
+              gravity_vec: {}
+              hand_random_params: {}
+              last_actions: {}
+              object_pose: {}
+              object_pose_cam_randomized: {}
+              object_vels: {}
+              rb_forces: {}
+              rot_dist: {}
+              stochastic_delay_params: {}
+            mlp:
+              activation: elu
+              d2rl: false
+              initializer:
+                name: default
+              regularizer:
+                name: None
+              units:
+              - 1024
+              - 512
+            name: actor_critic
+            rnn:
+              before_mlp: true
+              layer_norm: true
+              layers: 1
+              name: lstm
+              units: 2048
+          normalize_input: true
+          truncate_grads: true
+        clip_value: true
+        critic_coef: 4
+        e_clip: 0.2
+        entropy_coef: 0.002
+        env_name: rlgpu
+        force_interval_writer: true
+        full_experiment_name: AllegroHandADRAsymmLSTM
+        gamma: 0.998
+        grad_norm: 1.0
+        horizon_length: 16
+        kl_threshold: 0.01
+        learning_rate: 0.0001
+        lr_schedule: linear
+        max_epochs: 1000000
+        mini_epochs: 4
+        minibatch_size: 16384
+        mixed_precision: false
+        multi_gpu: false
+        name: AllegroHandADRAsymmLSTM
+        normalize_advantage: true
+        normalize_input: true
+        normalize_value: true
+        num_actors: 16384
+        player:
+          deterministic: true
+          games_num: 1000000
+          print_stats: false
+          use_vecenv: true
+        ppo: true
+        print_stats: true
+        reward_shaper:
+          scale_value: 1.0
+        save_best_after: 10000
+        save_frequency: 500
+        schedule_type: standard
+        score_to_win: 1000000
+        seq_length: 16
+        tau: 0.95
+        truncate_grads: true
+        value_bootstrap: false
+        zero_rnn_on_done: false
+      load_checkpoint: false
+      load_path: ''
+      model:
+        name: continuous_a2c_logstd
+      network:
+        inputs:
+          dof_pos_randomized: {}
+          goal_pose: {}
+          goal_relative_rot_cam_randomized: {}
+          last_actions: {}
+          object_pose_cam_randomized: {}
+        mlp:
+          activation: elu
+          d2rl: false
+          initializer:
+            name: default
+          regularizer:
+            name: None
+          units:
+          - 512
+          - 512
+        name: actor_critic
+        rnn:
+          before_mlp: true
+          layer_norm: true
+          layers: 1
+          name: lstm
+          units: 1024
+        separate: false
+        space:
+          continuous:
+            fixed_sigma: true
+            mu_activation: None
+            mu_init:
+              name: default
+            sigma_activation: None
+            sigma_init:
+              name: const_initializer
+              val: 0
+      seed: 42
+wandb_activate:
+  desc: null
+  value: true
+wandb_entity:
+  desc: null
+  value: 2238046709-sjtu
+wandb_group:
+  desc: null
+  value: Isaac_2024
+wandb_logcode_dir:
+  desc: null
+  value: ''
+wandb_name:
+  desc: null
+  value: AllegroHandADRAsymmLSTM
+wandb_project:
+  desc: null
+  value: isaacgymenvs
+wandb_tags:
+  desc: null
+  value: []

@@ -1,0 +1,78 @@
+/home/king/miniconda3/envs/rlgpu/lib/python3.7/site-packages/gym/spaces/box.py:84: UserWarning: [33mWARN: Box bound precision lowered by casting to float32
+  logger.warn(f"Box bound precision lowered by casting to {self.dtype}")
+MESA-INTEL: warning: Performance support disabled, consider sysctl dev.i915.perf_stream_paranoid=0
+Obs type: full_state
+Not connected to PVD
+Physics Engine: PhysX
+Physics Device: cpu
+GPU Pipeline: disabled
+Num dofs:  16
+Max effort:  0.35
+Max effort:  0.35
+Max effort:  0.35
+Max effort:  0.35
+Max effort:  0.35
+Max effort:  0.35
+Max effort:  0.35
+Max effort:  0.35
+Max effort:  0.35
+Max effort:  0.35
+Max effort:  0.35
+Max effort:  0.35
+Max effort:  0.35
+Max effort:  0.35
+Max effort:  0.35
+Max effort:  0.35
+Subscene 0 has 4096 articulations
+Subscene 1 has 4096 articulations
+Subscene 2 has 4096 articulations
+Subscene 3 has 4096 articulations
+[93m[1m[Warning] [carb.gym.plugin] Acquiring DOF force tensor, but no actors have DOF force sensors enabled.
+[93m[1m[Warning] [carb.gym.plugin] -> Enabled DOF force sensors for all eligible actors.
+[93m[1mNum dofs:  16
+[93m[1mBox(-1.0, 1.0, (16,), float32) Box(-inf, inf, (88,), float32)
+[93m[1mWARNING: seq_len is deprecated, use seq_length instead
+[93m[1mseq_length: 4
+[93m[1mcurrent training device: cuda:0
+[93m[1mbuild mlp: 88
+[93m[1mRunningMeanStd:  (1,)
+[93m[1mRunningMeanStd:  (88,)
+fps step: 14419 fps step and policy inference: 13866 fps total: 13578 epoch: 1/5000 frames: 0
+fps step: 14688 fps step and policy inference: 14672 fps total: 14354 epoch: 2/5000 frames: 131072
+Traceback (most recent call last):
+  File "train.py", line 219, in <module>
+    launch_rlg_hydra()
+  File "/home/king/miniconda3/envs/rlgpu/lib/python3.7/site-packages/hydra/main.py", line 99, in decorated_main
+    config_name=config_name,
+  File "/home/king/miniconda3/envs/rlgpu/lib/python3.7/site-packages/hydra/_internal/utils.py", line 401, in _run_hydra
+    overrides=overrides,
+  File "/home/king/miniconda3/envs/rlgpu/lib/python3.7/site-packages/hydra/_internal/utils.py", line 458, in _run_app
+    lambda: hydra.run(
+  File "/home/king/miniconda3/envs/rlgpu/lib/python3.7/site-packages/hydra/_internal/utils.py", line 220, in run_and_report
+    return func()
+  File "/home/king/miniconda3/envs/rlgpu/lib/python3.7/site-packages/hydra/_internal/utils.py", line 461, in <lambda>
+    overrides=overrides,
+  File "/home/king/miniconda3/envs/rlgpu/lib/python3.7/site-packages/hydra/_internal/hydra.py", line 127, in run
+    configure_logging=with_log_configuration,
+  File "/home/king/miniconda3/envs/rlgpu/lib/python3.7/site-packages/hydra/core/utils.py", line 186, in run_job
+    ret.return_value = task_function(task_cfg)
+  File "train.py", line 214, in launch_rlg_hydra
+    'sigma': cfg.sigma if cfg.sigma != '' else None
+  File "/home/king/miniconda3/envs/rlgpu/lib/python3.7/site-packages/rl_games/torch_runner.py", line 133, in run
+    self.run_train(args)
+  File "/home/king/miniconda3/envs/rlgpu/lib/python3.7/site-packages/rl_games/torch_runner.py", line 116, in run_train
+    agent.train()
+  File "/home/king/miniconda3/envs/rlgpu/lib/python3.7/site-packages/rl_games/common/a2c_common.py", line 1318, in train
+    step_time, play_time, update_time, sum_time, a_losses, c_losses, b_losses, entropies, kls, last_lr, lr_mul = self.train_epoch()
+  File "/home/king/miniconda3/envs/rlgpu/lib/python3.7/site-packages/rl_games/common/a2c_common.py", line 1182, in train_epoch
+    batch_dict = self.play_steps()
+  File "/home/king/miniconda3/envs/rlgpu/lib/python3.7/site-packages/rl_games/common/a2c_common.py", line 752, in play_steps
+    self.obs, rewards, self.dones, infos = self.env_step(res_dict['actions'])
+  File "/home/king/miniconda3/envs/rlgpu/lib/python3.7/site-packages/rl_games/common/a2c_common.py", line 519, in env_step
+    obs, rewards, dones, infos = self.vec_env.step(actions)
+  File "/home/king/Isaac/IsaacGymEnvs/isaacgymenvs/utils/rlgames_utils.py", line 247, in step
+    return self.env.step(actions)
+  File "/home/king/Isaac/IsaacGymEnvs/isaacgymenvs/tasks/base/vec_task.py", line 381, in step
+    self.render()
+  File "/home/king/Isaac/IsaacGymEnvs/isaacgymenvs/tasks/base/vec_task.py", line 480, in render
+    self.gym.draw_viewer(self.viewer, self.sim, True)

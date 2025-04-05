@@ -1,0 +1,36 @@
+[93m[1m[Warning] [carb.gym.plugin] useGpu is set, forcing single scene (0 subscenes)
+Not connected to PVD
++++ Using GPU PhysX
+Physics Engine: PhysX
+Physics Device: cuda:0
+GPU Pipeline: enabled
+/home/king/miniconda3/envs/rlgpu/lib/python3.7/site-packages/gym/spaces/box.py:84: UserWarning: [33mWARN: Box bound precision lowered by casting to float32
+  logger.warn(f"Box bound precision lowered by casting to {self.dtype}")
+MESA-INTEL: warning: Performance support disabled, consider sysctl dev.i915.perf_stream_paranoid=0
+Box(-1.0, 1.0, (1,), float32) Box(-inf, inf, (4,), float32)
+WARNING: seq_len is deprecated, use seq_length instead
+seq_length: 4
+current training device: cuda:0
+build mlp: 4
+RunningMeanStd:  (1,)
+RunningMeanStd:  (4,)
+fps step: 14180 fps step and policy inference: 8232 fps total: 8075 epoch: 1/100 frames: 0
+fps step: 34332 fps step and policy inference: 30710 fps total: 28606 epoch: 2/100 frames: 8192
+fps step: 34334 fps step and policy inference: 30659 fps total: 28760 epoch: 3/100 frames: 16384
+fps step: 33284 fps step and policy inference: 30975 fps total: 28473 epoch: 4/100 frames: 24576
+fps step: 31861 fps step and policy inference: 29460 fps total: 27478 epoch: 5/100 frames: 32768
+fps step: 34216 fps step and policy inference: 30579 fps total: 27996 epoch: 6/100 frames: 40960
+fps step: 34008 fps step and policy inference: 30800 fps total: 28714 epoch: 7/100 frames: 49152
+fps step: 34618 fps step and policy inference: 30717 fps total: 28639 epoch: 8/100 frames: 57344
+fps step: 33546 fps step and policy inference: 30746 fps total: 28751 epoch: 9/100 frames: 65536
+fps step: 34689 fps step and policy inference: 30782 fps total: 28853 epoch: 10/100 frames: 73728
+fps step: 33850 fps step and policy inference: 30705 fps total: 28794 epoch: 11/100 frames: 81920
+fps step: 33407 fps step and policy inference: 30580 fps total: 28177 epoch: 12/100 frames: 90112
+fps step: 33896 fps step and policy inference: 30418 fps total: 28478 epoch: 13/100 frames: 98304
+fps step: 33615 fps step and policy inference: 30732 fps total: 28784 epoch: 14/100 frames: 106496
+fps step: 34678 fps step and policy inference: 30892 fps total: 28360 epoch: 15/100 frames: 114688
+fps step: 33972 fps step and policy inference: 30972 fps total: 28947 epoch: 16/100 frames: 122880
+fps step: 33868 fps step and policy inference: 30661 fps total: 28629 epoch: 17/100 frames: 131072
+fps step: 33121 fps step and policy inference: 30206 fps total: 28271 epoch: 18/100 frames: 139264
+fps step: 32176 fps step and policy inference: 29966 fps total: 27931 epoch: 19/100 frames: 147456
+fps step: 34059 fps step and policy inference: 30226 fps total: 28132 epoch: 20/100 frames: 155648

@@ -1,0 +1,57 @@
+/home/king/miniconda3/envs/rlgpu/lib/python3.7/site-packages/gym/spaces/box.py:84: UserWarning: [33mWARN: Box bound precision lowered by casting to float32
+  logger.warn(f"Box bound precision lowered by casting to {self.dtype}")
+MESA-INTEL: warning: Performance support disabled, consider sysctl dev.i915.perf_stream_paranoid=0
+Error executing job with overrides: ['task=Anymal']
+Traceback (most recent call last):
+  File "train.py", line 219, in <module>
+    launch_rlg_hydra()
+  File "/home/king/miniconda3/envs/rlgpu/lib/python3.7/site-packages/hydra/main.py", line 99, in decorated_main
+    config_name=config_name,
+  File "/home/king/miniconda3/envs/rlgpu/lib/python3.7/site-packages/hydra/_internal/utils.py", line 401, in _run_hydra
+    overrides=overrides,
+  File "/home/king/miniconda3/envs/rlgpu/lib/python3.7/site-packages/hydra/_internal/utils.py", line 458, in _run_app
+    lambda: hydra.run(
+  File "/home/king/miniconda3/envs/rlgpu/lib/python3.7/site-packages/hydra/_internal/utils.py", line 223, in run_and_report
+    raise ex
+  File "/home/king/miniconda3/envs/rlgpu/lib/python3.7/site-packages/hydra/_internal/utils.py", line 220, in run_and_report
+    return func()
+  File "/home/king/miniconda3/envs/rlgpu/lib/python3.7/site-packages/hydra/_internal/utils.py", line 461, in <lambda>
+    overrides=overrides,
+  File "/home/king/miniconda3/envs/rlgpu/lib/python3.7/site-packages/hydra/_internal/hydra.py", line 132, in run
+    _ = ret.return_value
+  File "/home/king/miniconda3/envs/rlgpu/lib/python3.7/site-packages/hydra/core/utils.py", line 260, in return_value
+    raise self._return_value
+  File "/home/king/miniconda3/envs/rlgpu/lib/python3.7/site-packages/hydra/core/utils.py", line 186, in run_job
+    ret.return_value = task_function(task_cfg)
+  File "train.py", line 214, in launch_rlg_hydra
+    'sigma': cfg.sigma if cfg.sigma != '' else None
+  File "/home/king/miniconda3/envs/rlgpu/lib/python3.7/site-packages/rl_games/torch_runner.py", line 133, in run
+    self.run_train(args)
+  File "/home/king/miniconda3/envs/rlgpu/lib/python3.7/site-packages/rl_games/torch_runner.py", line 116, in run_train
+    agent.train()
+  File "/home/king/miniconda3/envs/rlgpu/lib/python3.7/site-packages/rl_games/common/a2c_common.py", line 1302, in train
+    self.init_tensors()
+  File "/home/king/miniconda3/envs/rlgpu/lib/python3.7/site-packages/rl_games/common/a2c_common.py", line 1169, in init_tensors
+    A2CBase.init_tensors(self)
+  File "/home/king/miniconda3/envs/rlgpu/lib/python3.7/site-packages/rl_games/common/a2c_common.py", line 459, in init_tensors
+    self.experience_buffer = ExperienceBuffer(self.env_info, algo_info, self.ppo_device)
+  File "/home/king/miniconda3/envs/rlgpu/lib/python3.7/site-packages/rl_games/common/experience.py", line 321, in __init__
+    self._init_from_env_info(self.env_info)
+  File "/home/king/miniconda3/envs/rlgpu/lib/python3.7/site-packages/rl_games/common/experience.py", line 331, in _init_from_env_info
+    self.tensor_dict['obses'] = self._create_tensor_from_space(env_info['observation_space'], obs_base_shape)
+  File "/home/king/miniconda3/envs/rlgpu/lib/python3.7/site-packages/rl_games/common/experience.py", line 358, in _create_tensor_from_space
+    return torch.zeros(base_shape + space.shape, dtype= dtype, device = self.device)
+RuntimeError: CUDA out of memory. Tried to allocate 18.00 MiB (GPU 0; 5.78 GiB total capacity; 2.72 MiB already allocated; 17.12 MiB free; 4.00 MiB reserved in total by PyTorch)
+[93m[1m[Warning] [carb.gym.plugin] useGpu is set, forcing single scene (0 subscenes)
+Not connected to PVD
++++ Using GPU PhysX
+Physics Engine: PhysX
+Physics Device: cuda:0
+GPU Pipeline: enabled
+Box(-1.0, 1.0, (12,), float32) Box(-inf, inf, (48,), float32)
+WARNING: seq_len is deprecated, use seq_length instead
+seq_length: 4
+current training device: cuda:0
+build mlp: 48
+RunningMeanStd:  (1,)
+RunningMeanStd:  (48,)

@@ -1,0 +1,79 @@
+/home/king/miniconda3/envs/rlgpu/lib/python3.7/site-packages/gym/spaces/box.py:84: UserWarning: [33mWARN: Box bound precision lowered by casting to float32
+  logger.warn(f"Box bound precision lowered by casting to {self.dtype}")
+MESA-INTEL: warning: Performance support disabled, consider sysctl dev.i915.perf_stream_paranoid=0
+/home/king/Isaac/IsaacGymEnvs/isaacgymenvs/tasks/factory/factory_base.py:486: UserWarning: [33mWARN: Please be patient: SDFs may be generating, which may take a few minutes. Terminating prematurely may result in a corrupted SDF cache.
+  logger.warn('Please be patient: SDFs may be generating, which may take a few minutes. Terminating prematurely may result in a corrupted SDF cache.')
+[93m[1m[Warning] [carb.gym.plugin] useGpu is set, forcing single scene (0 subscenes)
+Not connected to PVD
++++ Using GPU PhysX
+Physics Engine: PhysX
+Physics Device: cuda:0
+GPU Pipeline: enabled
+Using SDF cache directory '/home/king/.isaacgym/sdf_V100'
+Cooking object... factory_gear_small_space_5e-4 at resolution 256 and spacing 0.000086 - Done
+~!~!~! Loaded/Cooked SDF triangle mesh 0 @ 0x55f6f4d1f320, resolution=256, spacing=0.000086
+  ~!~! Bounds:  (0.039502, 0.061498) (-0.010998, 0.010998) (0.005000, 0.025000)
+  ~!~! Extents: (0.021995, 0.021995, 0.020000)
+  ~!~! Resolution: (256, 256, 233)
+Traceback (most recent call last):
+  File "train.py", line 219, in <module>
+    launch_rlg_hydra()
+  File "/home/king/miniconda3/envs/rlgpu/lib/python3.7/site-packages/hydra/main.py", line 99, in decorated_main
+    config_name=config_name,
+  File "/home/king/miniconda3/envs/rlgpu/lib/python3.7/site-packages/hydra/_internal/utils.py", line 401, in _run_hydra
+    overrides=overrides,
+  File "/home/king/miniconda3/envs/rlgpu/lib/python3.7/site-packages/hydra/_internal/utils.py", line 458, in _run_app
+    lambda: hydra.run(
+  File "/home/king/miniconda3/envs/rlgpu/lib/python3.7/site-packages/hydra/_internal/utils.py", line 220, in run_and_report
+    return func()
+  File "/home/king/miniconda3/envs/rlgpu/lib/python3.7/site-packages/hydra/_internal/utils.py", line 461, in <lambda>
+    overrides=overrides,
+  File "/home/king/miniconda3/envs/rlgpu/lib/python3.7/site-packages/hydra/_internal/hydra.py", line 127, in run
+    configure_logging=with_log_configuration,
+  File "/home/king/miniconda3/envs/rlgpu/lib/python3.7/site-packages/hydra/core/utils.py", line 186, in run_job
+    ret.return_value = task_function(task_cfg)
+  File "train.py", line 214, in launch_rlg_hydra
+    'sigma': cfg.sigma if cfg.sigma != '' else None
+  File "/home/king/miniconda3/envs/rlgpu/lib/python3.7/site-packages/rl_games/torch_runner.py", line 133, in run
+    self.run_train(args)
+  File "/home/king/miniconda3/envs/rlgpu/lib/python3.7/site-packages/rl_games/torch_runner.py", line 113, in run_train
+    agent = self.algo_factory.create(self.algo_name, base_name='run', params=self.params)
+  File "/home/king/miniconda3/envs/rlgpu/lib/python3.7/site-packages/rl_games/common/object_factory.py", line 15, in create
+    return builder(**kwargs)
+  File "/home/king/miniconda3/envs/rlgpu/lib/python3.7/site-packages/rl_games/torch_runner.py", line 37, in <lambda>
+    self.algo_factory.register_builder('a2c_continuous', lambda **kwargs : a2c_continuous.A2CAgent(**kwargs))
+  File "/home/king/miniconda3/envs/rlgpu/lib/python3.7/site-packages/rl_games/algos_torch/a2c_continuous.py", line 15, in __init__
+    a2c_common.ContinuousA2CBase.__init__(self, base_name, params)
+  File "/home/king/miniconda3/envs/rlgpu/lib/python3.7/site-packages/rl_games/common/a2c_common.py", line 1143, in __init__
+    A2CBase.__init__(self, base_name, params)
+  File "/home/king/miniconda3/envs/rlgpu/lib/python3.7/site-packages/rl_games/common/a2c_common.py", line 129, in __init__
+    self.vec_env = vecenv.create_vec_env(self.env_name, self.num_actors, **self.env_config)
+  File "/home/king/miniconda3/envs/rlgpu/lib/python3.7/site-packages/rl_games/common/vecenv.py", line 224, in create_vec_env
+    return vecenv_config[vec_env_name](config_name, num_actors, **kwargs)
+  File "train.py", line 167, in <lambda>
+    vecenv.register('RLGPU', lambda config_name, num_actors, **kwargs: RLGPUEnv(config_name, num_actors, **kwargs))
+  File "/home/king/Isaac/IsaacGymEnvs/isaacgymenvs/utils/rlgames_utils.py", line 244, in __init__
+    self.env = env_configurations.configurations[config_name]['env_creator'](**kwargs)
+  File "train.py", line 149, in <lambda>
+    'env_creator': lambda **kwargs: create_isaacgym_env(**kwargs),
+  File "train.py", line 135, in create_isaacgym_env
+    **kwargs,
+  File "/home/king/Isaac/IsaacGymEnvs/isaacgymenvs/__init__.py", line 55, in make
+    return create_rlgpu_env()
+  File "/home/king/Isaac/IsaacGymEnvs/isaacgymenvs/utils/rlgames_utils.py", line 120, in create_rlgpu_env
+    force_render=force_render,
+  File "/home/king/Isaac/IsaacGymEnvs/isaacgymenvs/tasks/factory/factory_task_gears.py", line 54, in __init__
+    super().__init__(cfg, rl_device, sim_device, graphics_device_id, headless, virtual_screen_capture, force_render)
+  File "/home/king/Isaac/IsaacGymEnvs/isaacgymenvs/tasks/factory/factory_env_gears.py", line 55, in __init__
+    super().__init__(cfg, rl_device, sim_device, graphics_device_id, headless, virtual_screen_capture, force_render)
+  File "/home/king/Isaac/IsaacGymEnvs/isaacgymenvs/tasks/factory/factory_base.py", line 66, in __init__
+    super().__init__(cfg, rl_device, sim_device, graphics_device_id, headless, virtual_screen_capture, force_render)  # create_sim() is called here
+  File "/home/king/Isaac/IsaacGymEnvs/isaacgymenvs/tasks/base/vec_task.py", line 261, in __init__
+    self.create_sim()
+  File "/home/king/Isaac/IsaacGymEnvs/isaacgymenvs/tasks/factory/factory_base.py", line 94, in create_sim
+    self.create_envs()  # defined in subclass
+  File "/home/king/Isaac/IsaacGymEnvs/isaacgymenvs/tasks/factory/factory_env_gears.py", line 86, in create_envs
+    gear_small_asset, gear_medium_asset, gear_large_asset, base_asset = self._import_env_assets()
+  File "/home/king/Isaac/IsaacGymEnvs/isaacgymenvs/tasks/factory/factory_env_gears.py", line 138, in _import_env_assets
+    gear_small_asset = self.gym.load_asset(self.sim, urdf_root, gear_small_file, gear_options)
+KeyboardInterrupt

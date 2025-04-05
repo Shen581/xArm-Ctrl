@@ -1,0 +1,93 @@
+Obs type: full_state
+[93m[1m[Warning] [carb.gym.plugin] useGpu is set, forcing single scene (0 subscenes)
+Not connected to PVD
++++ Using GPU PhysX
+Physics Engine: PhysX
+Physics Device: cuda:0
+GPU Pipeline: enabled
+/home/king/miniconda3/envs/rlgpu/lib/python3.7/site-packages/gym/spaces/box.py:84: UserWarning: [33mWARN: Box bound precision lowered by casting to float32
+  logger.warn(f"Box bound precision lowered by casting to {self.dtype}")
+MESA-INTEL: warning: Performance support disabled, consider sysctl dev.i915.perf_stream_paranoid=0
+Num dofs:  16
+Max effort:  0.35
+Max effort:  0.35
+Max effort:  0.35
+Max effort:  0.35
+Max effort:  0.35
+Max effort:  0.35
+Max effort:  0.35
+Max effort:  0.35
+Max effort:  0.35
+Max effort:  0.35
+Max effort:  0.35
+Max effort:  0.35
+Max effort:  0.35
+Max effort:  0.35
+Max effort:  0.35
+Max effort:  0.35
+[93m[1m[Warning] [carb.gym.plugin] Acquiring DOF force tensor, but no actors have DOF force sensors enabled.
+[93m[1m[Warning] [carb.gym.plugin] -> Enabled DOF force sensors for all eligible actors.
+[91m[1m[Error] [carb.gym.plugin] Gym cuda error: out of memory: ../../../source/plugins/carb/gym/impl/Gym/GymPhysX.cpp: 1721
+[91m[1m[Error] [carb.gym.plugin] Gym cuda error: invalid resource handle: ../../../source/plugins/carb/gym/impl/Gym/GymPhysX.cpp: 5993
+[91m[1m[Error] [carb.gym.plugin] Gym cuda error: out of memory: ../../../source/plugins/carb/gym/impl/Gym/GymPhysXCuda.cu: 937
+[91m[1m[Error] [carb.gym.plugin] Failed to fill root state tensor
+[91m[1m[Error] [carb.gym.plugin] Gym cuda error: invalid resource handle: ../../../source/plugins/carb/gym/impl/Gym/GymPhysX.cpp: 6137
+[91m[1m[Error] [carb.gym.plugin] Gym cuda error: an illegal memory access was encountered: ../../../source/plugins/carb/gym/impl/Gym/GymPhysXCuda.cu: 991
+[91m[1m[Error] [carb.gym.plugin] Gym cuda error: an illegal memory access was encountered: ../../../source/plugins/carb/gym/impl/Gym/GymPhysX.cpp: 5754
+[91m[1m[Error] [carb.gym.plugin] Gym cuda error: an illegal memory access was encountered: ../../../source/plugins/carb/gym/impl/Gym/GymPhysXCuda.cu: 926
+[91m[1m[Error] [carb.gym.plugin] Failed to fill rigid body state tensor
+Error executing job with overrides: ['task=AllegroHand']
+Traceback (most recent call last):
+  File "train.py", line 219, in <module>
+    launch_rlg_hydra()
+  File "/home/king/miniconda3/envs/rlgpu/lib/python3.7/site-packages/hydra/main.py", line 99, in decorated_main
+    config_name=config_name,
+  File "/home/king/miniconda3/envs/rlgpu/lib/python3.7/site-packages/hydra/_internal/utils.py", line 401, in _run_hydra
+    overrides=overrides,
+  File "/home/king/miniconda3/envs/rlgpu/lib/python3.7/site-packages/hydra/_internal/utils.py", line 458, in _run_app
+    lambda: hydra.run(
+  File "/home/king/miniconda3/envs/rlgpu/lib/python3.7/site-packages/hydra/_internal/utils.py", line 223, in run_and_report
+    raise ex
+  File "/home/king/miniconda3/envs/rlgpu/lib/python3.7/site-packages/hydra/_internal/utils.py", line 220, in run_and_report
+    return func()
+  File "/home/king/miniconda3/envs/rlgpu/lib/python3.7/site-packages/hydra/_internal/utils.py", line 461, in <lambda>
+    overrides=overrides,
+  File "/home/king/miniconda3/envs/rlgpu/lib/python3.7/site-packages/hydra/_internal/hydra.py", line 132, in run
+    _ = ret.return_value
+  File "/home/king/miniconda3/envs/rlgpu/lib/python3.7/site-packages/hydra/core/utils.py", line 260, in return_value
+    raise self._return_value
+  File "/home/king/miniconda3/envs/rlgpu/lib/python3.7/site-packages/hydra/core/utils.py", line 186, in run_job
+    ret.return_value = task_function(task_cfg)
+  File "train.py", line 214, in launch_rlg_hydra
+    'sigma': cfg.sigma if cfg.sigma != '' else None
+  File "/home/king/miniconda3/envs/rlgpu/lib/python3.7/site-packages/rl_games/torch_runner.py", line 133, in run
+    self.run_train(args)
+  File "/home/king/miniconda3/envs/rlgpu/lib/python3.7/site-packages/rl_games/torch_runner.py", line 113, in run_train
+    agent = self.algo_factory.create(self.algo_name, base_name='run', params=self.params)
+  File "/home/king/miniconda3/envs/rlgpu/lib/python3.7/site-packages/rl_games/common/object_factory.py", line 15, in create
+    return builder(**kwargs)
+  File "/home/king/miniconda3/envs/rlgpu/lib/python3.7/site-packages/rl_games/torch_runner.py", line 37, in <lambda>
+    self.algo_factory.register_builder('a2c_continuous', lambda **kwargs : a2c_continuous.A2CAgent(**kwargs))
+  File "/home/king/miniconda3/envs/rlgpu/lib/python3.7/site-packages/rl_games/algos_torch/a2c_continuous.py", line 15, in __init__
+    a2c_common.ContinuousA2CBase.__init__(self, base_name, params)
+  File "/home/king/miniconda3/envs/rlgpu/lib/python3.7/site-packages/rl_games/common/a2c_common.py", line 1143, in __init__
+    A2CBase.__init__(self, base_name, params)
+  File "/home/king/miniconda3/envs/rlgpu/lib/python3.7/site-packages/rl_games/common/a2c_common.py", line 129, in __init__
+    self.vec_env = vecenv.create_vec_env(self.env_name, self.num_actors, **self.env_config)
+  File "/home/king/miniconda3/envs/rlgpu/lib/python3.7/site-packages/rl_games/common/vecenv.py", line 224, in create_vec_env
+    return vecenv_config[vec_env_name](config_name, num_actors, **kwargs)
+  File "train.py", line 167, in <lambda>
+    vecenv.register('RLGPU', lambda config_name, num_actors, **kwargs: RLGPUEnv(config_name, num_actors, **kwargs))
+  File "/home/king/Isaac/IsaacGymEnvs/isaacgymenvs/utils/rlgames_utils.py", line 244, in __init__
+    self.env = env_configurations.configurations[config_name]['env_creator'](**kwargs)
+  File "train.py", line 149, in <lambda>
+    'env_creator': lambda **kwargs: create_isaacgym_env(**kwargs),
+  File "train.py", line 135, in create_isaacgym_env
+    **kwargs,
+  File "/home/king/Isaac/IsaacGymEnvs/isaacgymenvs/__init__.py", line 55, in make
+    return create_rlgpu_env()
+  File "/home/king/Isaac/IsaacGymEnvs/isaacgymenvs/utils/rlgames_utils.py", line 120, in create_rlgpu_env
+    force_render=force_render,
+  File "/home/king/Isaac/IsaacGymEnvs/isaacgymenvs/tasks/allegro_hand.py", line 159, in __init__
+    self.shadow_hand_default_dof_pos = torch.zeros(self.num_shadow_hand_dofs, dtype=torch.float, device=self.device)
+RuntimeError: CUDA error: an illegal memory access was encountered

@@ -1,0 +1,387 @@
+2025-02-24 22:31:07,143 INFO    MainThread:6689 [wandb_setup.py:_flush():76] Configure stats pid to 6689
+2025-02-24 22:31:07,143 INFO    MainThread:6689 [wandb_setup.py:_flush():76] Loading settings from /home/king/.config/wandb/settings
+2025-02-24 22:31:07,143 INFO    MainThread:6689 [wandb_setup.py:_flush():76] Loading settings from /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/settings
+2025-02-24 22:31:07,143 INFO    MainThread:6689 [wandb_setup.py:_flush():76] Loading settings from environment variables: {}
+2025-02-24 22:31:07,143 INFO    MainThread:6689 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program_relpath': 'isaacgymenvs/train.py', 'program': '/home/king/Isaac/IsaacGymEnvs/isaacgymenvs/train.py'}
+2025-02-24 22:31:07,143 INFO    MainThread:6689 [wandb_init.py:_log_setup():461] Logging user logs to /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20250224_223107-uid_Ant_24-22-31-03/logs/debug.log
+2025-02-24 22:31:07,143 INFO    MainThread:6689 [wandb_init.py:_log_setup():462] Logging internal logs to /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20250224_223107-uid_Ant_24-22-31-03/logs/debug-internal.log
+2025-02-24 22:31:07,143 INFO    MainThread:6689 [wandb_init.py:init():495] calling init triggers
+2025-02-24 22:31:07,143 INFO    MainThread:6689 [wandb_init.py:init():499] wandb.init called with sweep_config: {}
+config: {}
+2025-02-24 22:31:07,143 INFO    MainThread:6689 [wandb_init.py:init():548] starting backend
+2025-02-24 22:31:07,143 INFO    MainThread:6689 [backend.py:_multiprocessing_setup():99] multiprocessing start_methods=fork,spawn,forkserver, using: fork
+2025-02-24 22:31:07,146 INFO    MainThread:6689 [backend.py:ensure_launched():217] starting backend process...
+2025-02-24 22:31:07,148 INFO    MainThread:6689 [backend.py:ensure_launched():222] started backend process with pid: 6856
+2025-02-24 22:31:07,149 INFO    MainThread:6689 [wandb_init.py:init():558] backend started and connected
+2025-02-24 22:31:07,153 INFO    MainThread:6689 [wandb_init.py:init():634] updated telemetry
+2025-02-24 22:31:07,155 INFO    MainThread:6856 [internal.py:wandb_internal():93] W&B internal server running at pid: 6856, started at: 2025-02-24 22:31:07.155036
+2025-02-24 22:31:07,157 INFO    WriterThread:6856 [datastore.py:open_for_write():75] open: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20250224_223107-uid_Ant_24-22-31-03/run-uid_Ant_24-22-31-03.wandb
+2025-02-24 22:31:07,162 INFO    MainThread:6689 [wandb_init.py:init():666] communicating run to backend with 30 second timeout
+2025-02-24 22:31:07,164 INFO    SenderThread:6856 [sender.py:_maybe_setup_resume():494] checking resume status for 2238046709-sjtu/isaacgymenvs/uid_Ant_24-22-31-03
+2025-02-24 22:31:09,603 INFO    SenderThread:6856 [dir_watcher.py:__init__():216] watching files in: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20250224_223107-uid_Ant_24-22-31-03/files
+2025-02-24 22:31:09,603 INFO    SenderThread:6856 [sender.py:_start_run_threads():818] run started: uid_Ant_24-22-31-03 with start time 1740407467
+2025-02-24 22:31:09,603 INFO    SenderThread:6856 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2025-02-24 22:31:09,604 INFO    MainThread:6689 [wandb_run.py:_on_init():1919] communicating current version
+2025-02-24 22:31:10,603 INFO    Thread-8  :6856 [dir_watcher.py:_on_file_created():269] file/dir created: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20250224_223107-uid_Ant_24-22-31-03/files/wandb-summary.json
+2025-02-24 22:31:14,398 INFO    MainThread:6689 [wandb_run.py:_on_init():1923] got version response 
+2025-02-24 22:31:14,398 INFO    MainThread:6689 [wandb_init.py:init():700] starting run threads in backend
+2025-02-24 22:31:14,604 INFO    Thread-8  :6856 [dir_watcher.py:_on_file_created():269] file/dir created: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20250224_223107-uid_Ant_24-22-31-03/files/conda-environment.yaml
+2025-02-24 22:31:14,604 INFO    Thread-8  :6856 [dir_watcher.py:_on_file_created():269] file/dir created: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20250224_223107-uid_Ant_24-22-31-03/files/requirements.txt
+2025-02-24 22:31:15,030 INFO    SenderThread:6856 [sender.py:_save_file():952] saving file wandb-metadata.json with policy now
+2025-02-24 22:31:15,032 INFO    MainThread:6689 [wandb_run.py:_console_start():1893] atexit reg
+2025-02-24 22:31:15,033 INFO    MainThread:6689 [wandb_run.py:_redirect():1766] redirect: SettingsConsole.REDIRECT
+2025-02-24 22:31:15,033 INFO    MainThread:6689 [wandb_run.py:_redirect():1771] Redirecting console.
+2025-02-24 22:31:15,034 INFO    MainThread:6689 [wandb_run.py:_redirect():1827] Redirects installed.
+2025-02-24 22:31:15,034 INFO    MainThread:6689 [wandb_init.py:init():732] run started, returning control to user process
+2025-02-24 22:31:15,049 INFO    MainThread:6689 [wandb_run.py:_config_callback():1131] config_cb None None {'task': {'name': 'Ant', 'physics_engine': 'physx', 'env': {'numEnvs': 4096, 'envSpacing': 5, 'episodeLength': 1000, 'enableDebugVis': False, 'clipActions': 1.0, 'powerScale': 1.0, 'controlFrequencyInv': 1, 'headingWeight': 0.5, 'upWeight': 0.1, 'actionsCost': 0.005, 'energyCost': 0.05, 'dofVelocityScale': 0.2, 'contactForceScale': 0.1, 'jointsAtLimitCost': 0.1, 'deathCost': -2.0, 'terminationHeight': 0.31, 'plane': {'staticFriction': 1.0, 'dynamicFriction': 1.0, 'restitution': 0.0}, 'asset': {'assetFileName': 'mjcf/nv_ant.xml'}, 'enableCameraSensors': False}, 'sim': {'dt': 0.0166, 'substeps': 2, 'up_axis': 'z', 'use_gpu_pipeline': True, 'gravity': [0.0, 0.0, -9.81], 'physx': {'num_threads': 4, 'solver_type': 1, 'use_gpu': True, 'num_position_iterations': 4, 'num_velocity_iterations': 0, 'contact_offset': 0.02, 'rest_offset': 0.0, 'bounce_threshold_velocity': 0.2, 'max_depenetration_velocity': 10.0, 'default_buffer_size_multiplier': 5.0, 'max_gpu_contact_pairs': 8388608, 'num_subscenes': 4, 'contact_collection': 0}}, 'task': {'randomize': False, 'randomization_params': {'frequency': 600, 'observations': {'range': [0, 0.002], 'operation': 'additive', 'distribution': 'gaussian'}, 'actions': {'range': [0.0, 0.02], 'operation': 'additive', 'distribution': 'gaussian'}, 'actor_params': {'ant': {'color': True, 'rigid_body_properties': {'mass': {'range': [0.5, 1.5], 'operation': 'scaling', 'distribution': 'uniform', 'setup_only': True}}, 'dof_properties': {'damping': {'range': [0.5, 1.5], 'operation': 'scaling', 'distribution': 'uniform'}, 'stiffness': {'range': [0.5, 1.5], 'operation': 'scaling', 'distribution': 'uniform'}, 'lower': {'range': [0, 0.01], 'operation': 'additive', 'distribution': 'gaussian'}, 'upper': {'range': [0, 0.01], 'operation': 'additive', 'distribution': 'gaussian'}}}}}}}, 'train': {'params': {'seed': 42, 'algo': {'name': 'a2c_continuous'}, 'model': {'name': 'continuous_a2c_logstd'}, 'network': {'name': 'actor_critic', 'separate': False, 'space': {'continuous': {'mu_activation': 'None', 'sigma_activation': 'None', 'mu_init': {'name': 'default'}, 'sigma_init': {'name': 'const_initializer', 'val': 0}, 'fixed_sigma': True}}, 'mlp': {'units': [256, 128, 64], 'activation': 'elu', 'd2rl': False, 'initializer': {'name': 'default'}, 'regularizer': {'name': 'None'}}}, 'load_checkpoint': False, 'load_path': '', 'config': {'name': 'Ant', 'full_experiment_name': 'Ant', 'env_name': 'rlgpu', 'multi_gpu': False, 'ppo': True, 'mixed_precision': True, 'normalize_input': True, 'normalize_value': True, 'value_bootstrap': True, 'num_actors': 4096, 'reward_shaper': {'scale_value': 0.01}, 'normalize_advantage': True, 'gamma': 0.99, 'tau': 0.95, 'learning_rate': 0.0003, 'lr_schedule': 'adaptive', 'schedule_type': 'legacy', 'kl_threshold': 0.008, 'score_to_win': 20000, 'max_epochs': 500, 'save_best_after': 200, 'save_frequency': 50, 'grad_norm': 1.0, 'entropy_coef': 0.0, 'truncate_grads': False, 'e_clip': 0.2, 'horizon_length': 16, 'minibatch_size': 32768, 'mini_epochs': 4, 'critic_coef': 2, 'clip_value': True, 'seq_len': 4, 'bounds_loss_coef': 0.0001}}}, 'pbt': {'enabled': False}, 'task_name': 'Ant', 'experiment': '', 'num_envs': '', 'seed': 42, 'torch_deterministic': False, 'max_iterations': '', 'physics_engine': 'physx', 'pipeline': 'gpu', 'sim_device': 'cuda:0', 'rl_device': 'cuda:0', 'graphics_device_id': 0, 'num_threads': 4, 'solver_type': 1, 'num_subscenes': 4, 'test': False, 'checkpoint': '', 'sigma': '', 'multi_gpu': False, 'wandb_activate': True, 'wandb_group': 'Isaac_2024', 'wandb_name': 'Ant', 'wandb_entity': '2238046709-sjtu', 'wandb_project': 'isaacgymenvs', 'wandb_tags': [], 'wandb_logcode_dir': '', 'capture_video': False, 'capture_video_freq': 1464, 'capture_video_len': 100, 'force_render': True, 'headless': False}
+2025-02-24 22:31:15,604 INFO    Thread-8  :6856 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20250224_223107-uid_Ant_24-22-31-03/files/conda-environment.yaml
+2025-02-24 22:31:15,604 INFO    Thread-8  :6856 [dir_watcher.py:_on_file_created():269] file/dir created: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20250224_223107-uid_Ant_24-22-31-03/files/wandb-metadata.json
+2025-02-24 22:31:15,604 INFO    Thread-8  :6856 [dir_watcher.py:_on_file_created():269] file/dir created: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20250224_223107-uid_Ant_24-22-31-03/files/output.log
+2025-02-24 22:31:16,742 INFO    Thread-12 :6856 [upload_job.py:push():138] Uploaded file /tmp/tmpmb24e2mtwandb/1smbynj6-wandb-metadata.json
+2025-02-24 22:31:17,233 INFO    MainThread:6689 [wandb_run.py:_tensorboard_callback():1239] tensorboard callback: runs/Ant_24-22-31-03/summaries, True
+2025-02-24 22:31:17,234 INFO    HandlerThread:6856 [handler.py:handle_tbrecord():723] handling tbrecord: tbrecord {
+  log_dir: "runs/Ant_24-22-31-03/summaries"
+  save: true
+}
+
+2025-02-24 22:31:17,241 INFO    SenderThread:6856 [sender.py:_save_file():952] saving file events.out.tfevents.1740407477.king-ROG-Zephyrus-M16-GU603ZM-GU603ZM with policy live
+2025-02-24 22:31:17,604 INFO    Thread-8  :6856 [dir_watcher.py:_on_file_created():269] file/dir created: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20250224_223107-uid_Ant_24-22-31-03/files/events.out.tfevents.1740407477.king-ROG-Zephyrus-M16-GU603ZM-GU603ZM
+2025-02-24 22:31:19,605 INFO    Thread-8  :6856 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20250224_223107-uid_Ant_24-22-31-03/files/output.log
+2025-02-24 22:31:26,608 INFO    Thread-8  :6856 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20250224_223107-uid_Ant_24-22-31-03/files/events.out.tfevents.1740407477.king-ROG-Zephyrus-M16-GU603ZM-GU603ZM
+2025-02-24 22:31:27,279 INFO    SenderThread:6856 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2025-02-24 22:31:27,283 INFO    SenderThread:6856 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2025-02-24 22:31:27,283 INFO    SenderThread:6856 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2025-02-24 22:31:27,284 INFO    SenderThread:6856 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2025-02-24 22:31:27,284 INFO    SenderThread:6856 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2025-02-24 22:31:27,285 INFO    SenderThread:6856 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2025-02-24 22:31:27,285 INFO    SenderThread:6856 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2025-02-24 22:31:27,286 INFO    SenderThread:6856 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2025-02-24 22:31:27,286 INFO    SenderThread:6856 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2025-02-24 22:31:27,287 INFO    SenderThread:6856 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2025-02-24 22:31:27,287 INFO    SenderThread:6856 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2025-02-24 22:31:27,288 INFO    SenderThread:6856 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2025-02-24 22:31:27,288 INFO    SenderThread:6856 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2025-02-24 22:31:27,288 INFO    SenderThread:6856 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2025-02-24 22:31:27,288 INFO    SenderThread:6856 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2025-02-24 22:31:27,288 INFO    SenderThread:6856 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2025-02-24 22:31:27,289 INFO    SenderThread:6856 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2025-02-24 22:31:27,289 INFO    SenderThread:6856 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2025-02-24 22:31:27,608 INFO    Thread-8  :6856 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20250224_223107-uid_Ant_24-22-31-03/files/events.out.tfevents.1740407477.king-ROG-Zephyrus-M16-GU603ZM-GU603ZM
+2025-02-24 22:31:27,608 INFO    Thread-8  :6856 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20250224_223107-uid_Ant_24-22-31-03/files/wandb-summary.json
+2025-02-24 22:31:28,298 INFO    SenderThread:6856 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2025-02-24 22:31:28,301 INFO    SenderThread:6856 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2025-02-24 22:31:28,302 INFO    SenderThread:6856 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2025-02-24 22:31:28,302 INFO    SenderThread:6856 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2025-02-24 22:31:28,302 INFO    SenderThread:6856 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2025-02-24 22:31:28,303 INFO    SenderThread:6856 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2025-02-24 22:31:28,303 INFO    SenderThread:6856 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2025-02-24 22:31:28,303 INFO    SenderThread:6856 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2025-02-24 22:31:28,304 INFO    SenderThread:6856 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2025-02-24 22:31:28,304 INFO    SenderThread:6856 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2025-02-24 22:31:28,304 INFO    SenderThread:6856 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2025-02-24 22:31:28,304 INFO    SenderThread:6856 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2025-02-24 22:31:28,305 INFO    SenderThread:6856 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2025-02-24 22:31:28,305 INFO    SenderThread:6856 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2025-02-24 22:31:28,305 INFO    SenderThread:6856 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2025-02-24 22:31:28,608 INFO    Thread-8  :6856 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20250224_223107-uid_Ant_24-22-31-03/files/events.out.tfevents.1740407477.king-ROG-Zephyrus-M16-GU603ZM-GU603ZM
+2025-02-24 22:31:28,609 INFO    Thread-8  :6856 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20250224_223107-uid_Ant_24-22-31-03/files/wandb-summary.json
+2025-02-24 22:31:28,609 INFO    Thread-8  :6856 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20250224_223107-uid_Ant_24-22-31-03/files/output.log
+2025-02-24 22:31:29,322 INFO    SenderThread:6856 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2025-02-24 22:31:29,325 INFO    Thread-15 :6856 [upload_job.py:push():138] Uploaded file /tmp/tmpmb24e2mtwandb/lhf6l89m-events.out.tfevents.1740407477.king-ROG-Zephyrus-M16-GU603ZM-GU603ZM
+2025-02-24 22:31:29,328 INFO    SenderThread:6856 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2025-02-24 22:31:29,328 INFO    SenderThread:6856 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2025-02-24 22:31:29,328 INFO    SenderThread:6856 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2025-02-24 22:31:29,329 INFO    SenderThread:6856 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2025-02-24 22:31:29,329 INFO    SenderThread:6856 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2025-02-24 22:31:29,609 INFO    Thread-8  :6856 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20250224_223107-uid_Ant_24-22-31-03/files/events.out.tfevents.1740407477.king-ROG-Zephyrus-M16-GU603ZM-GU603ZM
+2025-02-24 22:31:29,609 INFO    Thread-8  :6856 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20250224_223107-uid_Ant_24-22-31-03/files/wandb-summary.json
+2025-02-24 22:31:30,340 INFO    SenderThread:6856 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2025-02-24 22:31:30,343 INFO    SenderThread:6856 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2025-02-24 22:31:30,344 INFO    SenderThread:6856 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2025-02-24 22:31:30,609 INFO    Thread-8  :6856 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20250224_223107-uid_Ant_24-22-31-03/files/events.out.tfevents.1740407477.king-ROG-Zephyrus-M16-GU603ZM-GU603ZM
+2025-02-24 22:31:30,609 INFO    Thread-8  :6856 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20250224_223107-uid_Ant_24-22-31-03/files/wandb-summary.json
+2025-02-24 22:31:30,609 INFO    Thread-8  :6856 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20250224_223107-uid_Ant_24-22-31-03/files/output.log
+2025-02-24 22:31:31,365 INFO    SenderThread:6856 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2025-02-24 22:31:31,366 INFO    SenderThread:6856 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2025-02-24 22:31:31,367 INFO    SenderThread:6856 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2025-02-24 22:31:31,367 INFO    SenderThread:6856 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2025-02-24 22:31:31,367 INFO    SenderThread:6856 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2025-02-24 22:31:31,367 INFO    SenderThread:6856 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2025-02-24 22:31:31,609 INFO    Thread-8  :6856 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20250224_223107-uid_Ant_24-22-31-03/files/events.out.tfevents.1740407477.king-ROG-Zephyrus-M16-GU603ZM-GU603ZM
+2025-02-24 22:31:31,610 INFO    Thread-8  :6856 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20250224_223107-uid_Ant_24-22-31-03/files/wandb-summary.json
+2025-02-24 22:31:32,610 INFO    Thread-8  :6856 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20250224_223107-uid_Ant_24-22-31-03/files/events.out.tfevents.1740407477.king-ROG-Zephyrus-M16-GU603ZM-GU603ZM
+2025-02-24 22:31:32,610 INFO    Thread-8  :6856 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20250224_223107-uid_Ant_24-22-31-03/files/output.log
+2025-02-24 22:31:33,038 INFO    SenderThread:6856 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2025-02-24 22:31:33,041 INFO    SenderThread:6856 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2025-02-24 22:31:33,042 INFO    SenderThread:6856 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2025-02-24 22:31:33,042 INFO    SenderThread:6856 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2025-02-24 22:31:33,043 INFO    SenderThread:6856 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2025-02-24 22:31:33,044 INFO    SenderThread:6856 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2025-02-24 22:31:33,417 INFO    SenderThread:6856 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2025-02-24 22:31:33,421 INFO    SenderThread:6856 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2025-02-24 22:31:33,422 INFO    SenderThread:6856 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2025-02-24 22:31:33,610 INFO    Thread-8  :6856 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20250224_223107-uid_Ant_24-22-31-03/files/events.out.tfevents.1740407477.king-ROG-Zephyrus-M16-GU603ZM-GU603ZM
+2025-02-24 22:31:33,610 INFO    Thread-8  :6856 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20250224_223107-uid_Ant_24-22-31-03/files/wandb-summary.json
+2025-02-24 22:31:34,443 INFO    SenderThread:6856 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2025-02-24 22:31:34,446 INFO    SenderThread:6856 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2025-02-24 22:31:34,447 INFO    SenderThread:6856 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2025-02-24 22:31:34,447 INFO    SenderThread:6856 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2025-02-24 22:31:34,448 INFO    SenderThread:6856 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2025-02-24 22:31:34,448 INFO    SenderThread:6856 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2025-02-24 22:31:34,448 INFO    SenderThread:6856 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2025-02-24 22:31:34,449 INFO    SenderThread:6856 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2025-02-24 22:31:34,610 INFO    Thread-8  :6856 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20250224_223107-uid_Ant_24-22-31-03/files/events.out.tfevents.1740407477.king-ROG-Zephyrus-M16-GU603ZM-GU603ZM
+2025-02-24 22:31:34,610 INFO    Thread-8  :6856 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20250224_223107-uid_Ant_24-22-31-03/files/wandb-summary.json
+2025-02-24 22:31:34,610 INFO    Thread-8  :6856 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20250224_223107-uid_Ant_24-22-31-03/files/output.log
+2025-02-24 22:31:35,461 INFO    SenderThread:6856 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2025-02-24 22:31:35,464 INFO    SenderThread:6856 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2025-02-24 22:31:35,465 INFO    SenderThread:6856 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2025-02-24 22:31:35,610 INFO    Thread-8  :6856 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20250224_223107-uid_Ant_24-22-31-03/files/events.out.tfevents.1740407477.king-ROG-Zephyrus-M16-GU603ZM-GU603ZM
+2025-02-24 22:31:35,611 INFO    Thread-8  :6856 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20250224_223107-uid_Ant_24-22-31-03/files/wandb-summary.json
+2025-02-24 22:31:36,472 INFO    SenderThread:6856 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2025-02-24 22:31:36,476 INFO    SenderThread:6856 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2025-02-24 22:31:36,485 INFO    SenderThread:6856 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2025-02-24 22:31:36,486 INFO    SenderThread:6856 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2025-02-24 22:31:36,487 INFO    SenderThread:6856 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2025-02-24 22:31:36,487 INFO    SenderThread:6856 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2025-02-24 22:31:36,611 INFO    Thread-8  :6856 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20250224_223107-uid_Ant_24-22-31-03/files/events.out.tfevents.1740407477.king-ROG-Zephyrus-M16-GU603ZM-GU603ZM
+2025-02-24 22:31:36,611 INFO    Thread-8  :6856 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20250224_223107-uid_Ant_24-22-31-03/files/wandb-summary.json
+2025-02-24 22:31:36,611 INFO    Thread-8  :6856 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20250224_223107-uid_Ant_24-22-31-03/files/output.log
+2025-02-24 22:31:37,611 INFO    Thread-8  :6856 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20250224_223107-uid_Ant_24-22-31-03/files/events.out.tfevents.1740407477.king-ROG-Zephyrus-M16-GU603ZM-GU603ZM
+2025-02-24 22:31:38,611 INFO    Thread-8  :6856 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20250224_223107-uid_Ant_24-22-31-03/files/events.out.tfevents.1740407477.king-ROG-Zephyrus-M16-GU603ZM-GU603ZM
+2025-02-24 22:31:38,611 INFO    Thread-8  :6856 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20250224_223107-uid_Ant_24-22-31-03/files/output.log
+2025-02-24 22:31:39,114 INFO    SenderThread:6856 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2025-02-24 22:31:39,118 INFO    SenderThread:6856 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2025-02-24 22:31:39,118 INFO    SenderThread:6856 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2025-02-24 22:31:39,119 INFO    SenderThread:6856 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2025-02-24 22:31:39,119 INFO    SenderThread:6856 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2025-02-24 22:31:39,119 INFO    SenderThread:6856 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2025-02-24 22:31:39,120 INFO    SenderThread:6856 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2025-02-24 22:31:39,120 INFO    SenderThread:6856 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2025-02-24 22:31:39,120 INFO    SenderThread:6856 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2025-02-24 22:31:39,120 INFO    SenderThread:6856 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2025-02-24 22:31:39,121 INFO    SenderThread:6856 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2025-02-24 22:31:39,121 INFO    SenderThread:6856 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2025-02-24 22:31:39,544 INFO    SenderThread:6856 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2025-02-24 22:31:39,548 INFO    SenderThread:6856 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2025-02-24 22:31:39,549 INFO    SenderThread:6856 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2025-02-24 22:31:39,549 INFO    SenderThread:6856 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2025-02-24 22:31:39,550 INFO    SenderThread:6856 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2025-02-24 22:31:39,551 INFO    SenderThread:6856 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2025-02-24 22:31:39,612 INFO    Thread-8  :6856 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20250224_223107-uid_Ant_24-22-31-03/files/events.out.tfevents.1740407477.king-ROG-Zephyrus-M16-GU603ZM-GU603ZM
+2025-02-24 22:31:39,612 INFO    Thread-8  :6856 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20250224_223107-uid_Ant_24-22-31-03/files/config.yaml
+2025-02-24 22:31:39,612 INFO    Thread-8  :6856 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20250224_223107-uid_Ant_24-22-31-03/files/wandb-summary.json
+2025-02-24 22:31:40,556 INFO    SenderThread:6856 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2025-02-24 22:31:40,556 INFO    SenderThread:6856 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2025-02-24 22:31:40,557 INFO    SenderThread:6856 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2025-02-24 22:31:40,612 INFO    Thread-8  :6856 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20250224_223107-uid_Ant_24-22-31-03/files/events.out.tfevents.1740407477.king-ROG-Zephyrus-M16-GU603ZM-GU603ZM
+2025-02-24 22:31:40,612 INFO    Thread-8  :6856 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20250224_223107-uid_Ant_24-22-31-03/files/wandb-summary.json
+2025-02-24 22:31:40,612 INFO    Thread-8  :6856 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20250224_223107-uid_Ant_24-22-31-03/files/output.log
+2025-02-24 22:31:41,578 INFO    SenderThread:6856 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2025-02-24 22:31:41,582 INFO    SenderThread:6856 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2025-02-24 22:31:41,583 INFO    SenderThread:6856 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2025-02-24 22:31:41,583 INFO    SenderThread:6856 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2025-02-24 22:31:41,583 INFO    SenderThread:6856 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2025-02-24 22:31:41,612 INFO    Thread-8  :6856 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20250224_223107-uid_Ant_24-22-31-03/files/events.out.tfevents.1740407477.king-ROG-Zephyrus-M16-GU603ZM-GU603ZM
+2025-02-24 22:31:41,612 INFO    Thread-8  :6856 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20250224_223107-uid_Ant_24-22-31-03/files/wandb-summary.json
+2025-02-24 22:31:42,595 INFO    SenderThread:6856 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2025-02-24 22:31:42,598 INFO    SenderThread:6856 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2025-02-24 22:31:42,599 INFO    SenderThread:6856 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2025-02-24 22:31:42,599 INFO    SenderThread:6856 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2025-02-24 22:31:42,599 INFO    SenderThread:6856 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2025-02-24 22:31:42,600 INFO    SenderThread:6856 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2025-02-24 22:31:42,612 INFO    Thread-8  :6856 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20250224_223107-uid_Ant_24-22-31-03/files/events.out.tfevents.1740407477.king-ROG-Zephyrus-M16-GU603ZM-GU603ZM
+2025-02-24 22:31:42,612 INFO    Thread-8  :6856 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20250224_223107-uid_Ant_24-22-31-03/files/wandb-summary.json
+2025-02-24 22:31:42,613 INFO    Thread-8  :6856 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20250224_223107-uid_Ant_24-22-31-03/files/output.log
+2025-02-24 22:31:43,611 INFO    SenderThread:6856 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2025-02-24 22:31:43,612 INFO    Thread-8  :6856 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20250224_223107-uid_Ant_24-22-31-03/files/events.out.tfevents.1740407477.king-ROG-Zephyrus-M16-GU603ZM-GU603ZM
+2025-02-24 22:31:43,613 INFO    Thread-8  :6856 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20250224_223107-uid_Ant_24-22-31-03/files/wandb-summary.json
+2025-02-24 22:31:43,615 INFO    SenderThread:6856 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2025-02-24 22:31:43,615 INFO    SenderThread:6856 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2025-02-24 22:31:43,616 INFO    SenderThread:6856 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2025-02-24 22:31:43,616 INFO    SenderThread:6856 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2025-02-24 22:31:43,616 INFO    SenderThread:6856 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2025-02-24 22:31:44,632 INFO    Thread-8  :6856 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20250224_223107-uid_Ant_24-22-31-03/files/events.out.tfevents.1740407477.king-ROG-Zephyrus-M16-GU603ZM-GU603ZM
+2025-02-24 22:31:44,634 INFO    Thread-8  :6856 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20250224_223107-uid_Ant_24-22-31-03/files/wandb-summary.json
+2025-02-24 22:31:44,635 INFO    Thread-8  :6856 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20250224_223107-uid_Ant_24-22-31-03/files/output.log
+2025-02-24 22:31:44,635 INFO    SenderThread:6856 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2025-02-24 22:31:44,638 INFO    SenderThread:6856 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2025-02-24 22:31:44,639 INFO    SenderThread:6856 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2025-02-24 22:31:44,639 INFO    SenderThread:6856 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2025-02-24 22:31:44,639 INFO    SenderThread:6856 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2025-02-24 22:31:44,640 INFO    SenderThread:6856 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2025-02-24 22:31:45,649 INFO    SenderThread:6856 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2025-02-24 22:31:45,650 INFO    Thread-8  :6856 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20250224_223107-uid_Ant_24-22-31-03/files/events.out.tfevents.1740407477.king-ROG-Zephyrus-M16-GU603ZM-GU603ZM
+2025-02-24 22:31:45,650 INFO    SenderThread:6856 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2025-02-24 22:31:45,650 INFO    SenderThread:6856 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2025-02-24 22:31:45,651 INFO    Thread-8  :6856 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20250224_223107-uid_Ant_24-22-31-03/files/wandb-summary.json
+2025-02-24 22:31:45,651 INFO    SenderThread:6856 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2025-02-24 22:31:45,651 INFO    SenderThread:6856 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2025-02-24 22:31:45,652 INFO    SenderThread:6856 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2025-02-24 22:31:46,650 INFO    Thread-8  :6856 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20250224_223107-uid_Ant_24-22-31-03/files/events.out.tfevents.1740407477.king-ROG-Zephyrus-M16-GU603ZM-GU603ZM
+2025-02-24 22:31:46,650 INFO    Thread-8  :6856 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20250224_223107-uid_Ant_24-22-31-03/files/wandb-summary.json
+2025-02-24 22:31:46,654 INFO    Thread-8  :6856 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20250224_223107-uid_Ant_24-22-31-03/files/output.log
+2025-02-24 22:31:46,670 INFO    SenderThread:6856 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2025-02-24 22:31:46,671 INFO    SenderThread:6856 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2025-02-24 22:31:46,671 INFO    SenderThread:6856 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2025-02-24 22:31:46,672 INFO    SenderThread:6856 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2025-02-24 22:31:46,672 INFO    SenderThread:6856 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2025-02-24 22:31:46,672 INFO    SenderThread:6856 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2025-02-24 22:31:47,650 INFO    Thread-8  :6856 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20250224_223107-uid_Ant_24-22-31-03/files/events.out.tfevents.1740407477.king-ROG-Zephyrus-M16-GU603ZM-GU603ZM
+2025-02-24 22:31:47,650 INFO    Thread-8  :6856 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20250224_223107-uid_Ant_24-22-31-03/files/wandb-summary.json
+2025-02-24 22:31:47,689 INFO    SenderThread:6856 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2025-02-24 22:31:47,693 INFO    SenderThread:6856 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2025-02-24 22:31:47,694 INFO    SenderThread:6856 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2025-02-24 22:31:48,650 INFO    Thread-8  :6856 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20250224_223107-uid_Ant_24-22-31-03/files/events.out.tfevents.1740407477.king-ROG-Zephyrus-M16-GU603ZM-GU603ZM
+2025-02-24 22:31:48,651 INFO    Thread-8  :6856 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20250224_223107-uid_Ant_24-22-31-03/files/wandb-summary.json
+2025-02-24 22:31:48,651 INFO    Thread-8  :6856 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20250224_223107-uid_Ant_24-22-31-03/files/output.log
+2025-02-24 22:31:49,400 INFO    SenderThread:6856 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2025-02-24 22:31:49,404 INFO    SenderThread:6856 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2025-02-24 22:31:49,405 INFO    SenderThread:6856 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2025-02-24 22:31:49,406 INFO    SenderThread:6856 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2025-02-24 22:31:49,406 INFO    SenderThread:6856 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2025-02-24 22:31:49,651 INFO    Thread-8  :6856 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20250224_223107-uid_Ant_24-22-31-03/files/events.out.tfevents.1740407477.king-ROG-Zephyrus-M16-GU603ZM-GU603ZM
+2025-02-24 22:31:49,651 INFO    Thread-8  :6856 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20250224_223107-uid_Ant_24-22-31-03/files/wandb-summary.json
+2025-02-24 22:31:49,726 INFO    SenderThread:6856 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2025-02-24 22:31:49,730 INFO    SenderThread:6856 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2025-02-24 22:31:49,730 INFO    SenderThread:6856 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2025-02-24 22:31:49,731 INFO    SenderThread:6856 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2025-02-24 22:31:49,731 INFO    SenderThread:6856 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2025-02-24 22:31:49,732 INFO    SenderThread:6856 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2025-02-24 22:31:50,651 INFO    Thread-8  :6856 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20250224_223107-uid_Ant_24-22-31-03/files/events.out.tfevents.1740407477.king-ROG-Zephyrus-M16-GU603ZM-GU603ZM
+2025-02-24 22:31:50,651 INFO    Thread-8  :6856 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20250224_223107-uid_Ant_24-22-31-03/files/wandb-summary.json
+2025-02-24 22:31:50,651 INFO    Thread-8  :6856 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20250224_223107-uid_Ant_24-22-31-03/files/output.log
+2025-02-24 22:31:50,743 INFO    SenderThread:6856 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2025-02-24 22:31:50,747 INFO    SenderThread:6856 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2025-02-24 22:31:50,747 INFO    SenderThread:6856 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2025-02-24 22:31:50,747 INFO    SenderThread:6856 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2025-02-24 22:31:50,748 INFO    SenderThread:6856 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2025-02-24 22:31:50,748 INFO    SenderThread:6856 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2025-02-24 22:31:51,651 INFO    Thread-8  :6856 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20250224_223107-uid_Ant_24-22-31-03/files/events.out.tfevents.1740407477.king-ROG-Zephyrus-M16-GU603ZM-GU603ZM
+2025-02-24 22:31:51,652 INFO    Thread-8  :6856 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20250224_223107-uid_Ant_24-22-31-03/files/wandb-summary.json
+2025-02-24 22:31:51,764 INFO    SenderThread:6856 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2025-02-24 22:31:51,764 INFO    SenderThread:6856 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2025-02-24 22:31:51,765 INFO    SenderThread:6856 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2025-02-24 22:31:51,765 INFO    SenderThread:6856 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2025-02-24 22:31:51,765 INFO    SenderThread:6856 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2025-02-24 22:31:51,766 INFO    SenderThread:6856 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2025-02-24 22:31:52,651 INFO    Thread-8  :6856 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20250224_223107-uid_Ant_24-22-31-03/files/events.out.tfevents.1740407477.king-ROG-Zephyrus-M16-GU603ZM-GU603ZM
+2025-02-24 22:31:52,652 INFO    Thread-8  :6856 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20250224_223107-uid_Ant_24-22-31-03/files/wandb-summary.json
+2025-02-24 22:31:52,652 INFO    Thread-8  :6856 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20250224_223107-uid_Ant_24-22-31-03/files/output.log
+2025-02-24 22:31:52,784 INFO    SenderThread:6856 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2025-02-24 22:31:52,787 INFO    SenderThread:6856 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2025-02-24 22:31:52,787 INFO    SenderThread:6856 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2025-02-24 22:31:52,788 INFO    SenderThread:6856 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2025-02-24 22:31:52,788 INFO    SenderThread:6856 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2025-02-24 22:31:52,788 INFO    SenderThread:6856 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2025-02-24 22:31:53,652 INFO    Thread-8  :6856 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20250224_223107-uid_Ant_24-22-31-03/files/events.out.tfevents.1740407477.king-ROG-Zephyrus-M16-GU603ZM-GU603ZM
+2025-02-24 22:31:53,652 INFO    Thread-8  :6856 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20250224_223107-uid_Ant_24-22-31-03/files/wandb-summary.json
+2025-02-24 22:31:53,799 INFO    SenderThread:6856 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2025-02-24 22:31:53,803 INFO    SenderThread:6856 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2025-02-24 22:31:53,803 INFO    SenderThread:6856 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2025-02-24 22:31:54,652 INFO    Thread-8  :6856 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20250224_223107-uid_Ant_24-22-31-03/files/events.out.tfevents.1740407477.king-ROG-Zephyrus-M16-GU603ZM-GU603ZM
+2025-02-24 22:31:54,652 INFO    Thread-8  :6856 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20250224_223107-uid_Ant_24-22-31-03/files/wandb-summary.json
+2025-02-24 22:31:54,652 INFO    Thread-8  :6856 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20250224_223107-uid_Ant_24-22-31-03/files/output.log
+2025-02-24 22:31:54,809 INFO    SenderThread:6856 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2025-02-24 22:31:54,812 INFO    SenderThread:6856 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2025-02-24 22:31:54,813 INFO    SenderThread:6856 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2025-02-24 22:31:54,813 INFO    SenderThread:6856 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2025-02-24 22:31:54,813 INFO    SenderThread:6856 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2025-02-24 22:31:55,652 INFO    Thread-8  :6856 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20250224_223107-uid_Ant_24-22-31-03/files/events.out.tfevents.1740407477.king-ROG-Zephyrus-M16-GU603ZM-GU603ZM
+2025-02-24 22:31:55,652 INFO    Thread-8  :6856 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20250224_223107-uid_Ant_24-22-31-03/files/wandb-summary.json
+2025-02-24 22:31:55,820 INFO    SenderThread:6856 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2025-02-24 22:31:55,824 INFO    SenderThread:6856 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2025-02-24 22:31:55,825 INFO    SenderThread:6856 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2025-02-24 22:31:55,825 INFO    SenderThread:6856 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2025-02-24 22:31:55,826 INFO    SenderThread:6856 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2025-02-24 22:31:55,826 INFO    SenderThread:6856 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2025-02-24 22:31:56,653 INFO    Thread-8  :6856 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20250224_223107-uid_Ant_24-22-31-03/files/events.out.tfevents.1740407477.king-ROG-Zephyrus-M16-GU603ZM-GU603ZM
+2025-02-24 22:31:56,654 INFO    Thread-8  :6856 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20250224_223107-uid_Ant_24-22-31-03/files/wandb-summary.json
+2025-02-24 22:31:56,654 INFO    Thread-8  :6856 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20250224_223107-uid_Ant_24-22-31-03/files/output.log
+2025-02-24 22:31:56,830 INFO    SenderThread:6856 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2025-02-24 22:31:56,834 INFO    SenderThread:6856 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2025-02-24 22:31:56,835 INFO    SenderThread:6856 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2025-02-24 22:31:57,654 INFO    Thread-8  :6856 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20250224_223107-uid_Ant_24-22-31-03/files/wandb-summary.json
+2025-02-24 22:31:58,655 INFO    Thread-8  :6856 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20250224_223107-uid_Ant_24-22-31-03/files/output.log
+2025-02-24 22:32:00,656 INFO    Thread-8  :6856 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20250224_223107-uid_Ant_24-22-31-03/files/output.log
+2025-02-24 22:32:00,890 INFO    MainThread:6689 [wandb_run.py:_atexit_cleanup():1862] got exitcode: 0
+2025-02-24 22:32:00,891 INFO    MainThread:6689 [wandb_run.py:_restore():1834] restore
+2025-02-24 22:32:01,656 INFO    Thread-8  :6856 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20250224_223107-uid_Ant_24-22-31-03/files/events.out.tfevents.1740407477.king-ROG-Zephyrus-M16-GU603ZM-GU603ZM
+2025-02-24 22:32:01,848 INFO    SenderThread:6856 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2025-02-24 22:32:02,657 INFO    Thread-8  :6856 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20250224_223107-uid_Ant_24-22-31-03/files/wandb-summary.json
+2025-02-24 22:32:03,879 INFO    SenderThread:6856 [sender.py:send_exit():372] handling exit code: 0
+2025-02-24 22:32:03,879 INFO    SenderThread:6856 [sender.py:send_exit():374] handling runtime: 49
+2025-02-24 22:32:03,880 INFO    SenderThread:6856 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2025-02-24 22:32:03,880 INFO    SenderThread:6856 [sender.py:send_exit():380] send defer
+2025-02-24 22:32:03,882 INFO    HandlerThread:6856 [handler.py:handle_request_defer():163] handle defer: 0
+2025-02-24 22:32:03,882 INFO    MainThread:6689 [wandb_run.py:_on_finish():1991] got exit ret: file_counts {
+  wandb_count: 1
+  other_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 4928
+  total_bytes: 4928
+}
+
+2025-02-24 22:32:03,882 INFO    SenderThread:6856 [sender.py:send_request_defer():389] handle sender defer: 0
+2025-02-24 22:32:03,882 INFO    SenderThread:6856 [sender.py:transition_state():393] send defer: 1
+2025-02-24 22:32:03,883 INFO    HandlerThread:6856 [handler.py:handle_request_defer():163] handle defer: 1
+2025-02-24 22:32:03,994 INFO    SenderThread:6856 [sender.py:send_request_defer():389] handle sender defer: 1
+2025-02-24 22:32:03,994 INFO    SenderThread:6856 [sender.py:transition_state():393] send defer: 2
+2025-02-24 22:32:03,994 INFO    MainThread:6689 [wandb_run.py:_on_finish():1991] got exit ret: file_counts {
+  wandb_count: 1
+  other_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 4928
+  total_bytes: 4928
+}
+
+2025-02-24 22:32:03,995 INFO    HandlerThread:6856 [handler.py:handle_request_defer():163] handle defer: 2
+2025-02-24 22:32:03,995 INFO    SenderThread:6856 [sender.py:send_request_defer():389] handle sender defer: 2
+2025-02-24 22:32:03,995 INFO    SenderThread:6856 [sender.py:transition_state():393] send defer: 3
+2025-02-24 22:32:03,996 INFO    HandlerThread:6856 [handler.py:handle_request_defer():163] handle defer: 3
+2025-02-24 22:32:04,658 INFO    Thread-8  :6856 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20250224_223107-uid_Ant_24-22-31-03/files/wandb-summary.json
+2025-02-24 22:32:04,658 INFO    Thread-8  :6856 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20250224_223107-uid_Ant_24-22-31-03/files/output.log
+2025-02-24 22:32:08,138 WARNING MainThread:6856 [internal.py:wandb_internal():153] Internal process interrupt: 1
+2025-02-24 22:32:10,659 INFO    Thread-8  :6856 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20250224_223107-uid_Ant_24-22-31-03/files/config.yaml
+2025-02-24 22:32:10,849 INFO    SenderThread:6856 [sender.py:send_request_defer():389] handle sender defer: 3
+2025-02-24 22:32:10,849 INFO    SenderThread:6856 [sender.py:transition_state():393] send defer: 4
+2025-02-24 22:32:10,854 INFO    HandlerThread:6856 [handler.py:handle_request_defer():163] handle defer: 4
+2025-02-24 22:32:10,854 INFO    SenderThread:6856 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2025-02-24 22:32:10,858 INFO    SenderThread:6856 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2025-02-24 22:32:10,859 INFO    SenderThread:6856 [sender.py:send_request_defer():389] handle sender defer: 4
+2025-02-24 22:32:10,859 INFO    SenderThread:6856 [sender.py:transition_state():393] send defer: 5
+2025-02-24 22:32:10,859 INFO    HandlerThread:6856 [handler.py:handle_request_defer():163] handle defer: 5
+2025-02-24 22:32:10,860 INFO    SenderThread:6856 [sender.py:send_request_defer():389] handle sender defer: 5
+2025-02-24 22:32:10,860 INFO    SenderThread:6856 [sender.py:transition_state():393] send defer: 6
+2025-02-24 22:32:10,860 INFO    HandlerThread:6856 [handler.py:handle_request_defer():163] handle defer: 6
+2025-02-24 22:32:10,861 INFO    SenderThread:6856 [sender.py:send_request_defer():389] handle sender defer: 6
+2025-02-24 22:32:10,861 INFO    SenderThread:6856 [dir_watcher.py:finish():353] shutting down directory watcher
+2025-02-24 22:32:11,660 INFO    Thread-8  :6856 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20250224_223107-uid_Ant_24-22-31-03/files/wandb-summary.json
+2025-02-24 22:32:11,661 INFO    SenderThread:6856 [dir_watcher.py:finish():383] scan: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20250224_223107-uid_Ant_24-22-31-03/files
+2025-02-24 22:32:11,662 INFO    SenderThread:6856 [dir_watcher.py:finish():397] scan save: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20250224_223107-uid_Ant_24-22-31-03/files/events.out.tfevents.1740407477.king-ROG-Zephyrus-M16-GU603ZM-GU603ZM events.out.tfevents.1740407477.king-ROG-Zephyrus-M16-GU603ZM-GU603ZM
+2025-02-24 22:32:11,662 INFO    SenderThread:6856 [dir_watcher.py:finish():397] scan save: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20250224_223107-uid_Ant_24-22-31-03/files/conda-environment.yaml conda-environment.yaml
+2025-02-24 22:32:11,662 INFO    SenderThread:6856 [dir_watcher.py:finish():397] scan save: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20250224_223107-uid_Ant_24-22-31-03/files/wandb-metadata.json wandb-metadata.json
+2025-02-24 22:32:11,663 INFO    SenderThread:6856 [dir_watcher.py:finish():397] scan save: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20250224_223107-uid_Ant_24-22-31-03/files/output.log output.log
+2025-02-24 22:32:11,663 INFO    SenderThread:6856 [dir_watcher.py:finish():397] scan save: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20250224_223107-uid_Ant_24-22-31-03/files/wandb-summary.json wandb-summary.json
+2025-02-24 22:32:11,663 INFO    SenderThread:6856 [dir_watcher.py:finish():397] scan save: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20250224_223107-uid_Ant_24-22-31-03/files/requirements.txt requirements.txt
+2025-02-24 22:32:11,663 INFO    SenderThread:6856 [dir_watcher.py:finish():397] scan save: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20250224_223107-uid_Ant_24-22-31-03/files/config.yaml config.yaml
+2025-02-24 22:32:11,664 INFO    SenderThread:6856 [sender.py:transition_state():393] send defer: 7
+2025-02-24 22:32:11,665 INFO    HandlerThread:6856 [handler.py:handle_request_defer():163] handle defer: 7
+2025-02-24 22:32:11,665 INFO    SenderThread:6856 [sender.py:send_request_defer():389] handle sender defer: 7
+2025-02-24 22:32:11,666 INFO    SenderThread:6856 [file_pusher.py:finish():171] shutting down file pusher
+2025-02-24 22:32:13,143 WARNING MainThread:6856 [internal.py:is_dead():388] Internal process exiting, parent pid 6689 disappeared
+2025-02-24 22:32:13,143 ERROR   MainThread:6856 [internal.py:wandb_internal():149] Internal process shutdown.
+2025-02-24 22:32:13,362 INFO    Thread-20 :6856 [upload_job.py:push():138] Uploaded file /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20250224_223107-uid_Ant_24-22-31-03/files/requirements.txt
+2025-02-24 22:32:13,442 INFO    Thread-21 :6856 [upload_job.py:push():138] Uploaded file /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20250224_223107-uid_Ant_24-22-31-03/files/config.yaml
+2025-02-24 22:32:13,583 INFO    Thread-18 :6856 [upload_job.py:push():138] Uploaded file /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20250224_223107-uid_Ant_24-22-31-03/files/output.log
+2025-02-24 22:32:13,666 INFO    SenderThread:6856 [sender.py:finish():1114] shutting down sender
+2025-02-24 22:32:13,666 INFO    SenderThread:6856 [file_pusher.py:finish():171] shutting down file pusher
+2025-02-24 22:32:13,666 INFO    SenderThread:6856 [file_pusher.py:join():176] waiting for file pusher
+2025-02-24 22:32:13,667 INFO    HandlerThread:6856 [handler.py:finish():806] shutting down handler
+2025-02-24 22:32:13,681 INFO    Thread-16 :6856 [upload_job.py:push():138] Uploaded file /tmp/tmpmb24e2mtwandb/jyxij06u-events.out.tfevents.1740407477.king-ROG-Zephyrus-M16-GU603ZM-GU603ZM
+2025-02-24 22:32:13,857 INFO    WriterThread:6856 [datastore.py:close():279] close: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20250224_223107-uid_Ant_24-22-31-03/run-uid_Ant_24-22-31-03.wandb
+2025-02-24 22:32:14,216 INFO    Thread-17 :6856 [upload_job.py:push():138] Uploaded file /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20250224_223107-uid_Ant_24-22-31-03/files/conda-environment.yaml
+2025-02-24 22:32:14,361 INFO    Thread-19 :6856 [upload_job.py:push():138] Uploaded file /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20250224_223107-uid_Ant_24-22-31-03/files/wandb-summary.json
+2025-02-24 22:32:14,561 INFO    Thread-7  :6856 [sender.py:transition_state():393] send defer: 8

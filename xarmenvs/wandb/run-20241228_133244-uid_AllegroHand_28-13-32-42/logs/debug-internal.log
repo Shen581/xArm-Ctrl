@@ -1,0 +1,57 @@
+2024-12-28 13:32:44,857 INFO    MainThread:21212 [internal.py:wandb_internal():93] W&B internal server running at pid: 21212, started at: 2024-12-28 13:32:44.856520
+2024-12-28 13:32:44,859 DEBUG   SenderThread:21212 [sender.py:send():236] send: header
+2024-12-28 13:32:44,859 INFO    WriterThread:21212 [datastore.py:open_for_write():75] open: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_133244-uid_AllegroHand_28-13-32-42/run-uid_AllegroHand_28-13-32-42.wandb
+2024-12-28 13:32:44,870 DEBUG   SenderThread:21212 [sender.py:send():236] send: run
+2024-12-28 13:32:44,871 INFO    SenderThread:21212 [sender.py:_maybe_setup_resume():494] checking resume status for 2238046709-sjtu/isaacgymenvs/uid_AllegroHand_28-13-32-42
+2024-12-28 13:32:46,577 INFO    SenderThread:21212 [dir_watcher.py:__init__():216] watching files in: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_133244-uid_AllegroHand_28-13-32-42/files
+2024-12-28 13:32:46,577 INFO    SenderThread:21212 [sender.py:_start_run_threads():818] run started: uid_AllegroHand_28-13-32-42 with start time 1735363964
+2024-12-28 13:32:46,578 DEBUG   SenderThread:21212 [sender.py:send():236] send: summary
+2024-12-28 13:32:46,578 INFO    SenderThread:21212 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2024-12-28 13:32:46,579 DEBUG   HandlerThread:21212 [handler.py:handle_request():140] handle_request: check_version
+2024-12-28 13:32:46,579 DEBUG   SenderThread:21212 [sender.py:send_request():250] send_request: check_version
+2024-12-28 13:32:47,275 DEBUG   HandlerThread:21212 [handler.py:handle_request():140] handle_request: run_start
+2024-12-28 13:32:47,279 DEBUG   HandlerThread:21212 [meta.py:__init__():35] meta init
+2024-12-28 13:32:47,279 DEBUG   HandlerThread:21212 [meta.py:__init__():49] meta init done
+2024-12-28 13:32:47,279 DEBUG   HandlerThread:21212 [meta.py:probe():209] probe
+2024-12-28 13:32:47,287 DEBUG   HandlerThread:21212 [meta.py:_setup_git():199] setup git
+2024-12-28 13:32:47,319 DEBUG   HandlerThread:21212 [meta.py:_setup_git():206] setup git done
+2024-12-28 13:32:47,319 DEBUG   HandlerThread:21212 [meta.py:_save_pip():53] save pip
+2024-12-28 13:32:47,319 DEBUG   HandlerThread:21212 [meta.py:_save_pip():67] save pip done
+2024-12-28 13:32:47,319 DEBUG   HandlerThread:21212 [meta.py:_save_conda():74] save conda
+2024-12-28 13:32:47,578 INFO    Thread-8  :21212 [dir_watcher.py:_on_file_created():269] file/dir created: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_133244-uid_AllegroHand_28-13-32-42/files/requirements.txt
+2024-12-28 13:32:47,578 INFO    Thread-8  :21212 [dir_watcher.py:_on_file_created():269] file/dir created: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_133244-uid_AllegroHand_28-13-32-42/files/wandb-summary.json
+2024-12-28 13:32:47,578 INFO    Thread-8  :21212 [dir_watcher.py:_on_file_created():269] file/dir created: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_133244-uid_AllegroHand_28-13-32-42/files/conda-environment.yaml
+2024-12-28 13:32:47,896 DEBUG   HandlerThread:21212 [meta.py:_save_conda():84] save conda done
+2024-12-28 13:32:47,897 DEBUG   HandlerThread:21212 [meta.py:probe():247] probe done
+2024-12-28 13:32:47,898 DEBUG   SenderThread:21212 [sender.py:send():236] send: files
+2024-12-28 13:32:47,898 INFO    SenderThread:21212 [sender.py:_save_file():952] saving file wandb-metadata.json with policy now
+2024-12-28 13:32:47,901 DEBUG   HandlerThread:21212 [handler.py:handle_request():140] handle_request: stop_status
+2024-12-28 13:32:47,902 DEBUG   SenderThread:21212 [sender.py:send_request():250] send_request: stop_status
+2024-12-28 13:32:48,578 INFO    Thread-8  :21212 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_133244-uid_AllegroHand_28-13-32-42/files/conda-environment.yaml
+2024-12-28 13:32:48,578 INFO    Thread-8  :21212 [dir_watcher.py:_on_file_created():269] file/dir created: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_133244-uid_AllegroHand_28-13-32-42/files/wandb-metadata.json
+2024-12-28 13:32:48,578 INFO    Thread-8  :21212 [dir_watcher.py:_on_file_created():269] file/dir created: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_133244-uid_AllegroHand_28-13-32-42/files/output.log
+2024-12-28 13:32:48,749 DEBUG   SenderThread:21212 [sender.py:send():236] send: telemetry
+2024-12-28 13:32:48,885 DEBUG   SenderThread:21212 [sender.py:send():236] send: config
+2024-12-28 13:32:49,388 INFO    Thread-12 :21212 [upload_job.py:push():138] Uploaded file /tmp/tmpc_l6pu0ewandb/6rf4wutv-wandb-metadata.json
+2024-12-28 13:32:50,578 INFO    Thread-8  :21212 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_133244-uid_AllegroHand_28-13-32-42/files/output.log
+2024-12-28 13:32:52,579 INFO    Thread-8  :21212 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_133244-uid_AllegroHand_28-13-32-42/files/output.log
+2024-12-28 13:32:53,868 WARNING MainThread:21212 [internal.py:is_dead():388] Internal process exiting, parent pid 21144 disappeared
+2024-12-28 13:32:53,868 ERROR   MainThread:21212 [internal.py:wandb_internal():149] Internal process shutdown.
+2024-12-28 13:32:54,542 INFO    SenderThread:21212 [sender.py:finish():1114] shutting down sender
+2024-12-28 13:32:54,543 INFO    SenderThread:21212 [dir_watcher.py:finish():353] shutting down directory watcher
+2024-12-28 13:32:54,543 INFO    WriterThread:21212 [datastore.py:close():279] close: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_133244-uid_AllegroHand_28-13-32-42/run-uid_AllegroHand_28-13-32-42.wandb
+2024-12-28 13:32:54,544 INFO    HandlerThread:21212 [handler.py:finish():806] shutting down handler
+2024-12-28 13:32:54,580 INFO    SenderThread:21212 [dir_watcher.py:finish():383] scan: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_133244-uid_AllegroHand_28-13-32-42/files
+2024-12-28 13:32:54,580 INFO    SenderThread:21212 [dir_watcher.py:finish():397] scan save: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_133244-uid_AllegroHand_28-13-32-42/files/conda-environment.yaml conda-environment.yaml
+2024-12-28 13:32:54,580 INFO    SenderThread:21212 [dir_watcher.py:finish():397] scan save: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_133244-uid_AllegroHand_28-13-32-42/files/wandb-metadata.json wandb-metadata.json
+2024-12-28 13:32:54,580 INFO    SenderThread:21212 [dir_watcher.py:finish():397] scan save: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_133244-uid_AllegroHand_28-13-32-42/files/output.log output.log
+2024-12-28 13:32:54,581 INFO    SenderThread:21212 [dir_watcher.py:finish():397] scan save: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_133244-uid_AllegroHand_28-13-32-42/files/wandb-summary.json wandb-summary.json
+2024-12-28 13:32:54,581 INFO    SenderThread:21212 [dir_watcher.py:finish():397] scan save: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_133244-uid_AllegroHand_28-13-32-42/files/requirements.txt requirements.txt
+2024-12-28 13:32:54,581 INFO    SenderThread:21212 [dir_watcher.py:finish():397] scan save: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_133244-uid_AllegroHand_28-13-32-42/files/config.yaml config.yaml
+2024-12-28 13:32:54,581 INFO    SenderThread:21212 [file_pusher.py:finish():171] shutting down file pusher
+2024-12-28 13:32:54,587 INFO    SenderThread:21212 [file_pusher.py:join():176] waiting for file pusher
+2024-12-28 13:32:56,946 INFO    Thread-17 :21212 [upload_job.py:push():138] Uploaded file /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_133244-uid_AllegroHand_28-13-32-42/files/config.yaml
+2024-12-28 13:32:57,397 INFO    Thread-15 :21212 [upload_job.py:push():138] Uploaded file /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_133244-uid_AllegroHand_28-13-32-42/files/wandb-summary.json
+2024-12-28 13:32:57,420 INFO    Thread-13 :21212 [upload_job.py:push():138] Uploaded file /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_133244-uid_AllegroHand_28-13-32-42/files/conda-environment.yaml
+2024-12-28 13:32:57,995 INFO    Thread-16 :21212 [upload_job.py:push():138] Uploaded file /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_133244-uid_AllegroHand_28-13-32-42/files/requirements.txt
+2024-12-28 13:32:58,812 INFO    Thread-14 :21212 [upload_job.py:push():138] Uploaded file /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_133244-uid_AllegroHand_28-13-32-42/files/output.log

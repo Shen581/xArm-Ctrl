@@ -1,0 +1,102 @@
+2024-12-28 13:55:01,498 INFO    MainThread:24724 [internal.py:wandb_internal():93] W&B internal server running at pid: 24724, started at: 2024-12-28 13:55:01.497762
+2024-12-28 13:55:01,500 DEBUG   SenderThread:24724 [sender.py:send():236] send: header
+2024-12-28 13:55:01,500 INFO    WriterThread:24724 [datastore.py:open_for_write():75] open: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_135501-uid_AllegroHand_28-13-55-00/run-uid_AllegroHand_28-13-55-00.wandb
+2024-12-28 13:55:01,511 DEBUG   SenderThread:24724 [sender.py:send():236] send: run
+2024-12-28 13:55:01,512 INFO    SenderThread:24724 [sender.py:_maybe_setup_resume():494] checking resume status for 2238046709-sjtu/isaacgymenvs/uid_AllegroHand_28-13-55-00
+2024-12-28 13:55:04,068 INFO    SenderThread:24724 [dir_watcher.py:__init__():216] watching files in: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_135501-uid_AllegroHand_28-13-55-00/files
+2024-12-28 13:55:04,068 INFO    SenderThread:24724 [sender.py:_start_run_threads():818] run started: uid_AllegroHand_28-13-55-00 with start time 1735365301
+2024-12-28 13:55:04,068 DEBUG   SenderThread:24724 [sender.py:send():236] send: summary
+2024-12-28 13:55:04,068 INFO    SenderThread:24724 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2024-12-28 13:55:04,070 DEBUG   HandlerThread:24724 [handler.py:handle_request():140] handle_request: check_version
+2024-12-28 13:55:04,070 DEBUG   SenderThread:24724 [sender.py:send_request():250] send_request: check_version
+2024-12-28 13:55:05,071 INFO    Thread-8  :24724 [dir_watcher.py:_on_file_created():269] file/dir created: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_135501-uid_AllegroHand_28-13-55-00/files/wandb-summary.json
+2024-12-28 13:55:05,117 DEBUG   HandlerThread:24724 [handler.py:handle_request():140] handle_request: run_start
+2024-12-28 13:55:05,121 DEBUG   HandlerThread:24724 [meta.py:__init__():35] meta init
+2024-12-28 13:55:05,121 DEBUG   HandlerThread:24724 [meta.py:__init__():49] meta init done
+2024-12-28 13:55:05,121 DEBUG   HandlerThread:24724 [meta.py:probe():209] probe
+2024-12-28 13:55:05,129 DEBUG   HandlerThread:24724 [meta.py:_setup_git():199] setup git
+2024-12-28 13:55:05,157 DEBUG   HandlerThread:24724 [meta.py:_setup_git():206] setup git done
+2024-12-28 13:55:05,157 DEBUG   HandlerThread:24724 [meta.py:_save_pip():53] save pip
+2024-12-28 13:55:05,157 DEBUG   HandlerThread:24724 [meta.py:_save_pip():67] save pip done
+2024-12-28 13:55:05,157 DEBUG   HandlerThread:24724 [meta.py:_save_conda():74] save conda
+2024-12-28 13:55:05,711 DEBUG   HandlerThread:24724 [meta.py:_save_conda():84] save conda done
+2024-12-28 13:55:05,711 DEBUG   HandlerThread:24724 [meta.py:probe():247] probe done
+2024-12-28 13:55:05,713 DEBUG   SenderThread:24724 [sender.py:send():236] send: files
+2024-12-28 13:55:05,713 INFO    SenderThread:24724 [sender.py:_save_file():952] saving file wandb-metadata.json with policy now
+2024-12-28 13:55:05,716 DEBUG   HandlerThread:24724 [handler.py:handle_request():140] handle_request: stop_status
+2024-12-28 13:55:05,716 DEBUG   SenderThread:24724 [sender.py:send_request():250] send_request: stop_status
+2024-12-28 13:55:06,069 INFO    Thread-8  :24724 [dir_watcher.py:_on_file_created():269] file/dir created: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_135501-uid_AllegroHand_28-13-55-00/files/conda-environment.yaml
+2024-12-28 13:55:06,069 INFO    Thread-8  :24724 [dir_watcher.py:_on_file_created():269] file/dir created: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_135501-uid_AllegroHand_28-13-55-00/files/wandb-metadata.json
+2024-12-28 13:55:06,069 INFO    Thread-8  :24724 [dir_watcher.py:_on_file_created():269] file/dir created: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_135501-uid_AllegroHand_28-13-55-00/files/output.log
+2024-12-28 13:55:06,070 INFO    Thread-8  :24724 [dir_watcher.py:_on_file_created():269] file/dir created: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_135501-uid_AllegroHand_28-13-55-00/files/requirements.txt
+2024-12-28 13:55:06,590 DEBUG   SenderThread:24724 [sender.py:send():236] send: telemetry
+2024-12-28 13:55:06,590 DEBUG   SenderThread:24724 [sender.py:send():236] send: config
+2024-12-28 13:55:07,234 INFO    Thread-12 :24724 [upload_job.py:push():138] Uploaded file /tmp/tmpzbq5ujchwandb/pah1m82m-wandb-metadata.json
+2024-12-28 13:55:08,069 INFO    Thread-8  :24724 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_135501-uid_AllegroHand_28-13-55-00/files/output.log
+2024-12-28 13:55:10,041 INFO    HandlerThread:24724 [handler.py:handle_tbrecord():723] handling tbrecord: tbrecord {
+  log_dir: "runs/AllegroHand_28-13-55-00/summaries"
+  save: true
+}
+
+2024-12-28 13:55:10,041 DEBUG   HandlerThread:24724 [config_util.py:dict_from_config_file():100] no default config file found in config-defaults.yaml
+2024-12-28 13:55:10,046 DEBUG   SenderThread:24724 [sender.py:send():236] send: tbrecord
+2024-12-28 13:55:10,046 DEBUG   SenderThread:24724 [sender.py:send():236] send: files
+2024-12-28 13:55:10,046 INFO    SenderThread:24724 [sender.py:_save_file():952] saving file events.out.tfevents.1735365310.king-ROG-Zephyrus-M16-GU603ZM-GU603ZM with policy live
+2024-12-28 13:55:10,070 INFO    Thread-8  :24724 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_135501-uid_AllegroHand_28-13-55-00/files/output.log
+2024-12-28 13:55:10,070 INFO    Thread-8  :24724 [dir_watcher.py:_on_file_created():269] file/dir created: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_135501-uid_AllegroHand_28-13-55-00/files/events.out.tfevents.1735365310.king-ROG-Zephyrus-M16-GU603ZM-GU603ZM
+2024-12-28 13:55:10,285 DEBUG   SenderThread:24724 [sender.py:send():236] send: telemetry
+2024-12-28 13:55:11,071 INFO    Thread-8  :24724 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_135501-uid_AllegroHand_28-13-55-00/files/events.out.tfevents.1735365310.king-ROG-Zephyrus-M16-GU603ZM-GU603ZM
+2024-12-28 13:55:12,071 INFO    Thread-8  :24724 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_135501-uid_AllegroHand_28-13-55-00/files/output.log
+2024-12-28 13:55:12,553 DEBUG   HandlerThread:24724 [handler.py:handle_request():140] handle_request: poll_exit
+2024-12-28 13:55:12,554 DEBUG   SenderThread:24724 [sender.py:send():236] send: exit
+2024-12-28 13:55:12,554 INFO    SenderThread:24724 [sender.py:send_exit():372] handling exit code: 1
+2024-12-28 13:55:12,554 INFO    SenderThread:24724 [sender.py:send_exit():374] handling runtime: 7
+2024-12-28 13:55:12,554 INFO    SenderThread:24724 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2024-12-28 13:55:12,554 INFO    SenderThread:24724 [sender.py:send_exit():380] send defer
+2024-12-28 13:55:12,554 DEBUG   SenderThread:24724 [sender.py:send_request():250] send_request: poll_exit
+2024-12-28 13:55:12,555 DEBUG   HandlerThread:24724 [handler.py:handle_request():140] handle_request: defer
+2024-12-28 13:55:12,555 INFO    HandlerThread:24724 [handler.py:handle_request_defer():163] handle defer: 0
+2024-12-28 13:55:12,555 DEBUG   SenderThread:24724 [sender.py:send_request():250] send_request: defer
+2024-12-28 13:55:12,555 INFO    SenderThread:24724 [sender.py:send_request_defer():389] handle sender defer: 0
+2024-12-28 13:55:12,555 INFO    SenderThread:24724 [sender.py:transition_state():393] send defer: 1
+2024-12-28 13:55:12,556 DEBUG   HandlerThread:24724 [handler.py:handle_request():140] handle_request: defer
+2024-12-28 13:55:12,556 INFO    HandlerThread:24724 [handler.py:handle_request_defer():163] handle defer: 1
+2024-12-28 13:55:12,596 DEBUG   SenderThread:24724 [sender.py:send_request():250] send_request: defer
+2024-12-28 13:55:12,596 INFO    SenderThread:24724 [sender.py:send_request_defer():389] handle sender defer: 1
+2024-12-28 13:55:12,596 INFO    SenderThread:24724 [sender.py:transition_state():393] send defer: 2
+2024-12-28 13:55:12,596 DEBUG   SenderThread:24724 [sender.py:send():236] send: stats
+2024-12-28 13:55:12,596 DEBUG   HandlerThread:24724 [handler.py:handle_request():140] handle_request: defer
+2024-12-28 13:55:12,597 INFO    HandlerThread:24724 [handler.py:handle_request_defer():163] handle defer: 2
+2024-12-28 13:55:12,597 DEBUG   SenderThread:24724 [sender.py:send_request():250] send_request: defer
+2024-12-28 13:55:12,597 INFO    SenderThread:24724 [sender.py:send_request_defer():389] handle sender defer: 2
+2024-12-28 13:55:12,597 INFO    SenderThread:24724 [sender.py:transition_state():393] send defer: 3
+2024-12-28 13:55:12,597 DEBUG   HandlerThread:24724 [handler.py:handle_request():140] handle_request: defer
+2024-12-28 13:55:12,597 INFO    HandlerThread:24724 [handler.py:handle_request_defer():163] handle defer: 3
+2024-12-28 13:55:13,071 INFO    Thread-8  :24724 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_135501-uid_AllegroHand_28-13-55-00/files/wandb-summary.json
+2024-12-28 13:55:13,072 INFO    Thread-8  :24724 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_135501-uid_AllegroHand_28-13-55-00/files/output.log
+2024-12-28 13:55:13,597 WARNING MainThread:24724 [internal.py:wandb_internal():153] Internal process interrupt: 1
+2024-12-28 13:55:14,607 INFO    Thread-15 :24724 [upload_job.py:push():138] Uploaded file /tmp/tmpzbq5ujchwandb/5z1nbasi-events.out.tfevents.1735365310.king-ROG-Zephyrus-M16-GU603ZM-GU603ZM
+2024-12-28 13:55:18,605 WARNING MainThread:24724 [internal.py:is_dead():388] Internal process exiting, parent pid 24700 disappeared
+2024-12-28 13:55:18,605 ERROR   MainThread:24724 [internal.py:wandb_internal():149] Internal process shutdown.
+2024-12-28 13:55:19,044 INFO    HandlerThread:24724 [handler.py:finish():806] shutting down handler
+2024-12-28 13:55:19,044 DEBUG   SenderThread:24724 [sender.py:send_request():250] send_request: defer
+2024-12-28 13:55:19,045 INFO    SenderThread:24724 [sender.py:send_request_defer():389] handle sender defer: 3
+2024-12-28 13:55:19,045 INFO    SenderThread:24724 [sender.py:transition_state():393] send defer: 4
+2024-12-28 13:55:19,045 INFO    SenderThread:24724 [sender.py:finish():1114] shutting down sender
+2024-12-28 13:55:19,045 INFO    SenderThread:24724 [dir_watcher.py:finish():353] shutting down directory watcher
+2024-12-28 13:55:19,074 INFO    SenderThread:24724 [dir_watcher.py:finish():383] scan: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_135501-uid_AllegroHand_28-13-55-00/files
+2024-12-28 13:55:19,075 INFO    SenderThread:24724 [dir_watcher.py:finish():397] scan save: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_135501-uid_AllegroHand_28-13-55-00/files/conda-environment.yaml conda-environment.yaml
+2024-12-28 13:55:19,075 INFO    SenderThread:24724 [dir_watcher.py:finish():397] scan save: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_135501-uid_AllegroHand_28-13-55-00/files/events.out.tfevents.1735365310.king-ROG-Zephyrus-M16-GU603ZM-GU603ZM events.out.tfevents.1735365310.king-ROG-Zephyrus-M16-GU603ZM-GU603ZM
+2024-12-28 13:55:19,075 INFO    SenderThread:24724 [dir_watcher.py:finish():397] scan save: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_135501-uid_AllegroHand_28-13-55-00/files/wandb-metadata.json wandb-metadata.json
+2024-12-28 13:55:19,076 INFO    SenderThread:24724 [dir_watcher.py:finish():397] scan save: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_135501-uid_AllegroHand_28-13-55-00/files/output.log output.log
+2024-12-28 13:55:19,076 INFO    SenderThread:24724 [dir_watcher.py:finish():397] scan save: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_135501-uid_AllegroHand_28-13-55-00/files/wandb-summary.json wandb-summary.json
+2024-12-28 13:55:19,077 INFO    SenderThread:24724 [dir_watcher.py:finish():397] scan save: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_135501-uid_AllegroHand_28-13-55-00/files/requirements.txt requirements.txt
+2024-12-28 13:55:19,077 INFO    SenderThread:24724 [dir_watcher.py:finish():397] scan save: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_135501-uid_AllegroHand_28-13-55-00/files/config.yaml config.yaml
+2024-12-28 13:55:19,077 INFO    SenderThread:24724 [file_pusher.py:finish():171] shutting down file pusher
+2024-12-28 13:55:19,078 INFO    SenderThread:24724 [file_pusher.py:join():176] waiting for file pusher
+2024-12-28 13:55:19,597 INFO    WriterThread:24724 [datastore.py:close():279] close: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_135501-uid_AllegroHand_28-13-55-00/run-uid_AllegroHand_28-13-55-00.wandb
+2024-12-28 13:55:21,097 INFO    Thread-19 :24724 [upload_job.py:push():138] Uploaded file /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_135501-uid_AllegroHand_28-13-55-00/files/requirements.txt
+2024-12-28 13:55:21,316 INFO    Thread-17 :24724 [upload_job.py:push():138] Uploaded file /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_135501-uid_AllegroHand_28-13-55-00/files/output.log
+2024-12-28 13:55:21,506 INFO    Thread-16 :24724 [upload_job.py:push():138] Uploaded file /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_135501-uid_AllegroHand_28-13-55-00/files/conda-environment.yaml
+2024-12-28 13:55:21,629 INFO    Thread-20 :24724 [upload_job.py:push():138] Uploaded file /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_135501-uid_AllegroHand_28-13-55-00/files/config.yaml
+2024-12-28 13:55:21,883 INFO    Thread-18 :24724 [upload_job.py:push():138] Uploaded file /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_135501-uid_AllegroHand_28-13-55-00/files/wandb-summary.json

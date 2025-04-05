@@ -1,0 +1,354 @@
+wandb_version: 1
+
+_wandb:
+  desc: null
+  value:
+    cli_version: 0.12.21
+    framework: torch
+    is_jupyter_run: false
+    is_kaggle_kernel: false
+    python_version: 3.7.12
+    start_time: 1735363311
+    t:
+      1:
+      - 1
+      - 50
+      - 55
+      2:
+      - 1
+      - 50
+      - 55
+      3:
+      - 13
+      - 14
+      - 35
+      4: 3.7.12
+      5: 0.12.21
+      8:
+      - 6
+capture_video:
+  desc: null
+  value: false
+capture_video_freq:
+  desc: null
+  value: 1464
+capture_video_len:
+  desc: null
+  value: 100
+checkpoint:
+  desc: null
+  value: ''
+experiment:
+  desc: null
+  value: ''
+force_render:
+  desc: null
+  value: true
+graphics_device_id:
+  desc: null
+  value: 0
+headless:
+  desc: null
+  value: false
+max_iterations:
+  desc: null
+  value: ''
+multi_gpu:
+  desc: null
+  value: false
+num_envs:
+  desc: null
+  value: ''
+num_subscenes:
+  desc: null
+  value: 4
+num_threads:
+  desc: null
+  value: 4
+pbt:
+  desc: null
+  value:
+    enabled: false
+physics_engine:
+  desc: null
+  value: physx
+pipeline:
+  desc: null
+  value: gpu
+rl_device:
+  desc: null
+  value: cuda:0
+seed:
+  desc: null
+  value: 42
+sigma:
+  desc: null
+  value: ''
+sim_device:
+  desc: null
+  value: cuda:0
+solver_type:
+  desc: null
+  value: 1
+task:
+  desc: null
+  value:
+    env:
+      asset:
+        assetFileName: mjcf/amp_humanoid.xml
+      cameraFollow: true
+      contactBodies:
+      - right_foot
+      - left_foot
+      controlFrequencyInv: 2
+      enableDebugVis: false
+      enableEarlyTermination: true
+      envSpacing: 5
+      episodeLength: 300
+      hybridInitProb: 0.5
+      localRootObs: false
+      motion_file: amp_humanoid_run.npy
+      numAMPObsSteps: 2
+      numEnvs: 4096
+      pdControl: true
+      plane:
+        dynamicFriction: 1.0
+        restitution: 0.0
+        staticFriction: 1.0
+      powerScale: 1.0
+      stateInit: Random
+      terminationHeight: 0.5
+    name: HumanoidAMP
+    physics_engine: physx
+    sim:
+      dt: 0.0166
+      gravity:
+      - 0.0
+      - 0.0
+      - -9.81
+      physx:
+        bounce_threshold_velocity: 0.2
+        contact_collection: 2
+        contact_offset: 0.02
+        default_buffer_size_multiplier: 5.0
+        max_depenetration_velocity: 10.0
+        max_gpu_contact_pairs: 8388608
+        num_position_iterations: 4
+        num_subscenes: 4
+        num_threads: 4
+        num_velocity_iterations: 0
+        rest_offset: 0.0
+        solver_type: 1
+        use_gpu: true
+      substeps: 2
+      up_axis: z
+      use_gpu_pipeline: true
+    task:
+      randomization_params:
+        actions:
+          distribution: gaussian
+          operation: additive
+          range:
+          - 0.0
+          - 0.02
+        actor_params:
+          humanoid:
+            color: true
+            dof_properties:
+              damping:
+                distribution: uniform
+                operation: scaling
+                range:
+                - 0.5
+                - 1.5
+                schedule: linear
+                schedule_steps: 3000
+              lower:
+                distribution: gaussian
+                operation: additive
+                range:
+                - 0
+                - 0.01
+                schedule: linear
+                schedule_steps: 3000
+              stiffness:
+                distribution: uniform
+                operation: scaling
+                range:
+                - 0.5
+                - 1.5
+                schedule: linear
+                schedule_steps: 3000
+              upper:
+                distribution: gaussian
+                operation: additive
+                range:
+                - 0
+                - 0.01
+                schedule: linear
+                schedule_steps: 3000
+            rigid_body_properties:
+              mass:
+                distribution: uniform
+                operation: scaling
+                range:
+                - 0.5
+                - 1.5
+                schedule: linear
+                schedule_steps: 3000
+                setup_only: true
+            rigid_shape_properties:
+              friction:
+                distribution: uniform
+                num_buckets: 500
+                operation: scaling
+                range:
+                - 0.7
+                - 1.3
+                schedule: linear
+                schedule_steps: 3000
+              restitution:
+                distribution: uniform
+                operation: scaling
+                range:
+                - 0.0
+                - 0.7
+                schedule: linear
+                schedule_steps: 3000
+        frequency: 600
+        observations:
+          distribution: gaussian
+          operation: additive
+          range:
+          - 0
+          - 0.002
+        sim_params:
+          gravity:
+            distribution: gaussian
+            operation: additive
+            range:
+            - 0
+            - 0.4
+            schedule: linear
+            schedule_steps: 3000
+      randomize: false
+task_name:
+  desc: null
+  value: HumanoidAMP
+test:
+  desc: null
+  value: false
+torch_deterministic:
+  desc: null
+  value: false
+train:
+  desc: null
+  value:
+    params:
+      algo:
+        name: amp_continuous
+      config:
+        amp_batch_size: 512
+        amp_minibatch_size: 4096
+        amp_obs_demo_buffer_size: 200000
+        amp_replay_buffer_size: 1000000
+        amp_replay_keep_prob: 0.01
+        bounds_loss_coef: 10
+        clip_value: false
+        critic_coef: 5
+        disc_coef: 5
+        disc_grad_penalty: 5
+        disc_logit_reg: 0.05
+        disc_reward_scale: 2
+        disc_reward_w: 1.0
+        disc_weight_decay: 0.0001
+        e_clip: 0.2
+        entropy_coef: 0.0
+        env_name: rlgpu
+        full_experiment_name: HumanoidAMP
+        gamma: 0.99
+        grad_norm: 1.0
+        horizon_length: 16
+        kl_threshold: 0.008
+        learning_rate: 5.0e-05
+        lr_schedule: constant
+        max_epochs: 5000
+        mini_epochs: 6
+        minibatch_size: 32768
+        mixed_precision: false
+        multi_gpu: false
+        name: HumanoidAMP
+        normalize_advantage: true
+        normalize_amp_input: true
+        normalize_input: true
+        normalize_value: true
+        num_actors: 4096
+        ppo: true
+        print_stats: true
+        reward_shaper:
+          scale_value: 1
+        save_best_after: 100
+        save_frequency: 50
+        score_to_win: 20000
+        seq_len: 4
+        task_reward_w: 0.0
+        tau: 0.95
+        truncate_grads: false
+        value_bootstrap: true
+      load_checkpoint: false
+      load_path: ''
+      model:
+        name: continuous_amp
+      network:
+        disc:
+          activation: relu
+          initializer:
+            name: default
+          units:
+          - 1024
+          - 512
+        mlp:
+          activation: relu
+          d2rl: false
+          initializer:
+            name: default
+          regularizer:
+            name: None
+          units:
+          - 1024
+          - 512
+        name: amp
+        separate: true
+        space:
+          continuous:
+            fixed_sigma: true
+            learn_sigma: false
+            mu_activation: None
+            mu_init:
+              name: default
+            sigma_activation: None
+            sigma_init:
+              name: const_initializer
+              val: -2.9
+      seed: 42
+wandb_activate:
+  desc: null
+  value: true
+wandb_entity:
+  desc: null
+  value: 2238046709-sjtu
+wandb_group:
+  desc: null
+  value: Isaac_2024
+wandb_logcode_dir:
+  desc: null
+  value: ''
+wandb_name:
+  desc: null
+  value: HumanoidAMP
+wandb_project:
+  desc: null
+  value: isaacgymenvs
+wandb_tags:
+  desc: null
+  value: []

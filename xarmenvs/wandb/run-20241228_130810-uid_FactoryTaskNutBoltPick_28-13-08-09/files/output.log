@@ -1,0 +1,100 @@
+/home/king/miniconda3/envs/rlgpu/lib/python3.7/site-packages/gym/spaces/box.py:84: UserWarning: [33mWARN: Box bound precision lowered by casting to float32
+  logger.warn(f"Box bound precision lowered by casting to {self.dtype}")
+MESA-INTEL: warning: Performance support disabled, consider sysctl dev.i915.perf_stream_paranoid=0
+/home/king/Isaac/IsaacGymEnvs/isaacgymenvs/tasks/factory/factory_base.py:486: UserWarning: [33mWARN: Please be patient: SDFs may be generating, which may take a few minutes. Terminating prematurely may result in a corrupted SDF cache.
+  logger.warn('Please be patient: SDFs may be generating, which may take a few minutes. Terminating prematurely may result in a corrupted SDF cache.')
+[93m[1m[Warning] [carb.gym.plugin] useGpu is set, forcing single scene (0 subscenes)
+Not connected to PVD
++++ Using GPU PhysX
+Physics Engine: PhysX
+Physics Device: cuda:0
+GPU Pipeline: enabled
+Using SDF cache directory '/home/king/.isaacgym/sdf_V100'
+Cooking object... factory_nut_m16_tight_subdiv_3x at resolution 256 and spacing 0.000108 - Done
+~!~!~! Loaded/Cooked SDF triangle mesh 0 @ 0x55fb2e5139d0, resolution=256, spacing=0.000108
+  ~!~! Bounds:  (-0.012000, 0.012000) (-0.013856, 0.013856) (0.016000, 0.029000)
+  ~!~! Extents: (0.024000, 0.027712, 0.013000)
+  ~!~! Resolution: (222, 256, 121)
+Cooking object... factory_bolt_m16_tight at resolution 512 and spacing 0.000080 - Done
+~!~!~! Loaded/Cooked SDF triangle mesh 1 @ 0x55fb2e141150, resolution=512, spacing=0.000080
+  ~!~! Bounds:  (-0.012000, 0.012000) (-0.012000, 0.012000) (0.000000, 0.041000)
+  ~!~! Extents: (0.024000, 0.024000, 0.041000)
+  ~!~! Resolution: (300, 300, 512)
+Cooking object... factory_nut_m16_loose_subdiv_3x at resolution 256 and spacing 0.000108 - Done
+~!~!~! Loaded/Cooked SDF triangle mesh 2 @ 0x55fb2e6423e0, resolution=256, spacing=0.000108
+  ~!~! Bounds:  (-0.012000, 0.012000) (-0.013856, 0.013856) (0.016000, 0.029000)
+  ~!~! Extents: (0.024000, 0.027712, 0.013000)
+  ~!~! Resolution: (222, 256, 121)
+Cooking object... factory_bolt_m16_loose at resolution 512 and spacing 0.000080 - Done
+~!~!~! Loaded/Cooked SDF triangle mesh 3 @ 0x55fb2e642740, resolution=512, spacing=0.000080
+  ~!~! Bounds:  (-0.012000, 0.012000) (-0.012000, 0.012000) (0.000000, 0.041000)
+  ~!~! Extents: (0.024000, 0.024000, 0.041000)
+  ~!~! Resolution: (300, 300, 512)
+Box(-1.0, 1.0, (12,), float32) Box(-inf, inf, (20,), float32)
+WARNING: seq_len is deprecated, use seq_length instead
+seq_length: 4
+current training device: cuda:0
+build mlp: 20
+RunningMeanStd:  (1,)
+RunningMeanStd:  (20,)
+fps step: 1334 fps step and policy inference: 1269 fps total: 1209 epoch: 1/1024 frames: 0
+fps step: 1516 fps step and policy inference: 1492 fps total: 1413 epoch: 2/1024 frames: 15360
+fps step: 1524 fps step and policy inference: 1497 fps total: 1422 epoch: 3/1024 frames: 30720
+fps step: 1499 fps step and policy inference: 1475 fps total: 1383 epoch: 4/1024 frames: 46080
+fps step: 1299 fps step and policy inference: 1282 fps total: 1219 epoch: 5/1024 frames: 61440
+fps step: 6847 fps step and policy inference: 6532 fps total: 5320 epoch: 6/1024 frames: 76800
+fps step: 6776 fps step and policy inference: 6474 fps total: 5297 epoch: 7/1024 frames: 92160
+fps step: 6396 fps step and policy inference: 6138 fps total: 5020 epoch: 8/1024 frames: 107520
+fps step: 6334 fps step and policy inference: 6053 fps total: 4913 epoch: 9/1024 frames: 122880
+fps step: 4776 fps step and policy inference: 4615 fps total: 3973 epoch: 10/1024 frames: 138240
+fps step: 6110 fps step and policy inference: 5844 fps total: 4751 epoch: 11/1024 frames: 153600
+fps step: 4772 fps step and policy inference: 4596 fps total: 3868 epoch: 12/1024 frames: 168960
+fps step: 5918 fps step and policy inference: 5686 fps total: 4622 epoch: 13/1024 frames: 184320
+Traceback (most recent call last):
+  File "train.py", line 219, in <module>
+    launch_rlg_hydra()
+  File "/home/king/miniconda3/envs/rlgpu/lib/python3.7/site-packages/hydra/main.py", line 99, in decorated_main
+    config_name=config_name,
+  File "/home/king/miniconda3/envs/rlgpu/lib/python3.7/site-packages/hydra/_internal/utils.py", line 401, in _run_hydra
+    overrides=overrides,
+  File "/home/king/miniconda3/envs/rlgpu/lib/python3.7/site-packages/hydra/_internal/utils.py", line 458, in _run_app
+    lambda: hydra.run(
+  File "/home/king/miniconda3/envs/rlgpu/lib/python3.7/site-packages/hydra/_internal/utils.py", line 220, in run_and_report
+    return func()
+  File "/home/king/miniconda3/envs/rlgpu/lib/python3.7/site-packages/hydra/_internal/utils.py", line 461, in <lambda>
+    overrides=overrides,
+  File "/home/king/miniconda3/envs/rlgpu/lib/python3.7/site-packages/hydra/_internal/hydra.py", line 127, in run
+    configure_logging=with_log_configuration,
+  File "/home/king/miniconda3/envs/rlgpu/lib/python3.7/site-packages/hydra/core/utils.py", line 186, in run_job
+    ret.return_value = task_function(task_cfg)
+  File "train.py", line 214, in launch_rlg_hydra
+    'sigma': cfg.sigma if cfg.sigma != '' else None
+  File "/home/king/miniconda3/envs/rlgpu/lib/python3.7/site-packages/rl_games/torch_runner.py", line 133, in run
+    self.run_train(args)
+  File "/home/king/miniconda3/envs/rlgpu/lib/python3.7/site-packages/rl_games/torch_runner.py", line 116, in run_train
+    agent.train()
+  File "/home/king/miniconda3/envs/rlgpu/lib/python3.7/site-packages/rl_games/common/a2c_common.py", line 1318, in train
+    step_time, play_time, update_time, sum_time, a_losses, c_losses, b_losses, entropies, kls, last_lr, lr_mul = self.train_epoch()
+  File "/home/king/miniconda3/envs/rlgpu/lib/python3.7/site-packages/rl_games/common/a2c_common.py", line 1182, in train_epoch
+    batch_dict = self.play_steps()
+  File "/home/king/miniconda3/envs/rlgpu/lib/python3.7/site-packages/rl_games/common/a2c_common.py", line 752, in play_steps
+    self.obs, rewards, self.dones, infos = self.env_step(res_dict['actions'])
+  File "/home/king/miniconda3/envs/rlgpu/lib/python3.7/site-packages/rl_games/common/a2c_common.py", line 519, in env_step
+    obs, rewards, dones, infos = self.vec_env.step(actions)
+  File "/home/king/Isaac/IsaacGymEnvs/isaacgymenvs/utils/rlgames_utils.py", line 247, in step
+    return self.env.step(actions)
+  File "/home/king/Isaac/IsaacGymEnvs/isaacgymenvs/tasks/base/vec_task.py", line 376, in step
+    self.pre_physics_step(action_tensor)
+  File "/home/king/Isaac/IsaacGymEnvs/isaacgymenvs/tasks/factory/factory_task_nut_bolt_pick.py", line 136, in pre_physics_step
+    do_scale=True)
+  File "/home/king/Isaac/IsaacGymEnvs/isaacgymenvs/tasks/factory/factory_task_nut_bolt_pick.py", line 333, in _apply_actions_as_ctrl_targets
+    self.generate_ctrl_signals()
+  File "/home/king/Isaac/IsaacGymEnvs/isaacgymenvs/tasks/factory/factory_base.py", line 436, in generate_ctrl_signals
+    self._set_dof_torque()
+  File "/home/king/Isaac/IsaacGymEnvs/isaacgymenvs/tasks/factory/factory_base.py", line 476, in _set_dof_torque
+    device=self.device)
+  File "/home/king/Isaac/IsaacGymEnvs/isaacgymenvs/tasks/factory/factory_control.py", line 111, in compute_dof_torque
+    device=device)
+  File "/home/king/Isaac/IsaacGymEnvs/isaacgymenvs/tasks/factory/factory_control.py", line 255, in _get_delta_dof_pos
+    delta_dof_pos = jacobian_T @ torch.inverse(jacobian @ jacobian_T + lambda_matrix) @ delta_pose.unsqueeze(-1)
+KeyboardInterrupt

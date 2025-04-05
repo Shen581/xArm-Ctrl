@@ -1,0 +1,93 @@
+2024-12-28 13:16:30,638 INFO    MainThread:19257 [wandb_setup.py:_flush():76] Configure stats pid to 19257
+2024-12-28 13:16:30,638 INFO    MainThread:19257 [wandb_setup.py:_flush():76] Loading settings from /home/king/.config/wandb/settings
+2024-12-28 13:16:30,638 INFO    MainThread:19257 [wandb_setup.py:_flush():76] Loading settings from /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/settings
+2024-12-28 13:16:30,638 INFO    MainThread:19257 [wandb_setup.py:_flush():76] Loading settings from environment variables: {}
+2024-12-28 13:16:30,638 INFO    MainThread:19257 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program_relpath': 'isaacgymenvs/train.py', 'program': 'train.py'}
+2024-12-28 13:16:30,638 INFO    MainThread:19257 [wandb_init.py:_log_setup():461] Logging user logs to /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_131630-uid_FrankaCabinet_28-13-16-29/logs/debug.log
+2024-12-28 13:16:30,638 INFO    MainThread:19257 [wandb_init.py:_log_setup():462] Logging internal logs to /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_131630-uid_FrankaCabinet_28-13-16-29/logs/debug-internal.log
+2024-12-28 13:16:30,638 INFO    MainThread:19257 [wandb_init.py:init():495] calling init triggers
+2024-12-28 13:16:30,638 INFO    MainThread:19257 [wandb_init.py:init():499] wandb.init called with sweep_config: {}
+config: {}
+2024-12-28 13:16:30,638 INFO    MainThread:19257 [wandb_init.py:init():548] starting backend
+2024-12-28 13:16:30,638 INFO    MainThread:19257 [backend.py:_multiprocessing_setup():99] multiprocessing start_methods=fork,spawn,forkserver, using: fork
+2024-12-28 13:16:30,642 INFO    MainThread:19257 [backend.py:ensure_launched():217] starting backend process...
+2024-12-28 13:16:30,647 INFO    MainThread:19257 [backend.py:ensure_launched():222] started backend process with pid: 19284
+2024-12-28 13:16:30,648 INFO    MainThread:19257 [wandb_init.py:init():558] backend started and connected
+2024-12-28 13:16:30,652 INFO    MainThread:19257 [wandb_init.py:init():634] updated telemetry
+2024-12-28 13:16:30,654 INFO    MainThread:19284 [internal.py:wandb_internal():93] W&B internal server running at pid: 19284, started at: 2024-12-28 13:16:30.653960
+2024-12-28 13:16:30,656 INFO    WriterThread:19284 [datastore.py:open_for_write():75] open: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_131630-uid_FrankaCabinet_28-13-16-29/run-uid_FrankaCabinet_28-13-16-29.wandb
+2024-12-28 13:16:30,667 INFO    MainThread:19257 [wandb_init.py:init():666] communicating run to backend with 30 second timeout
+2024-12-28 13:16:30,669 INFO    SenderThread:19284 [sender.py:_maybe_setup_resume():494] checking resume status for 2238046709-sjtu/isaacgymenvs/uid_FrankaCabinet_28-13-16-29
+2024-12-28 13:16:32,068 INFO    SenderThread:19284 [dir_watcher.py:__init__():216] watching files in: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_131630-uid_FrankaCabinet_28-13-16-29/files
+2024-12-28 13:16:32,068 INFO    SenderThread:19284 [sender.py:_start_run_threads():818] run started: uid_FrankaCabinet_28-13-16-29 with start time 1735362990
+2024-12-28 13:16:32,068 INFO    SenderThread:19284 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2024-12-28 13:16:32,069 INFO    MainThread:19257 [wandb_run.py:_on_init():1919] communicating current version
+2024-12-28 13:16:32,622 INFO    MainThread:19257 [wandb_run.py:_on_init():1923] got version response upgrade_message: "wandb version 0.19.1 is available!  To upgrade, please run:\n $ pip install wandb --upgrade"
+
+2024-12-28 13:16:32,622 INFO    MainThread:19257 [wandb_init.py:init():700] starting run threads in backend
+2024-12-28 13:16:33,069 INFO    Thread-8  :19284 [dir_watcher.py:_on_file_created():269] file/dir created: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_131630-uid_FrankaCabinet_28-13-16-29/files/conda-environment.yaml
+2024-12-28 13:16:33,069 INFO    Thread-8  :19284 [dir_watcher.py:_on_file_created():269] file/dir created: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_131630-uid_FrankaCabinet_28-13-16-29/files/requirements.txt
+2024-12-28 13:16:33,069 INFO    Thread-8  :19284 [dir_watcher.py:_on_file_created():269] file/dir created: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_131630-uid_FrankaCabinet_28-13-16-29/files/wandb-summary.json
+2024-12-28 13:16:33,256 INFO    SenderThread:19284 [sender.py:_save_file():952] saving file wandb-metadata.json with policy now
+2024-12-28 13:16:33,258 INFO    MainThread:19257 [wandb_run.py:_console_start():1893] atexit reg
+2024-12-28 13:16:33,259 INFO    MainThread:19257 [wandb_run.py:_redirect():1766] redirect: SettingsConsole.REDIRECT
+2024-12-28 13:16:33,259 INFO    MainThread:19257 [wandb_run.py:_redirect():1771] Redirecting console.
+2024-12-28 13:16:33,260 INFO    MainThread:19257 [wandb_run.py:_redirect():1827] Redirects installed.
+2024-12-28 13:16:33,260 INFO    MainThread:19257 [wandb_init.py:init():732] run started, returning control to user process
+2024-12-28 13:16:33,272 INFO    MainThread:19257 [wandb_run.py:_config_callback():1131] config_cb None None {'task': {'name': 'FrankaCabinet', 'physics_engine': 'physx', 'env': {'numEnvs': 4096, 'envSpacing': 1.5, 'episodeLength': 500, 'enableDebugVis': False, 'clipObservations': 5.0, 'clipActions': 1.0, 'startPositionNoise': 0.0, 'startRotationNoise': 0.0, 'numProps': 16, 'aggregateMode': 3, 'actionScale': 7.5, 'dofVelocityScale': 0.1, 'distRewardScale': 2.0, 'rotRewardScale': 0.5, 'aroundHandleRewardScale': 0.25, 'openRewardScale': 7.5, 'fingerDistRewardScale': 5.0, 'actionPenaltyScale': 0.01, 'asset': {'assetRoot': '../../assets', 'assetFileNameFranka': 'urdf/franka_description/robots/franka_panda.urdf', 'assetFileNameCabinet': 'urdf/sektion_cabinet_model/urdf/sektion_cabinet_2.urdf'}, 'enableCameraSensors': False}, 'sim': {'dt': 0.0166, 'substeps': 1, 'up_axis': 'z', 'use_gpu_pipeline': True, 'gravity': [0.0, 0.0, -9.81], 'physx': {'num_threads': 4, 'solver_type': 1, 'use_gpu': True, 'num_position_iterations': 12, 'num_velocity_iterations': 1, 'contact_offset': 0.005, 'rest_offset': 0.0, 'bounce_threshold_velocity': 0.2, 'max_depenetration_velocity': 1000.0, 'default_buffer_size_multiplier': 5.0, 'max_gpu_contact_pairs': 1048576, 'num_subscenes': 4, 'contact_collection': 0}}, 'task': {'randomize': False}}, 'train': {'params': {'seed': 42, 'algo': {'name': 'a2c_continuous'}, 'model': {'name': 'continuous_a2c_logstd'}, 'network': {'name': 'actor_critic', 'separate': False, 'space': {'continuous': {'mu_activation': 'None', 'sigma_activation': 'None', 'mu_init': {'name': 'default'}, 'sigma_init': {'name': 'const_initializer', 'val': 0}, 'fixed_sigma': True}}, 'mlp': {'units': [256, 128, 64], 'activation': 'elu', 'd2rl': False, 'initializer': {'name': 'default'}, 'regularizer': {'name': 'None'}}}, 'load_checkpoint': False, 'load_path': '', 'config': {'name': 'FrankaCabinet', 'full_experiment_name': 'FrankaCabinet', 'env_name': 'rlgpu', 'multi_gpu': False, 'ppo': True, 'mixed_precision': False, 'normalize_input': True, 'normalize_value': True, 'num_actors': 4096, 'reward_shaper': {'scale_value': 0.01}, 'normalize_advantage': True, 'gamma': 0.99, 'tau': 0.95, 'learning_rate': 0.0005, 'lr_schedule': 'adaptive', 'kl_threshold': 0.008, 'score_to_win': 10000, 'max_epochs': 1500, 'save_best_after': 200, 'save_frequency': 100, 'print_stats': True, 'grad_norm': 1.0, 'entropy_coef': 0.0, 'truncate_grads': True, 'e_clip': 0.2, 'horizon_length': 16, 'minibatch_size': 8192, 'mini_epochs': 8, 'critic_coef': 4, 'clip_value': True, 'seq_len': 4, 'bounds_loss_coef': 0.0001}}}, 'pbt': {'enabled': False}, 'task_name': 'FrankaCabinet', 'experiment': '', 'num_envs': '', 'seed': 42, 'torch_deterministic': False, 'max_iterations': '', 'physics_engine': 'physx', 'pipeline': 'gpu', 'sim_device': 'cuda:0', 'rl_device': 'cuda:0', 'graphics_device_id': 0, 'num_threads': 4, 'solver_type': 1, 'num_subscenes': 4, 'test': False, 'checkpoint': '', 'sigma': '', 'multi_gpu': False, 'wandb_activate': True, 'wandb_group': 'Isaac_2024', 'wandb_name': 'FrankaCabinet', 'wandb_entity': '2238046709-sjtu', 'wandb_project': 'isaacgymenvs', 'wandb_tags': [], 'wandb_logcode_dir': '', 'capture_video': False, 'capture_video_freq': 1464, 'capture_video_len': 100, 'force_render': True, 'headless': False}
+2024-12-28 13:16:34,068 INFO    Thread-8  :19284 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_131630-uid_FrankaCabinet_28-13-16-29/files/conda-environment.yaml
+2024-12-28 13:16:34,081 INFO    Thread-8  :19284 [dir_watcher.py:_on_file_created():269] file/dir created: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_131630-uid_FrankaCabinet_28-13-16-29/files/wandb-metadata.json
+2024-12-28 13:16:34,081 INFO    Thread-8  :19284 [dir_watcher.py:_on_file_created():269] file/dir created: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_131630-uid_FrankaCabinet_28-13-16-29/files/output.log
+2024-12-28 13:16:34,678 INFO    Thread-12 :19284 [upload_job.py:push():138] Uploaded file /tmp/tmp4yabf0_pwandb/uyv8mo10-wandb-metadata.json
+2024-12-28 13:16:36,069 INFO    Thread-8  :19284 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_131630-uid_FrankaCabinet_28-13-16-29/files/output.log
+2024-12-28 13:16:37,344 INFO    MainThread:19257 [wandb_run.py:_tensorboard_callback():1239] tensorboard callback: runs/FrankaCabinet_28-13-16-29/summaries, True
+2024-12-28 13:16:37,344 INFO    HandlerThread:19284 [handler.py:handle_tbrecord():723] handling tbrecord: tbrecord {
+  log_dir: "runs/FrankaCabinet_28-13-16-29/summaries"
+  save: true
+}
+
+2024-12-28 13:16:37,350 INFO    SenderThread:19284 [sender.py:_save_file():952] saving file events.out.tfevents.1735362997.king-ROG-Zephyrus-M16-GU603ZM-GU603ZM with policy live
+2024-12-28 13:16:38,069 INFO    Thread-8  :19284 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_131630-uid_FrankaCabinet_28-13-16-29/files/output.log
+2024-12-28 13:16:38,069 INFO    Thread-8  :19284 [dir_watcher.py:_on_file_created():269] file/dir created: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_131630-uid_FrankaCabinet_28-13-16-29/files/events.out.tfevents.1735362997.king-ROG-Zephyrus-M16-GU603ZM-GU603ZM
+2024-12-28 13:16:40,070 INFO    Thread-8  :19284 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_131630-uid_FrankaCabinet_28-13-16-29/files/output.log
+2024-12-28 13:16:49,073 INFO    Thread-8  :19284 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_131630-uid_FrankaCabinet_28-13-16-29/files/output.log
+2024-12-28 13:16:51,073 INFO    Thread-8  :19284 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_131630-uid_FrankaCabinet_28-13-16-29/files/output.log
+2024-12-28 13:16:52,380 INFO    SenderThread:19284 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2024-12-28 13:16:52,383 INFO    SenderThread:19284 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2024-12-28 13:16:52,384 INFO    SenderThread:19284 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2024-12-28 13:16:52,384 INFO    SenderThread:19284 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2024-12-28 13:16:53,074 INFO    Thread-8  :19284 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_131630-uid_FrankaCabinet_28-13-16-29/files/output.log
+2024-12-28 13:16:53,074 INFO    Thread-8  :19284 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_131630-uid_FrankaCabinet_28-13-16-29/files/events.out.tfevents.1735362997.king-ROG-Zephyrus-M16-GU603ZM-GU603ZM
+2024-12-28 13:16:53,074 INFO    Thread-8  :19284 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_131630-uid_FrankaCabinet_28-13-16-29/files/wandb-summary.json
+2024-12-28 13:16:54,696 INFO    Thread-15 :19284 [upload_job.py:push():138] Uploaded file /tmp/tmp4yabf0_pwandb/lzk0nmpp-events.out.tfevents.1735362997.king-ROG-Zephyrus-M16-GU603ZM-GU603ZM
+2024-12-28 13:16:56,076 INFO    Thread-8  :19284 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_131630-uid_FrankaCabinet_28-13-16-29/files/output.log
+2024-12-28 13:17:01,694 WARNING MainThread:19284 [internal.py:wandb_internal():153] Internal process interrupt: 1
+2024-12-28 13:17:01,707 INFO    MainThread:19257 [wandb_run.py:_atexit_cleanup():1862] got exitcode: 255
+2024-12-28 13:17:01,708 INFO    MainThread:19257 [wandb_run.py:_restore():1834] restore
+2024-12-28 13:17:02,078 INFO    Thread-8  :19284 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_131630-uid_FrankaCabinet_28-13-16-29/files/config.yaml
+2024-12-28 13:17:02,078 INFO    Thread-8  :19284 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_131630-uid_FrankaCabinet_28-13-16-29/files/events.out.tfevents.1735362997.king-ROG-Zephyrus-M16-GU603ZM-GU603ZM
+2024-12-28 13:17:02,404 INFO    SenderThread:19284 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2024-12-28 13:17:02,408 INFO    SenderThread:19284 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2024-12-28 13:17:02,506 WARNING MainThread:19284 [internal.py:wandb_internal():153] Internal process interrupt: 2
+2024-12-28 13:17:02,506 ERROR   MainThread:19284 [internal.py:wandb_internal():156] Internal process interrupted.
+2024-12-28 13:17:03,078 INFO    Thread-8  :19284 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_131630-uid_FrankaCabinet_28-13-16-29/files/wandb-summary.json
+2024-12-28 13:17:03,403 INFO    HandlerThread:19284 [handler.py:finish():806] shutting down handler
+2024-12-28 13:17:03,403 INFO    WriterThread:19284 [datastore.py:close():279] close: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_131630-uid_FrankaCabinet_28-13-16-29/run-uid_FrankaCabinet_28-13-16-29.wandb
+2024-12-28 13:17:03,409 INFO    SenderThread:19284 [sender.py:finish():1114] shutting down sender
+2024-12-28 13:17:03,409 INFO    SenderThread:19284 [dir_watcher.py:finish():353] shutting down directory watcher
+2024-12-28 13:17:04,079 INFO    SenderThread:19284 [dir_watcher.py:finish():383] scan: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_131630-uid_FrankaCabinet_28-13-16-29/files
+2024-12-28 13:17:04,080 INFO    SenderThread:19284 [dir_watcher.py:finish():397] scan save: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_131630-uid_FrankaCabinet_28-13-16-29/files/conda-environment.yaml conda-environment.yaml
+2024-12-28 13:17:04,080 INFO    SenderThread:19284 [dir_watcher.py:finish():397] scan save: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_131630-uid_FrankaCabinet_28-13-16-29/files/wandb-metadata.json wandb-metadata.json
+2024-12-28 13:17:04,080 INFO    SenderThread:19284 [dir_watcher.py:finish():397] scan save: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_131630-uid_FrankaCabinet_28-13-16-29/files/output.log output.log
+2024-12-28 13:17:04,080 INFO    SenderThread:19284 [dir_watcher.py:finish():397] scan save: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_131630-uid_FrankaCabinet_28-13-16-29/files/wandb-summary.json wandb-summary.json
+2024-12-28 13:17:04,080 INFO    SenderThread:19284 [dir_watcher.py:finish():397] scan save: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_131630-uid_FrankaCabinet_28-13-16-29/files/events.out.tfevents.1735362997.king-ROG-Zephyrus-M16-GU603ZM-GU603ZM events.out.tfevents.1735362997.king-ROG-Zephyrus-M16-GU603ZM-GU603ZM
+2024-12-28 13:17:04,081 INFO    SenderThread:19284 [dir_watcher.py:finish():397] scan save: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_131630-uid_FrankaCabinet_28-13-16-29/files/requirements.txt requirements.txt
+2024-12-28 13:17:04,081 INFO    SenderThread:19284 [dir_watcher.py:finish():397] scan save: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_131630-uid_FrankaCabinet_28-13-16-29/files/config.yaml config.yaml
+2024-12-28 13:17:04,081 INFO    SenderThread:19284 [file_pusher.py:finish():171] shutting down file pusher
+2024-12-28 13:17:04,081 INFO    SenderThread:19284 [file_pusher.py:join():176] waiting for file pusher
+2024-12-28 13:17:06,492 INFO    Thread-21 :19284 [upload_job.py:push():138] Uploaded file /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_131630-uid_FrankaCabinet_28-13-16-29/files/config.yaml
+2024-12-28 13:17:06,494 INFO    Thread-18 :19284 [upload_job.py:push():138] Uploaded file /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_131630-uid_FrankaCabinet_28-13-16-29/files/wandb-summary.json
+2024-12-28 13:17:06,516 INFO    Thread-20 :19284 [upload_job.py:push():138] Uploaded file /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_131630-uid_FrankaCabinet_28-13-16-29/files/requirements.txt
+2024-12-28 13:17:06,631 INFO    Thread-17 :19284 [upload_job.py:push():138] Uploaded file /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_131630-uid_FrankaCabinet_28-13-16-29/files/output.log
+2024-12-28 13:17:06,664 INFO    Thread-19 :19284 [upload_job.py:push():138] Uploaded file /tmp/tmp4yabf0_pwandb/x8odc8b2-events.out.tfevents.1735362997.king-ROG-Zephyrus-M16-GU603ZM-GU603ZM
+2024-12-28 13:17:06,777 INFO    Thread-16 :19284 [upload_job.py:push():138] Uploaded file /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_131630-uid_FrankaCabinet_28-13-16-29/files/conda-environment.yaml

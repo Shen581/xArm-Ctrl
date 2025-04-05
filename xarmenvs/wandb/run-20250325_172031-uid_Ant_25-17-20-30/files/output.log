@@ -1,0 +1,111 @@
+[93m[1m[Warning] [carb.gym.plugin] useGpu is set, forcing single scene (0 subscenes)
+Not connected to PVD
++++ Using GPU PhysX
+Physics Engine: PhysX
+Physics Device: cuda:0
+GPU Pipeline: enabled
+num envs 4096 env spacing 5
+ASSSSSS: nv_ant_newn.xml
+ant_asset: <isaacgym._bindings.linux-x86_64.gym_37.Asset object at 0x7fa4704d5430>
+num_dof: 12
+num_dof: 12
+num_dof: 12
+num_dof: 12
+num_bodies: 13
+num_bodies: 13
+num_bodies: 13
+num_bodies: 13
+num_bodies: 13
+/home/king/miniconda3/envs/xarm/lib/python3.7/site-packages/gym/spaces/box.py:84: UserWarning: [33mWARN: Box bound precision lowered by casting to float32
+  logger.warn(f"Box bound precision lowered by casting to {self.dtype}")
+MESA-INTEL: warning: Performance support disabled, consider sysctl dev.i915.perf_stream_paranoid=0
+dof_prop['lower']: [-0.7   0.52 -0.7  -1.75 -0.7   0.52 -0.7  -1.75 -0.7  -1.75 -0.7   0.52]
+dof_prop['upper']: [ 0.7   1.75  0.7  -0.52  0.7   1.75  0.7  -0.52  0.7  -0.52  0.7   1.75]
+num_dof: 12
+dof_prop['lower']: [-0.7   0.52 -0.7  -1.75 -0.7   0.52 -0.7  -1.75 -0.7  -1.75 -0.7   0.52]
+dof_prop['upper']: [ 0.7   1.75  0.7  -0.52  0.7   1.75  0.7  -0.52  0.7  -0.52  0.7   1.75]
+num_dof: 12
+dof_prop['lower']: [-0.7   0.52 -0.7  -1.75 -0.7   0.52 -0.7  -1.75 -0.7  -1.75 -0.7   0.52]
+dof_prop['upper']: [ 0.7   1.75  0.7  -0.52  0.7   1.75  0.7  -0.52  0.7  -0.52  0.7   1.75]
+num_dof: 12
+dof_prop['lower']: [-0.7   0.52 -0.7  -1.75 -0.7   0.52 -0.7  -1.75 -0.7  -1.75 -0.7   0.52]
+dof_prop['upper']: [ 0.7   1.75  0.7  -0.52  0.7   1.75  0.7  -0.52  0.7  -0.52  0.7   1.75]
+num_dof: 12
+dof_prop['lower']: [-0.7   0.52 -0.7  -1.75 -0.7   0.52 -0.7  -1.75 -0.7  -1.75 -0.7   0.52]
+dof_prop['upper']: [ 0.7   1.75  0.7  -0.52  0.7   1.75  0.7  -0.52  0.7  -0.52  0.7   1.75]
+num_dof: 12
+dof_prop['lower']: [-0.7   0.52 -0.7  -1.75 -0.7   0.52 -0.7  -1.75 -0.7  -1.75 -0.7   0.52]
+dof_prop['upper']: [ 0.7   1.75  0.7  -0.52  0.7   1.75  0.7  -0.52  0.7  -0.52  0.7   1.75]
+num_dof: 12
+dof_prop['lower']: [-0.7   0.52 -0.7  -1.75 -0.7   0.52 -0.7  -1.75 -0.7  -1.75 -0.7   0.52]
+dof_prop['upper']: [ 0.7   1.75  0.7  -0.52  0.7   1.75  0.7  -0.52  0.7  -0.52  0.7   1.75]
+num_dof: 12
+dof_prop['lower']: [-0.7   0.52 -0.7  -1.75 -0.7   0.52 -0.7  -1.75 -0.7  -1.75 -0.7   0.52]
+dof_prop['upper']: [ 0.7   1.75  0.7  -0.52  0.7   1.75  0.7  -0.52  0.7  -0.52  0.7   1.75]
+num_dof: 12
+dof_prop['lower']: [-0.7   0.52 -0.7  -1.75 -0.7   0.52 -0.7  -1.75 -0.7  -1.75 -0.7   0.52]
+dof_prop['upper']: [ 0.7   1.75  0.7  -0.52  0.7   1.75  0.7  -0.52  0.7  -0.52  0.7   1.75]
+num_dof: 12
+dof_prop['lower']: [-0.7   0.52 -0.7  -1.75 -0.7   0.52 -0.7  -1.75 -0.7  -1.75 -0.7   0.52]
+dof_prop['upper']: [ 0.7   1.75  0.7  -0.52  0.7   1.75  0.7  -0.52  0.7  -0.52  0.7   1.75]
+num_dof: 12
+dof_prop['lower']: [-0.7   0.52 -0.7  -1.75 -0.7   0.52 -0.7  -1.75 -0.7  -1.75 -0.7   0.52]
+dof_prop['upper']: [ 0.7   1.75  0.7  -0.52  0.7   1.75  0.7  -0.52  0.7  -0.52  0.7   1.75]
+num_dof: 12
+dof_prop['lower']: [-0.7   0.52 -0.7  -1.75 -0.7   0.52 -0.7  -1.75 -0.7  -1.75 -0.7   0.52]
+dof_prop['upper']: [ 0.7   1.75  0.7  -0.52  0.7   1.75  0.7  -0.52  0.7  -0.52  0.7   1.75]
+num_dof: 12
+Sensor tensor shape: (24576, 6)
+Box(-1.0, 1.0, (12,), float32) Box(-inf, inf, (84,), float32)
+WARNING: seq_len is deprecated, use seq_length instead
+seq_length: 4
+current training device: cuda:0
+build mlp: 84
+RunningMeanStd:  (1,)
+RunningMeanStd:  (84,)
+fps step: 11327 fps step and policy inference: 10039 fps total: 9967 epoch: 1/500 frames: 0
+fps step: 142138 fps step and policy inference: 135503 fps total: 128143 epoch: 2/500 frames: 65536
+fps step: 358592 fps step and policy inference: 326867 fps total: 287330 epoch: 3/500 frames: 131072
+fps step: 234959 fps step and policy inference: 217868 fps total: 199226 epoch: 4/500 frames: 196608
+fps step: 334717 fps step and policy inference: 298243 fps total: 264578 epoch: 5/500 frames: 262144
+fps step: 341957 fps step and policy inference: 306677 fps total: 270954 epoch: 6/500 frames: 327680
+fps step: 332837 fps step and policy inference: 297390 fps total: 262363 epoch: 7/500 frames: 393216
+fps step: 327979 fps step and policy inference: 291209 fps total: 258851 epoch: 8/500 frames: 458752
+fps step: 333266 fps step and policy inference: 299225 fps total: 265421 epoch: 9/500 frames: 524288
+fps step: 333758 fps step and policy inference: 301497 fps total: 267141 epoch: 10/500 frames: 589824
+Traceback (most recent call last):
+  File "/home/king/Isaac/xArm_Ctrl/envs/train.py", line 219, in <module>
+    launch_rlg_hydra()
+  File "/home/king/miniconda3/envs/xarm/lib/python3.7/site-packages/hydra/main.py", line 99, in decorated_main
+    config_name=config_name,
+  File "/home/king/miniconda3/envs/xarm/lib/python3.7/site-packages/hydra/_internal/utils.py", line 401, in _run_hydra
+    overrides=overrides,
+  File "/home/king/miniconda3/envs/xarm/lib/python3.7/site-packages/hydra/_internal/utils.py", line 458, in _run_app
+    lambda: hydra.run(
+  File "/home/king/miniconda3/envs/xarm/lib/python3.7/site-packages/hydra/_internal/utils.py", line 220, in run_and_report
+    return func()
+  File "/home/king/miniconda3/envs/xarm/lib/python3.7/site-packages/hydra/_internal/utils.py", line 461, in <lambda>
+    overrides=overrides,
+  File "/home/king/miniconda3/envs/xarm/lib/python3.7/site-packages/hydra/_internal/hydra.py", line 127, in run
+    configure_logging=with_log_configuration,
+  File "/home/king/miniconda3/envs/xarm/lib/python3.7/site-packages/hydra/core/utils.py", line 186, in run_job
+    ret.return_value = task_function(task_cfg)
+  File "/home/king/Isaac/xArm_Ctrl/envs/train.py", line 214, in launch_rlg_hydra
+    'sigma': cfg.sigma if cfg.sigma != '' else None
+  File "/home/king/miniconda3/envs/xarm/lib/python3.7/site-packages/rl_games/torch_runner.py", line 133, in run
+    self.run_train(args)
+  File "/home/king/miniconda3/envs/xarm/lib/python3.7/site-packages/rl_games/torch_runner.py", line 116, in run_train
+    agent.train()
+  File "/home/king/miniconda3/envs/xarm/lib/python3.7/site-packages/rl_games/common/a2c_common.py", line 1318, in train
+    step_time, play_time, update_time, sum_time, a_losses, c_losses, b_losses, entropies, kls, last_lr, lr_mul = self.train_epoch()
+  File "/home/king/miniconda3/envs/xarm/lib/python3.7/site-packages/rl_games/common/a2c_common.py", line 1182, in train_epoch
+    batch_dict = self.play_steps()
+  File "/home/king/miniconda3/envs/xarm/lib/python3.7/site-packages/rl_games/common/a2c_common.py", line 752, in play_steps
+    self.obs, rewards, self.dones, infos = self.env_step(res_dict['actions'])
+  File "/home/king/miniconda3/envs/xarm/lib/python3.7/site-packages/rl_games/common/a2c_common.py", line 519, in env_step
+    obs, rewards, dones, infos = self.vec_env.step(actions)
+  File "/home/king/Isaac/IsaacGymEnvs/isaacgymenvs/utils/rlgames_utils.py", line 247, in step
+    return self.env.step(actions)
+  File "/home/king/Isaac/IsaacGymEnvs/isaacgymenvs/tasks/base/vec_task.py", line 382, in step
+    self.gym.simulate(self.sim)
+KeyboardInterrupt

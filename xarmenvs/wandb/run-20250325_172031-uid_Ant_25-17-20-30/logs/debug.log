@@ -1,0 +1,372 @@
+2025-03-25 17:20:31,606 INFO    MainThread:6179 [wandb_setup.py:_flush():76] Configure stats pid to 6179
+2025-03-25 17:20:31,607 INFO    MainThread:6179 [wandb_setup.py:_flush():76] Loading settings from /home/king/.config/wandb/settings
+2025-03-25 17:20:31,607 INFO    MainThread:6179 [wandb_setup.py:_flush():76] Loading settings from /home/king/Isaac/xArm_Ctrl/envs/wandb/settings
+2025-03-25 17:20:31,607 INFO    MainThread:6179 [wandb_setup.py:_flush():76] Loading settings from environment variables: {}
+2025-03-25 17:20:31,607 INFO    MainThread:6179 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program_relpath': 'train.py', 'program': '/home/king/Isaac/xArm_Ctrl/envs/train.py'}
+2025-03-25 17:20:31,607 INFO    MainThread:6179 [wandb_init.py:_log_setup():461] Logging user logs to /home/king/Isaac/xArm_Ctrl/envs/wandb/run-20250325_172031-uid_Ant_25-17-20-30/logs/debug.log
+2025-03-25 17:20:31,607 INFO    MainThread:6179 [wandb_init.py:_log_setup():462] Logging internal logs to /home/king/Isaac/xArm_Ctrl/envs/wandb/run-20250325_172031-uid_Ant_25-17-20-30/logs/debug-internal.log
+2025-03-25 17:20:31,607 INFO    MainThread:6179 [wandb_init.py:init():495] calling init triggers
+2025-03-25 17:20:31,607 INFO    MainThread:6179 [wandb_init.py:init():499] wandb.init called with sweep_config: {}
+config: {}
+2025-03-25 17:20:31,608 INFO    MainThread:6179 [wandb_init.py:init():548] starting backend
+2025-03-25 17:20:31,608 INFO    MainThread:6179 [backend.py:_multiprocessing_setup():99] multiprocessing start_methods=fork,spawn,forkserver, using: fork
+2025-03-25 17:20:31,612 INFO    MainThread:6179 [backend.py:ensure_launched():217] starting backend process...
+2025-03-25 17:20:31,616 INFO    MainThread:6179 [backend.py:ensure_launched():222] started backend process with pid: 6206
+2025-03-25 17:20:31,617 INFO    MainThread:6179 [wandb_init.py:init():558] backend started and connected
+2025-03-25 17:20:31,623 INFO    MainThread:6179 [wandb_init.py:init():634] updated telemetry
+2025-03-25 17:20:31,624 INFO    MainThread:6179 [wandb_init.py:init():666] communicating run to backend with 30 second timeout
+2025-03-25 17:20:31,625 INFO    MainThread:6206 [internal.py:wandb_internal():93] W&B internal server running at pid: 6206, started at: 2025-03-25 17:20:31.625090
+2025-03-25 17:20:31,628 INFO    WriterThread:6206 [datastore.py:open_for_write():75] open: /home/king/Isaac/xArm_Ctrl/envs/wandb/run-20250325_172031-uid_Ant_25-17-20-30/run-uid_Ant_25-17-20-30.wandb
+2025-03-25 17:20:31,630 INFO    SenderThread:6206 [sender.py:_maybe_setup_resume():494] checking resume status for 2238046709-sjtu/isaacgymenvs/uid_Ant_25-17-20-30
+2025-03-25 17:20:32,633 INFO    MainThread:6179 [wandb_run.py:_on_init():1919] communicating current version
+2025-03-25 17:20:32,634 INFO    SenderThread:6206 [dir_watcher.py:__init__():216] watching files in: /home/king/Isaac/xArm_Ctrl/envs/wandb/run-20250325_172031-uid_Ant_25-17-20-30/files
+2025-03-25 17:20:32,634 INFO    SenderThread:6206 [sender.py:_start_run_threads():818] run started: uid_Ant_25-17-20-30 with start time 1742894431
+2025-03-25 17:20:32,635 INFO    SenderThread:6206 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2025-03-25 17:20:33,105 INFO    MainThread:6179 [wandb_run.py:_on_init():1923] got version response upgrade_message: "wandb version 0.19.8 is available!  To upgrade, please run:\n $ pip install wandb --upgrade"
+
+2025-03-25 17:20:33,105 INFO    MainThread:6179 [wandb_init.py:init():700] starting run threads in backend
+2025-03-25 17:20:33,634 INFO    Thread-8  :6206 [dir_watcher.py:_on_file_created():269] file/dir created: /home/king/Isaac/xArm_Ctrl/envs/wandb/run-20250325_172031-uid_Ant_25-17-20-30/files/conda-environment.yaml
+2025-03-25 17:20:33,635 INFO    Thread-8  :6206 [dir_watcher.py:_on_file_created():269] file/dir created: /home/king/Isaac/xArm_Ctrl/envs/wandb/run-20250325_172031-uid_Ant_25-17-20-30/files/requirements.txt
+2025-03-25 17:20:33,635 INFO    Thread-8  :6206 [dir_watcher.py:_on_file_created():269] file/dir created: /home/king/Isaac/xArm_Ctrl/envs/wandb/run-20250325_172031-uid_Ant_25-17-20-30/files/wandb-summary.json
+2025-03-25 17:20:34,029 INFO    SenderThread:6206 [sender.py:_save_file():952] saving file wandb-metadata.json with policy now
+2025-03-25 17:20:34,032 INFO    MainThread:6179 [wandb_run.py:_console_start():1893] atexit reg
+2025-03-25 17:20:34,032 INFO    MainThread:6179 [wandb_run.py:_redirect():1766] redirect: SettingsConsole.REDIRECT
+2025-03-25 17:20:34,033 INFO    MainThread:6179 [wandb_run.py:_redirect():1771] Redirecting console.
+2025-03-25 17:20:34,034 INFO    MainThread:6179 [wandb_run.py:_redirect():1827] Redirects installed.
+2025-03-25 17:20:34,034 INFO    MainThread:6179 [wandb_init.py:init():732] run started, returning control to user process
+2025-03-25 17:20:34,047 INFO    MainThread:6179 [wandb_run.py:_config_callback():1131] config_cb None None {'task': {'name': 'Ant_new', 'physics_engine': 'physx', 'env': {'numEnvs': 4096, 'envSpacing': 5, 'episodeLength': 1000, 'enableDebugVis': False, 'clipActions': 1.0, 'powerScale': 1.0, 'controlFrequencyInv': 1, 'headingWeight': 0.5, 'upWeight': 0.1, 'actionsCost': 0.005, 'energyCost': 0.05, 'dofVelocityScale': 0.2, 'contactForceScale': 0.1, 'jointsAtLimitCost': 0.1, 'deathCost': -2.0, 'terminationHeight': 0.31, 'plane': {'staticFriction': 1.0, 'dynamicFriction': 1.0, 'restitution': 0.0}, 'asset': {'assetFileName': 'mjcf/nv_ant_newn.xml'}, 'enableCameraSensors': False}, 'sim': {'dt': 0.0166, 'substeps': 2, 'up_axis': 'z', 'use_gpu_pipeline': True, 'gravity': [0.0, 0.0, -9.81], 'physx': {'num_threads': 4, 'solver_type': 1, 'use_gpu': True, 'num_position_iterations': 4, 'num_velocity_iterations': 0, 'contact_offset': 0.02, 'rest_offset': 0.0, 'bounce_threshold_velocity': 0.2, 'max_depenetration_velocity': 10.0, 'default_buffer_size_multiplier': 5.0, 'max_gpu_contact_pairs': 8388608, 'num_subscenes': 4, 'contact_collection': 0}}, 'task': {'randomize': False, 'randomization_params': {'frequency': 600, 'observations': {'range': [0, 0.002], 'operation': 'additive', 'distribution': 'gaussian'}, 'actions': {'range': [0.0, 0.02], 'operation': 'additive', 'distribution': 'gaussian'}, 'actor_params': {'ant': {'color': True, 'rigid_body_properties': {'mass': {'range': [0.5, 1.5], 'operation': 'scaling', 'distribution': 'uniform', 'setup_only': True}}, 'dof_properties': {'damping': {'range': [0.5, 1.5], 'operation': 'scaling', 'distribution': 'uniform'}, 'stiffness': {'range': [0.5, 1.5], 'operation': 'scaling', 'distribution': 'uniform'}, 'lower': {'range': [0, 0.01], 'operation': 'additive', 'distribution': 'gaussian'}, 'upper': {'range': [0, 0.01], 'operation': 'additive', 'distribution': 'gaussian'}}}}}}}, 'train': {'params': {'seed': 42, 'algo': {'name': 'a2c_continuous'}, 'model': {'name': 'continuous_a2c_logstd'}, 'network': {'name': 'actor_critic', 'separate': False, 'space': {'continuous': {'mu_activation': 'None', 'sigma_activation': 'None', 'mu_init': {'name': 'default'}, 'sigma_init': {'name': 'const_initializer', 'val': 0}, 'fixed_sigma': True}}, 'mlp': {'units': [256, 128, 64], 'activation': 'elu', 'd2rl': False, 'initializer': {'name': 'default'}, 'regularizer': {'name': 'None'}}}, 'load_checkpoint': False, 'load_path': '', 'config': {'name': 'Ant', 'full_experiment_name': 'Ant', 'env_name': 'rlgpu', 'multi_gpu': False, 'ppo': True, 'mixed_precision': True, 'normalize_input': True, 'normalize_value': True, 'value_bootstrap': True, 'num_actors': 4096, 'reward_shaper': {'scale_value': 0.01}, 'normalize_advantage': True, 'gamma': 0.99, 'tau': 0.95, 'learning_rate': 0.0003, 'lr_schedule': 'adaptive', 'schedule_type': 'legacy', 'kl_threshold': 0.008, 'score_to_win': 20000, 'max_epochs': 500, 'save_best_after': 200, 'save_frequency': 50, 'grad_norm': 1.0, 'entropy_coef': 0.0, 'truncate_grads': False, 'e_clip': 0.2, 'horizon_length': 16, 'minibatch_size': 32768, 'mini_epochs': 4, 'critic_coef': 2, 'clip_value': True, 'seq_len': 4, 'bounds_loss_coef': 0.0001}}}, 'pbt': {'enabled': False}, 'task_name': 'Ant_new', 'experiment': '', 'num_envs': '', 'seed': 42, 'torch_deterministic': False, 'max_iterations': '', 'physics_engine': 'physx', 'pipeline': 'gpu', 'sim_device': 'cuda:0', 'rl_device': 'cuda:0', 'graphics_device_id': 0, 'num_threads': 4, 'solver_type': 1, 'num_subscenes': 4, 'test': False, 'checkpoint': '', 'sigma': '', 'multi_gpu': False, 'wandb_activate': True, 'wandb_group': 'Isaac_2024', 'wandb_name': 'Ant', 'wandb_entity': '2238046709-sjtu', 'wandb_project': 'isaacgymenvs', 'wandb_tags': [], 'wandb_logcode_dir': '', 'capture_video': False, 'capture_video_freq': 1464, 'capture_video_len': 100, 'force_render': True, 'headless': False}
+2025-03-25 17:20:34,634 INFO    Thread-8  :6206 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/king/Isaac/xArm_Ctrl/envs/wandb/run-20250325_172031-uid_Ant_25-17-20-30/files/conda-environment.yaml
+2025-03-25 17:20:34,634 INFO    Thread-8  :6206 [dir_watcher.py:_on_file_created():269] file/dir created: /home/king/Isaac/xArm_Ctrl/envs/wandb/run-20250325_172031-uid_Ant_25-17-20-30/files/wandb-metadata.json
+2025-03-25 17:20:34,634 INFO    Thread-8  :6206 [dir_watcher.py:_on_file_created():269] file/dir created: /home/king/Isaac/xArm_Ctrl/envs/wandb/run-20250325_172031-uid_Ant_25-17-20-30/files/output.log
+2025-03-25 17:20:36,368 INFO    MainThread:6179 [wandb_run.py:_tensorboard_callback():1239] tensorboard callback: runs/Ant_25-17-20-30/summaries, True
+2025-03-25 17:20:36,368 INFO    HandlerThread:6206 [handler.py:handle_tbrecord():723] handling tbrecord: tbrecord {
+  log_dir: "runs/Ant_25-17-20-30/summaries"
+  save: true
+}
+
+2025-03-25 17:20:36,467 INFO    SenderThread:6206 [sender.py:_save_file():952] saving file events.out.tfevents.1742894436.king-ROG-Zephyrus-M16-GU603ZM-GU603ZM with policy live
+2025-03-25 17:20:36,635 INFO    Thread-8  :6206 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/king/Isaac/xArm_Ctrl/envs/wandb/run-20250325_172031-uid_Ant_25-17-20-30/files/output.log
+2025-03-25 17:20:36,635 INFO    Thread-8  :6206 [dir_watcher.py:_on_file_created():269] file/dir created: /home/king/Isaac/xArm_Ctrl/envs/wandb/run-20250325_172031-uid_Ant_25-17-20-30/files/events.out.tfevents.1742894436.king-ROG-Zephyrus-M16-GU603ZM-GU603ZM
+2025-03-25 17:20:37,028 INFO    Thread-12 :6206 [upload_job.py:push():138] Uploaded file /tmp/tmpqd_mee5hwandb/zgz6zkdn-wandb-metadata.json
+2025-03-25 17:20:38,635 INFO    Thread-8  :6206 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/king/Isaac/xArm_Ctrl/envs/wandb/run-20250325_172031-uid_Ant_25-17-20-30/files/output.log
+2025-03-25 17:20:44,638 INFO    Thread-8  :6206 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/king/Isaac/xArm_Ctrl/envs/wandb/run-20250325_172031-uid_Ant_25-17-20-30/files/events.out.tfevents.1742894436.king-ROG-Zephyrus-M16-GU603ZM-GU603ZM
+2025-03-25 17:20:44,638 INFO    Thread-8  :6206 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/king/Isaac/xArm_Ctrl/envs/wandb/run-20250325_172031-uid_Ant_25-17-20-30/files/output.log
+2025-03-25 17:20:45,638 INFO    Thread-8  :6206 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/king/Isaac/xArm_Ctrl/envs/wandb/run-20250325_172031-uid_Ant_25-17-20-30/files/events.out.tfevents.1742894436.king-ROG-Zephyrus-M16-GU603ZM-GU603ZM
+2025-03-25 17:20:45,708 WARNING MainThread:6206 [internal.py:wandb_internal():153] Internal process interrupt: 1
+2025-03-25 17:20:45,724 INFO    MainThread:6179 [wandb_run.py:_atexit_cleanup():1862] got exitcode: 255
+2025-03-25 17:20:45,725 INFO    MainThread:6179 [wandb_run.py:_restore():1834] restore
+2025-03-25 17:20:46,431 INFO    SenderThread:6206 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2025-03-25 17:20:46,435 INFO    SenderThread:6206 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2025-03-25 17:20:46,435 INFO    SenderThread:6206 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2025-03-25 17:20:46,436 INFO    SenderThread:6206 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2025-03-25 17:20:46,436 INFO    SenderThread:6206 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2025-03-25 17:20:46,436 INFO    SenderThread:6206 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2025-03-25 17:20:46,436 INFO    SenderThread:6206 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2025-03-25 17:20:46,437 INFO    SenderThread:6206 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2025-03-25 17:20:46,437 INFO    SenderThread:6206 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2025-03-25 17:20:46,437 INFO    SenderThread:6206 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2025-03-25 17:20:46,437 INFO    SenderThread:6206 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2025-03-25 17:20:46,437 INFO    SenderThread:6206 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2025-03-25 17:20:46,438 INFO    SenderThread:6206 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2025-03-25 17:20:46,438 INFO    SenderThread:6206 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2025-03-25 17:20:46,438 INFO    SenderThread:6206 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2025-03-25 17:20:46,438 INFO    SenderThread:6206 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2025-03-25 17:20:46,438 INFO    SenderThread:6206 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2025-03-25 17:20:46,439 INFO    SenderThread:6206 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2025-03-25 17:20:46,439 INFO    SenderThread:6206 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2025-03-25 17:20:46,439 INFO    SenderThread:6206 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2025-03-25 17:20:46,439 INFO    SenderThread:6206 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2025-03-25 17:20:46,639 INFO    Thread-8  :6206 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/king/Isaac/xArm_Ctrl/envs/wandb/run-20250325_172031-uid_Ant_25-17-20-30/files/events.out.tfevents.1742894436.king-ROG-Zephyrus-M16-GU603ZM-GU603ZM
+2025-03-25 17:20:46,640 INFO    Thread-8  :6206 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/king/Isaac/xArm_Ctrl/envs/wandb/run-20250325_172031-uid_Ant_25-17-20-30/files/output.log
+2025-03-25 17:20:46,640 INFO    Thread-8  :6206 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/king/Isaac/xArm_Ctrl/envs/wandb/run-20250325_172031-uid_Ant_25-17-20-30/files/wandb-summary.json
+2025-03-25 17:20:47,167 INFO    Thread-15 :6206 [upload_job.py:push():138] Uploaded file /tmp/tmpqd_mee5hwandb/saagdlcy-events.out.tfevents.1742894436.king-ROG-Zephyrus-M16-GU603ZM-GU603ZM
+2025-03-25 17:20:48,269 INFO    SenderThread:6206 [sender.py:send_exit():372] handling exit code: 255
+2025-03-25 17:20:48,270 INFO    SenderThread:6206 [sender.py:send_exit():374] handling runtime: 15
+2025-03-25 17:20:48,274 INFO    SenderThread:6206 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2025-03-25 17:20:48,275 INFO    SenderThread:6206 [sender.py:send_exit():380] send defer
+2025-03-25 17:20:48,277 INFO    HandlerThread:6206 [handler.py:handle_request_defer():163] handle defer: 0
+2025-03-25 17:20:48,277 INFO    SenderThread:6206 [sender.py:send_request_defer():389] handle sender defer: 0
+2025-03-25 17:20:48,277 INFO    SenderThread:6206 [sender.py:transition_state():393] send defer: 1
+2025-03-25 17:20:48,278 INFO    HandlerThread:6206 [handler.py:handle_request_defer():163] handle defer: 1
+2025-03-25 17:20:48,278 INFO    MainThread:6179 [wandb_run.py:_on_finish():1991] got exit ret: file_counts {
+  wandb_count: 1
+  other_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 4702
+  total_bytes: 4702
+}
+
+2025-03-25 17:20:48,350 INFO    SenderThread:6206 [sender.py:send_request_defer():389] handle sender defer: 1
+2025-03-25 17:20:48,350 INFO    SenderThread:6206 [sender.py:transition_state():393] send defer: 2
+2025-03-25 17:20:48,351 INFO    HandlerThread:6206 [handler.py:handle_request_defer():163] handle defer: 2
+2025-03-25 17:20:48,352 INFO    SenderThread:6206 [sender.py:send_request_defer():389] handle sender defer: 2
+2025-03-25 17:20:48,352 INFO    SenderThread:6206 [sender.py:transition_state():393] send defer: 3
+2025-03-25 17:20:48,353 INFO    HandlerThread:6206 [handler.py:handle_request_defer():163] handle defer: 3
+2025-03-25 17:20:48,641 INFO    Thread-8  :6206 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/king/Isaac/xArm_Ctrl/envs/wandb/run-20250325_172031-uid_Ant_25-17-20-30/files/output.log
+2025-03-25 17:20:48,641 INFO    Thread-8  :6206 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/king/Isaac/xArm_Ctrl/envs/wandb/run-20250325_172031-uid_Ant_25-17-20-30/files/wandb-summary.json
+2025-03-25 17:20:53,379 INFO    MainThread:6179 [wandb_run.py:_on_finish():1991] got exit ret: None
+2025-03-25 17:20:54,429 INFO    SenderThread:6206 [sender.py:send_request_defer():389] handle sender defer: 3
+2025-03-25 17:20:54,429 INFO    SenderThread:6206 [sender.py:transition_state():393] send defer: 4
+2025-03-25 17:20:54,434 INFO    HandlerThread:6206 [handler.py:handle_request_defer():163] handle defer: 4
+2025-03-25 17:20:54,434 INFO    MainThread:6179 [wandb_run.py:_on_finish():1991] got exit ret: file_counts {
+  wandb_count: 1
+  other_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 4702
+  total_bytes: 4702
+}
+
+2025-03-25 17:20:54,434 INFO    SenderThread:6206 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2025-03-25 17:20:54,438 INFO    SenderThread:6206 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2025-03-25 17:20:54,438 INFO    SenderThread:6206 [sender.py:send_request_defer():389] handle sender defer: 4
+2025-03-25 17:20:54,438 INFO    SenderThread:6206 [sender.py:transition_state():393] send defer: 5
+2025-03-25 17:20:54,439 INFO    HandlerThread:6206 [handler.py:handle_request_defer():163] handle defer: 5
+2025-03-25 17:20:54,439 INFO    SenderThread:6206 [sender.py:send_request_defer():389] handle sender defer: 5
+2025-03-25 17:20:54,644 INFO    Thread-8  :6206 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/king/Isaac/xArm_Ctrl/envs/wandb/run-20250325_172031-uid_Ant_25-17-20-30/files/wandb-summary.json
+2025-03-25 17:20:59,535 INFO    MainThread:6179 [wandb_run.py:_on_finish():1991] got exit ret: None
+2025-03-25 17:21:00,999 INFO    SenderThread:6206 [sender.py:transition_state():393] send defer: 6
+2025-03-25 17:21:01,001 INFO    HandlerThread:6206 [handler.py:handle_request_defer():163] handle defer: 6
+2025-03-25 17:21:01,001 INFO    SenderThread:6206 [sender.py:send_request_defer():389] handle sender defer: 6
+2025-03-25 17:21:01,001 INFO    SenderThread:6206 [dir_watcher.py:finish():353] shutting down directory watcher
+2025-03-25 17:21:01,001 INFO    MainThread:6179 [wandb_run.py:_on_finish():1991] got exit ret: file_counts {
+  wandb_count: 1
+  other_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 4702
+  total_bytes: 4702
+}
+
+2025-03-25 17:21:01,647 INFO    SenderThread:6206 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/king/Isaac/xArm_Ctrl/envs/wandb/run-20250325_172031-uid_Ant_25-17-20-30/files/config.yaml
+2025-03-25 17:21:01,648 INFO    SenderThread:6206 [dir_watcher.py:finish():383] scan: /home/king/Isaac/xArm_Ctrl/envs/wandb/run-20250325_172031-uid_Ant_25-17-20-30/files
+2025-03-25 17:21:01,648 INFO    SenderThread:6206 [dir_watcher.py:finish():397] scan save: /home/king/Isaac/xArm_Ctrl/envs/wandb/run-20250325_172031-uid_Ant_25-17-20-30/files/conda-environment.yaml conda-environment.yaml
+2025-03-25 17:21:01,648 INFO    SenderThread:6206 [dir_watcher.py:finish():397] scan save: /home/king/Isaac/xArm_Ctrl/envs/wandb/run-20250325_172031-uid_Ant_25-17-20-30/files/wandb-metadata.json wandb-metadata.json
+2025-03-25 17:21:01,648 INFO    SenderThread:6206 [dir_watcher.py:finish():397] scan save: /home/king/Isaac/xArm_Ctrl/envs/wandb/run-20250325_172031-uid_Ant_25-17-20-30/files/output.log output.log
+2025-03-25 17:21:01,648 INFO    SenderThread:6206 [dir_watcher.py:finish():397] scan save: /home/king/Isaac/xArm_Ctrl/envs/wandb/run-20250325_172031-uid_Ant_25-17-20-30/files/wandb-summary.json wandb-summary.json
+2025-03-25 17:21:01,648 INFO    SenderThread:6206 [dir_watcher.py:finish():397] scan save: /home/king/Isaac/xArm_Ctrl/envs/wandb/run-20250325_172031-uid_Ant_25-17-20-30/files/events.out.tfevents.1742894436.king-ROG-Zephyrus-M16-GU603ZM-GU603ZM events.out.tfevents.1742894436.king-ROG-Zephyrus-M16-GU603ZM-GU603ZM
+2025-03-25 17:21:01,649 INFO    SenderThread:6206 [dir_watcher.py:finish():397] scan save: /home/king/Isaac/xArm_Ctrl/envs/wandb/run-20250325_172031-uid_Ant_25-17-20-30/files/requirements.txt requirements.txt
+2025-03-25 17:21:01,650 INFO    SenderThread:6206 [dir_watcher.py:finish():397] scan save: /home/king/Isaac/xArm_Ctrl/envs/wandb/run-20250325_172031-uid_Ant_25-17-20-30/files/config.yaml config.yaml
+2025-03-25 17:21:01,662 INFO    SenderThread:6206 [sender.py:transition_state():393] send defer: 7
+2025-03-25 17:21:01,664 INFO    MainThread:6179 [wandb_run.py:_on_finish():1991] got exit ret: file_counts {
+  wandb_count: 4
+  other_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 4702
+  total_bytes: 18529
+}
+
+2025-03-25 17:21:01,665 INFO    HandlerThread:6206 [handler.py:handle_request_defer():163] handle defer: 7
+2025-03-25 17:21:01,666 INFO    SenderThread:6206 [sender.py:send_request_defer():389] handle sender defer: 7
+2025-03-25 17:21:01,666 INFO    SenderThread:6206 [file_pusher.py:finish():171] shutting down file pusher
+2025-03-25 17:21:01,767 INFO    MainThread:6179 [wandb_run.py:_on_finish():1991] got exit ret: file_counts {
+  wandb_count: 6
+  other_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 617
+  total_bytes: 36506
+}
+
+2025-03-25 17:21:01,871 INFO    MainThread:6179 [wandb_run.py:_on_finish():1991] got exit ret: file_counts {
+  wandb_count: 6
+  other_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 617
+  total_bytes: 36506
+}
+
+2025-03-25 17:21:01,976 INFO    MainThread:6179 [wandb_run.py:_on_finish():1991] got exit ret: file_counts {
+  wandb_count: 6
+  other_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 617
+  total_bytes: 36506
+}
+
+2025-03-25 17:21:02,079 INFO    MainThread:6179 [wandb_run.py:_on_finish():1991] got exit ret: file_counts {
+  wandb_count: 6
+  other_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 617
+  total_bytes: 36506
+}
+
+2025-03-25 17:21:02,191 INFO    MainThread:6179 [wandb_run.py:_on_finish():1991] got exit ret: file_counts {
+  wandb_count: 6
+  other_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 617
+  total_bytes: 36506
+}
+
+2025-03-25 17:21:02,295 INFO    MainThread:6179 [wandb_run.py:_on_finish():1991] got exit ret: file_counts {
+  wandb_count: 6
+  other_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 617
+  total_bytes: 36506
+}
+
+2025-03-25 17:21:02,398 INFO    MainThread:6179 [wandb_run.py:_on_finish():1991] got exit ret: file_counts {
+  wandb_count: 6
+  other_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 36506
+  total_bytes: 36506
+}
+
+2025-03-25 17:21:02,501 INFO    MainThread:6179 [wandb_run.py:_on_finish():1991] got exit ret: file_counts {
+  wandb_count: 6
+  other_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 36506
+  total_bytes: 36506
+}
+
+2025-03-25 17:21:02,605 INFO    MainThread:6179 [wandb_run.py:_on_finish():1991] got exit ret: file_counts {
+  wandb_count: 6
+  other_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 36506
+  total_bytes: 36506
+}
+
+2025-03-25 17:21:02,709 INFO    MainThread:6179 [wandb_run.py:_on_finish():1991] got exit ret: file_counts {
+  wandb_count: 6
+  other_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 36506
+  total_bytes: 36506
+}
+
+2025-03-25 17:21:02,729 INFO    Thread-16 :6206 [upload_job.py:push():138] Uploaded file /home/king/Isaac/xArm_Ctrl/envs/wandb/run-20250325_172031-uid_Ant_25-17-20-30/files/conda-environment.yaml
+2025-03-25 17:21:02,769 INFO    Thread-19 :6206 [upload_job.py:push():138] Uploaded file /tmp/tmpqd_mee5hwandb/aiqfn38j-events.out.tfevents.1742894436.king-ROG-Zephyrus-M16-GU603ZM-GU603ZM
+2025-03-25 17:21:02,812 INFO    MainThread:6179 [wandb_run.py:_on_finish():1991] got exit ret: file_counts {
+  wandb_count: 6
+  other_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 36506
+  total_bytes: 36506
+}
+
+2025-03-25 17:21:02,850 INFO    Thread-21 :6206 [upload_job.py:push():138] Uploaded file /home/king/Isaac/xArm_Ctrl/envs/wandb/run-20250325_172031-uid_Ant_25-17-20-30/files/config.yaml
+2025-03-25 17:21:02,851 INFO    Thread-17 :6206 [upload_job.py:push():138] Uploaded file /home/king/Isaac/xArm_Ctrl/envs/wandb/run-20250325_172031-uid_Ant_25-17-20-30/files/output.log
+2025-03-25 17:21:02,914 INFO    MainThread:6179 [wandb_run.py:_on_finish():1991] got exit ret: file_counts {
+  wandb_count: 6
+  other_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 36506
+  total_bytes: 36506
+}
+
+2025-03-25 17:21:03,016 INFO    MainThread:6179 [wandb_run.py:_on_finish():1991] got exit ret: file_counts {
+  wandb_count: 6
+  other_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 36506
+  total_bytes: 36506
+}
+
+2025-03-25 17:21:03,120 INFO    MainThread:6179 [wandb_run.py:_on_finish():1991] got exit ret: file_counts {
+  wandb_count: 6
+  other_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 36506
+  total_bytes: 36506
+}
+
+2025-03-25 17:21:03,223 INFO    MainThread:6179 [wandb_run.py:_on_finish():1991] got exit ret: file_counts {
+  wandb_count: 6
+  other_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 36506
+  total_bytes: 36506
+}
+
+2025-03-25 17:21:03,325 INFO    MainThread:6179 [wandb_run.py:_on_finish():1991] got exit ret: file_counts {
+  wandb_count: 6
+  other_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 36506
+  total_bytes: 36506
+}
+
+2025-03-25 17:21:03,343 INFO    Thread-18 :6206 [upload_job.py:push():138] Uploaded file /home/king/Isaac/xArm_Ctrl/envs/wandb/run-20250325_172031-uid_Ant_25-17-20-30/files/wandb-summary.json
+2025-03-25 17:21:03,366 INFO    Thread-20 :6206 [upload_job.py:push():138] Uploaded file /home/king/Isaac/xArm_Ctrl/envs/wandb/run-20250325_172031-uid_Ant_25-17-20-30/files/requirements.txt
+2025-03-25 17:21:03,429 INFO    MainThread:6179 [wandb_run.py:_on_finish():1991] got exit ret: file_counts {
+  wandb_count: 6
+  other_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 36506
+  total_bytes: 36506
+}
+
+2025-03-25 17:21:03,533 INFO    MainThread:6179 [wandb_run.py:_on_finish():1991] got exit ret: file_counts {
+  wandb_count: 6
+  other_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 36506
+  total_bytes: 36506
+}
+
+2025-03-25 17:21:03,568 INFO    Thread-7  :6206 [sender.py:transition_state():393] send defer: 8
+2025-03-25 17:21:03,569 INFO    HandlerThread:6206 [handler.py:handle_request_defer():163] handle defer: 8
+2025-03-25 17:21:03,569 INFO    SenderThread:6206 [sender.py:send_request_defer():389] handle sender defer: 8
+2025-03-25 17:21:03,855 INFO    SenderThread:6206 [sender.py:transition_state():393] send defer: 9
+2025-03-25 17:21:03,858 INFO    MainThread:6179 [wandb_run.py:_on_finish():1991] got exit ret: file_counts {
+  wandb_count: 6
+  other_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 36506
+  total_bytes: 36506
+}
+
+2025-03-25 17:21:03,858 INFO    HandlerThread:6206 [handler.py:handle_request_defer():163] handle defer: 9
+2025-03-25 17:21:03,859 INFO    SenderThread:6206 [sender.py:send_request_defer():389] handle sender defer: 9
+2025-03-25 17:21:03,859 INFO    SenderThread:6206 [sender.py:transition_state():393] send defer: 10
+2025-03-25 17:21:03,860 INFO    HandlerThread:6206 [handler.py:handle_request_defer():163] handle defer: 10
+2025-03-25 17:21:03,861 INFO    SenderThread:6206 [sender.py:send_request_defer():389] handle sender defer: 10
+2025-03-25 17:21:03,960 INFO    SenderThread:6206 [file_pusher.py:join():176] waiting for file pusher
+2025-03-25 17:21:06,723 INFO    MainThread:6179 [wandb_run.py:_on_finish():1991] got exit ret: done: true
+exit_result {
+}
+file_counts {
+  wandb_count: 6
+  other_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 36506
+  total_bytes: 36506
+}
+local_info {
+}
+
+2025-03-25 17:21:06,832 INFO    HandlerThread:6206 [handler.py:finish():806] shutting down handler
+2025-03-25 17:21:06,861 INFO    WriterThread:6206 [datastore.py:close():279] close: /home/king/Isaac/xArm_Ctrl/envs/wandb/run-20250325_172031-uid_Ant_25-17-20-30/run-uid_Ant_25-17-20-30.wandb
+2025-03-25 17:21:07,723 INFO    SenderThread:6206 [sender.py:finish():1114] shutting down sender
+2025-03-25 17:21:07,724 INFO    SenderThread:6206 [file_pusher.py:finish():171] shutting down file pusher
+2025-03-25 17:21:07,724 INFO    SenderThread:6206 [file_pusher.py:join():176] waiting for file pusher
+2025-03-25 17:21:07,834 INFO    MainThread:6179 [wandb_run.py:_footer_history_summary_info():3099] rendering history
+2025-03-25 17:21:07,835 INFO    MainThread:6179 [wandb_run.py:_footer_history_summary_info():3131] rendering summary
+2025-03-25 17:21:07,839 INFO    MainThread:6179 [wandb_run.py:_footer_sync_info():3055] logging synced files

@@ -1,0 +1,200 @@
+2024-12-28 15:07:52,432 INFO    MainThread:31541 [wandb_setup.py:_flush():76] Configure stats pid to 31541
+2024-12-28 15:07:52,432 INFO    MainThread:31541 [wandb_setup.py:_flush():76] Loading settings from /home/king/.config/wandb/settings
+2024-12-28 15:07:52,432 INFO    MainThread:31541 [wandb_setup.py:_flush():76] Loading settings from /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/settings
+2024-12-28 15:07:52,432 INFO    MainThread:31541 [wandb_setup.py:_flush():76] Loading settings from environment variables: {}
+2024-12-28 15:07:52,432 INFO    MainThread:31541 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program_relpath': 'isaacgymenvs/train.py', 'program': 'train.py'}
+2024-12-28 15:07:52,432 INFO    MainThread:31541 [wandb_init.py:_log_setup():461] Logging user logs to /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_150752-uid_Anymal_28-15-07-47/logs/debug.log
+2024-12-28 15:07:52,432 INFO    MainThread:31541 [wandb_init.py:_log_setup():462] Logging internal logs to /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_150752-uid_Anymal_28-15-07-47/logs/debug-internal.log
+2024-12-28 15:07:52,433 INFO    MainThread:31541 [wandb_init.py:init():495] calling init triggers
+2024-12-28 15:07:52,433 INFO    MainThread:31541 [wandb_init.py:init():499] wandb.init called with sweep_config: {}
+config: {}
+2024-12-28 15:07:52,433 INFO    MainThread:31541 [wandb_init.py:init():548] starting backend
+2024-12-28 15:07:52,433 INFO    MainThread:31541 [backend.py:_multiprocessing_setup():99] multiprocessing start_methods=fork,spawn,forkserver, using: fork
+2024-12-28 15:07:52,437 INFO    MainThread:31541 [backend.py:ensure_launched():217] starting backend process...
+2024-12-28 15:07:52,441 INFO    MainThread:31541 [backend.py:ensure_launched():222] started backend process with pid: 31567
+2024-12-28 15:07:52,441 INFO    MainThread:31541 [wandb_init.py:init():558] backend started and connected
+2024-12-28 15:07:52,445 INFO    MainThread:31541 [wandb_init.py:init():634] updated telemetry
+2024-12-28 15:07:52,447 INFO    MainThread:31567 [internal.py:wandb_internal():93] W&B internal server running at pid: 31567, started at: 2024-12-28 15:07:52.447265
+2024-12-28 15:07:52,450 INFO    WriterThread:31567 [datastore.py:open_for_write():75] open: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_150752-uid_Anymal_28-15-07-47/run-uid_Anymal_28-15-07-47.wandb
+2024-12-28 15:07:52,457 INFO    MainThread:31541 [wandb_init.py:init():666] communicating run to backend with 30 second timeout
+2024-12-28 15:07:52,459 INFO    SenderThread:31567 [sender.py:_maybe_setup_resume():494] checking resume status for 2238046709-sjtu/isaacgymenvs/uid_Anymal_28-15-07-47
+2024-12-28 15:08:05,590 ERROR   Thread-1  :31541 [retry.py:__call__():132] Retry attempt failed:
+Traceback (most recent call last):
+  File "/home/king/miniconda3/envs/rlgpu/lib/python3.7/site-packages/urllib3/connectionpool.py", line 712, in urlopen
+    self._prepare_proxy(conn)
+  File "/home/king/miniconda3/envs/rlgpu/lib/python3.7/site-packages/urllib3/connectionpool.py", line 1014, in _prepare_proxy
+    conn.connect()
+  File "/home/king/miniconda3/envs/rlgpu/lib/python3.7/site-packages/urllib3/connection.py", line 429, in connect
+    tls_in_tls=tls_in_tls,
+  File "/home/king/miniconda3/envs/rlgpu/lib/python3.7/site-packages/urllib3/util/ssl_.py", line 450, in ssl_wrap_socket
+    sock, context, tls_in_tls, server_hostname=server_hostname
+  File "/home/king/miniconda3/envs/rlgpu/lib/python3.7/site-packages/urllib3/util/ssl_.py", line 493, in _ssl_wrap_socket_impl
+    return ssl_context.wrap_socket(sock, server_hostname=server_hostname)
+  File "/home/king/miniconda3/envs/rlgpu/lib/python3.7/ssl.py", line 423, in wrap_socket
+    session=session
+  File "/home/king/miniconda3/envs/rlgpu/lib/python3.7/ssl.py", line 870, in _create
+    self.do_handshake()
+  File "/home/king/miniconda3/envs/rlgpu/lib/python3.7/ssl.py", line 1139, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLError: [SSL: KRB5_S_TKT_NYV] unexpected eof while reading (_ssl.c:1091)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/king/miniconda3/envs/rlgpu/lib/python3.7/site-packages/requests/adapters.py", line 600, in send
+    chunked=chunked,
+  File "/home/king/miniconda3/envs/rlgpu/lib/python3.7/site-packages/urllib3/connectionpool.py", line 802, in urlopen
+    method, url, error=e, _pool=self, _stacktrace=sys.exc_info()[2]
+  File "/home/king/miniconda3/envs/rlgpu/lib/python3.7/site-packages/urllib3/util/retry.py", line 594, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.wandb.ai', port=443): Max retries exceeded with url: /graphql (Caused by SSLError(SSLError(1, '[SSL: KRB5_S_TKT_NYV] unexpected eof while reading (_ssl.c:1091)')))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/king/miniconda3/envs/rlgpu/lib/python3.7/site-packages/wandb/sdk/lib/retry.py", line 108, in __call__
+    result = self._call_fn(*args, **kwargs)
+  File "/home/king/miniconda3/envs/rlgpu/lib/python3.7/site-packages/wandb/sdk/internal/internal_api.py", line 158, in execute
+    return self.client.execute(*args, **kwargs)
+  File "/home/king/miniconda3/envs/rlgpu/lib/python3.7/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/client.py", line 52, in execute
+    result = self._get_result(document, *args, **kwargs)
+  File "/home/king/miniconda3/envs/rlgpu/lib/python3.7/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/client.py", line 60, in _get_result
+    return self.transport.execute(document, *args, **kwargs)
+  File "/home/king/miniconda3/envs/rlgpu/lib/python3.7/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/transport/requests.py", line 38, in execute
+    request = requests.post(self.url, **post_args)
+  File "/home/king/miniconda3/envs/rlgpu/lib/python3.7/site-packages/requests/api.py", line 115, in post
+    return request("post", url, data=data, json=json, **kwargs)
+  File "/home/king/miniconda3/envs/rlgpu/lib/python3.7/site-packages/requests/api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/home/king/miniconda3/envs/rlgpu/lib/python3.7/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/king/miniconda3/envs/rlgpu/lib/python3.7/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "/home/king/miniconda3/envs/rlgpu/lib/python3.7/site-packages/requests/adapters.py", line 620, in send
+    raise SSLError(e, request=request)
+requests.exceptions.SSLError: HTTPSConnectionPool(host='api.wandb.ai', port=443): Max retries exceeded with url: /graphql (Caused by SSLError(SSLError(1, '[SSL: KRB5_S_TKT_NYV] unexpected eof while reading (_ssl.c:1091)')))
+2024-12-28 15:08:07,648 INFO    SenderThread:31567 [dir_watcher.py:__init__():216] watching files in: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_150752-uid_Anymal_28-15-07-47/files
+2024-12-28 15:08:07,648 INFO    SenderThread:31567 [sender.py:_start_run_threads():818] run started: uid_Anymal_28-15-07-47 with start time 1735369672
+2024-12-28 15:08:07,648 INFO    SenderThread:31567 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2024-12-28 15:08:07,649 INFO    MainThread:31541 [wandb_run.py:_on_init():1919] communicating current version
+2024-12-28 15:08:08,312 INFO    MainThread:31541 [wandb_run.py:_on_init():1923] got version response upgrade_message: "wandb version 0.19.1 is available!  To upgrade, please run:\n $ pip install wandb --upgrade"
+
+2024-12-28 15:08:08,312 INFO    MainThread:31541 [wandb_init.py:init():700] starting run threads in backend
+2024-12-28 15:08:08,649 INFO    Thread-8  :31567 [dir_watcher.py:_on_file_created():269] file/dir created: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_150752-uid_Anymal_28-15-07-47/files/conda-environment.yaml
+2024-12-28 15:08:08,649 INFO    Thread-8  :31567 [dir_watcher.py:_on_file_created():269] file/dir created: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_150752-uid_Anymal_28-15-07-47/files/wandb-summary.json
+2024-12-28 15:08:08,649 INFO    Thread-8  :31567 [dir_watcher.py:_on_file_created():269] file/dir created: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_150752-uid_Anymal_28-15-07-47/files/requirements.txt
+2024-12-28 15:08:08,892 INFO    SenderThread:31567 [sender.py:_save_file():952] saving file wandb-metadata.json with policy now
+2024-12-28 15:08:08,894 INFO    MainThread:31541 [wandb_run.py:_console_start():1893] atexit reg
+2024-12-28 15:08:08,895 INFO    MainThread:31541 [wandb_run.py:_redirect():1766] redirect: SettingsConsole.REDIRECT
+2024-12-28 15:08:08,895 INFO    MainThread:31541 [wandb_run.py:_redirect():1771] Redirecting console.
+2024-12-28 15:08:08,896 INFO    MainThread:31541 [wandb_run.py:_redirect():1827] Redirects installed.
+2024-12-28 15:08:08,896 INFO    MainThread:31541 [wandb_init.py:init():732] run started, returning control to user process
+2024-12-28 15:08:08,909 INFO    MainThread:31541 [wandb_run.py:_config_callback():1131] config_cb None None {'task': {'name': 'Anymal', 'physics_engine': 'physx', 'env': {'numEnvs': 4096, 'envSpacing': 4.0, 'clipObservations': 5.0, 'clipActions': 1.0, 'plane': {'staticFriction': 1.0, 'dynamicFriction': 1.0, 'restitution': 0.0}, 'baseInitState': {'pos': [0.0, 0.0, 0.62], 'rot': [0.0, 0.0, 0.0, 1.0], 'vLinear': [0.0, 0.0, 0.0], 'vAngular': [0.0, 0.0, 0.0]}, 'randomCommandVelocityRanges': {'linear_x': [-2.0, 2.0], 'linear_y': [-1.0, 1.0], 'yaw': [-1.0, 1.0]}, 'control': {'stiffness': 85.0, 'damping': 2.0, 'actionScale': 0.5, 'controlFrequencyInv': 1}, 'defaultJointAngles': {'LF_HAA': 0.03, 'LH_HAA': 0.03, 'RF_HAA': -0.03, 'RH_HAA': -0.03, 'LF_HFE': 0.4, 'LH_HFE': -0.4, 'RF_HFE': 0.4, 'RH_HFE': -0.4, 'LF_KFE': -0.8, 'LH_KFE': 0.8, 'RF_KFE': -0.8, 'RH_KFE': 0.8}, 'urdfAsset': {'collapseFixedJoints': True, 'fixBaseLink': False, 'defaultDofDriveMode': 4}, 'learn': {'linearVelocityXYRewardScale': 1.0, 'angularVelocityZRewardScale': 0.5, 'torqueRewardScale': -2.5e-05, 'linearVelocityScale': 2.0, 'angularVelocityScale': 0.25, 'dofPositionScale': 1.0, 'dofVelocityScale': 0.05, 'episodeLength_s': 50}, 'viewer': {'refEnv': 0, 'pos': [0, 0, 4], 'lookat': [1.0, 1, 3.3]}, 'enableCameraSensors': False}, 'sim': {'dt': 0.02, 'substeps': 2, 'up_axis': 'z', 'use_gpu_pipeline': True, 'gravity': [0.0, 0.0, -9.81], 'physx': {'num_threads': 4, 'solver_type': 1, 'use_gpu': True, 'num_position_iterations': 4, 'num_velocity_iterations': 1, 'contact_offset': 0.02, 'rest_offset': 0.0, 'bounce_threshold_velocity': 0.2, 'max_depenetration_velocity': 100.0, 'default_buffer_size_multiplier': 5.0, 'max_gpu_contact_pairs': 8388608, 'num_subscenes': 4, 'contact_collection': 1}}, 'task': {'randomize': False, 'randomization_params': {'frequency': 600, 'observations': {'range': [0, 0.002], 'operation': 'additive', 'distribution': 'gaussian'}, 'actions': {'range': [0.0, 0.02], 'operation': 'additive', 'distribution': 'gaussian'}, 'sim_params': {'gravity': {'range': [0, 0.4], 'operation': 'additive', 'distribution': 'gaussian', 'schedule': 'linear', 'schedule_steps': 3000}}, 'actor_params': {'anymal': {'color': True, 'rigid_body_properties': {'mass': {'range': [0.5, 1.5], 'operation': 'scaling', 'distribution': 'uniform', 'setup_only': True, 'schedule': 'linear', 'schedule_steps': 3000}}, 'rigid_shape_properties': {'friction': {'num_buckets': 500, 'range': [0.7, 1.3], 'operation': 'scaling', 'distribution': 'uniform', 'schedule': 'linear', 'schedule_steps': 3000}, 'restitution': {'range': [0.0, 0.7], 'operation': 'scaling', 'distribution': 'uniform', 'schedule': 'linear', 'schedule_steps': 3000}}, 'dof_properties': {'damping': {'range': [0.5, 1.5], 'operation': 'scaling', 'distribution': 'uniform', 'schedule': 'linear', 'schedule_steps': 3000}, 'stiffness': {'range': [0.5, 1.5], 'operation': 'scaling', 'distribution': 'uniform', 'schedule': 'linear', 'schedule_steps': 3000}, 'lower': {'range': [0, 0.01], 'operation': 'additive', 'distribution': 'gaussian', 'schedule': 'linear', 'schedule_steps': 3000}, 'upper': {'range': [0, 0.01], 'operation': 'additive', 'distribution': 'gaussian', 'schedule': 'linear', 'schedule_steps': 3000}}}}}}}, 'train': {'params': {'seed': 42, 'algo': {'name': 'a2c_continuous'}, 'model': {'name': 'continuous_a2c_logstd'}, 'network': {'name': 'actor_critic', 'separate': False, 'space': {'continuous': {'mu_activation': 'None', 'sigma_activation': 'None', 'mu_init': {'name': 'default'}, 'sigma_init': {'name': 'const_initializer', 'val': 0.0}, 'fixed_sigma': True}}, 'mlp': {'units': [256, 128, 64], 'activation': 'elu', 'd2rl': False, 'initializer': {'name': 'default'}, 'regularizer': {'name': 'None'}}}, 'load_checkpoint': False, 'load_path': '', 'config': {'name': 'Anymal', 'full_experiment_name': 'Anymal', 'env_name': 'rlgpu', 'multi_gpu': False, 'ppo': True, 'mixed_precision': True, 'normalize_input': True, 'normalize_value': True, 'value_bootstrap': True, 'num_actors': 4096, 'reward_shaper': {'scale_value': 1.0}, 'normalize_advantage': True, 'gamma': 0.99, 'tau': 0.95, 'e_clip': 0.2, 'entropy_coef': 0.0, 'learning_rate': 0.0003, 'lr_schedule': 'adaptive', 'kl_threshold': 0.008, 'truncate_grads': True, 'grad_norm': 1.0, 'horizon_length': 24, 'minibatch_size': 32768, 'mini_epochs': 5, 'critic_coef': 2, 'clip_value': True, 'seq_len': 4, 'bounds_loss_coef': 0.001, 'max_epochs': 1000, 'save_best_after': 200, 'score_to_win': 20000, 'save_frequency': 50, 'print_stats': True}}}, 'pbt': {'enabled': False}, 'task_name': 'Anymal', 'experiment': '', 'num_envs': '', 'seed': 42, 'torch_deterministic': False, 'max_iterations': '', 'physics_engine': 'physx', 'pipeline': 'gpu', 'sim_device': 'cuda:0', 'rl_device': 'cuda:0', 'graphics_device_id': 0, 'num_threads': 4, 'solver_type': 1, 'num_subscenes': 4, 'test': False, 'checkpoint': '', 'sigma': '', 'multi_gpu': False, 'wandb_activate': True, 'wandb_group': 'Isaac_2024', 'wandb_name': 'Anymal', 'wandb_entity': '2238046709-sjtu', 'wandb_project': 'isaacgymenvs', 'wandb_tags': [], 'wandb_logcode_dir': '', 'capture_video': False, 'capture_video_freq': 1464, 'capture_video_len': 100, 'force_render': True, 'headless': False}
+2024-12-28 15:08:09,648 INFO    Thread-8  :31567 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_150752-uid_Anymal_28-15-07-47/files/conda-environment.yaml
+2024-12-28 15:08:09,648 INFO    Thread-8  :31567 [dir_watcher.py:_on_file_created():269] file/dir created: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_150752-uid_Anymal_28-15-07-47/files/wandb-metadata.json
+2024-12-28 15:08:09,648 INFO    Thread-8  :31567 [dir_watcher.py:_on_file_created():269] file/dir created: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_150752-uid_Anymal_28-15-07-47/files/output.log
+2024-12-28 15:08:10,207 INFO    Thread-12 :31567 [upload_job.py:push():138] Uploaded file /tmp/tmpcj9dw690wandb/jxiuwwxm-wandb-metadata.json
+2024-12-28 15:08:12,454 INFO    MainThread:31541 [wandb_run.py:_tensorboard_callback():1239] tensorboard callback: runs/Anymal_28-15-07-47/summaries, True
+2024-12-28 15:08:12,455 INFO    HandlerThread:31567 [handler.py:handle_tbrecord():723] handling tbrecord: tbrecord {
+  log_dir: "runs/Anymal_28-15-07-47/summaries"
+  save: true
+}
+
+2024-12-28 15:08:12,461 INFO    SenderThread:31567 [sender.py:_save_file():952] saving file events.out.tfevents.1735369692.king-ROG-Zephyrus-M16-GU603ZM-GU603ZM with policy live
+2024-12-28 15:08:12,463 INFO    MainThread:31541 [wandb_run.py:_atexit_cleanup():1862] got exitcode: 1
+2024-12-28 15:08:12,463 INFO    MainThread:31541 [wandb_run.py:_restore():1834] restore
+2024-12-28 15:08:12,649 INFO    Thread-8  :31567 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_150752-uid_Anymal_28-15-07-47/files/output.log
+2024-12-28 15:08:12,650 INFO    Thread-8  :31567 [dir_watcher.py:_on_file_created():269] file/dir created: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_150752-uid_Anymal_28-15-07-47/files/events.out.tfevents.1735369692.king-ROG-Zephyrus-M16-GU603ZM-GU603ZM
+2024-12-28 15:08:14,267 INFO    Thread-15 :31567 [upload_job.py:push():138] Uploaded file /tmp/tmpcj9dw690wandb/99soss3w-events.out.tfevents.1735369692.king-ROG-Zephyrus-M16-GU603ZM-GU603ZM
+2024-12-28 15:08:14,651 INFO    Thread-8  :31567 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_150752-uid_Anymal_28-15-07-47/files/output.log
+2024-12-28 15:08:15,320 INFO    SenderThread:31567 [sender.py:send_exit():372] handling exit code: 1
+2024-12-28 15:08:15,321 INFO    SenderThread:31567 [sender.py:send_exit():374] handling runtime: 7
+2024-12-28 15:08:15,322 INFO    SenderThread:31567 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2024-12-28 15:08:15,322 INFO    SenderThread:31567 [sender.py:send_exit():380] send defer
+2024-12-28 15:08:15,323 INFO    MainThread:31541 [wandb_run.py:_on_finish():1991] got exit ret: file_counts {
+  wandb_count: 1
+  other_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 857
+  total_bytes: 857
+}
+
+2024-12-28 15:08:15,323 INFO    HandlerThread:31567 [handler.py:handle_request_defer():163] handle defer: 0
+2024-12-28 15:08:15,323 INFO    SenderThread:31567 [sender.py:send_request_defer():389] handle sender defer: 0
+2024-12-28 15:08:15,323 INFO    SenderThread:31567 [sender.py:transition_state():393] send defer: 1
+2024-12-28 15:08:15,324 INFO    HandlerThread:31567 [handler.py:handle_request_defer():163] handle defer: 1
+2024-12-28 15:08:15,394 INFO    SenderThread:31567 [sender.py:send_request_defer():389] handle sender defer: 1
+2024-12-28 15:08:15,394 INFO    SenderThread:31567 [sender.py:transition_state():393] send defer: 2
+2024-12-28 15:08:15,395 INFO    HandlerThread:31567 [handler.py:handle_request_defer():163] handle defer: 2
+2024-12-28 15:08:15,395 INFO    SenderThread:31567 [sender.py:send_request_defer():389] handle sender defer: 2
+2024-12-28 15:08:15,395 INFO    SenderThread:31567 [sender.py:transition_state():393] send defer: 3
+2024-12-28 15:08:15,395 INFO    HandlerThread:31567 [handler.py:handle_request_defer():163] handle defer: 3
+2024-12-28 15:08:15,651 INFO    Thread-8  :31567 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_150752-uid_Anymal_28-15-07-47/files/wandb-summary.json
+2024-12-28 15:08:15,652 INFO    Thread-8  :31567 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_150752-uid_Anymal_28-15-07-47/files/output.log
+2024-12-28 15:08:20,424 INFO    MainThread:31541 [wandb_run.py:_on_finish():1991] got exit ret: None
+2024-12-28 15:08:21,458 INFO    SenderThread:31567 [sender.py:send_request_defer():389] handle sender defer: 3
+2024-12-28 15:08:21,458 INFO    SenderThread:31567 [sender.py:transition_state():393] send defer: 4
+2024-12-28 15:08:21,459 INFO    HandlerThread:31567 [handler.py:handle_request_defer():163] handle defer: 4
+2024-12-28 15:08:21,459 INFO    MainThread:31541 [wandb_run.py:_on_finish():1991] got exit ret: file_counts {
+  wandb_count: 1
+  other_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 857
+  total_bytes: 857
+}
+
+2024-12-28 15:08:21,462 INFO    SenderThread:31567 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2024-12-28 15:08:21,463 INFO    SenderThread:31567 [sender.py:send_request_defer():389] handle sender defer: 4
+2024-12-28 15:08:21,463 INFO    SenderThread:31567 [sender.py:transition_state():393] send defer: 5
+2024-12-28 15:08:21,463 INFO    HandlerThread:31567 [handler.py:handle_request_defer():163] handle defer: 5
+2024-12-28 15:08:21,463 INFO    SenderThread:31567 [sender.py:send_request_defer():389] handle sender defer: 5
+2024-12-28 15:08:21,654 INFO    Thread-8  :31567 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_150752-uid_Anymal_28-15-07-47/files/wandb-summary.json
+2024-12-28 15:08:22,068 INFO    SenderThread:31567 [sender.py:transition_state():393] send defer: 6
+2024-12-28 15:08:22,068 INFO    HandlerThread:31567 [handler.py:handle_request_defer():163] handle defer: 6
+2024-12-28 15:08:22,069 INFO    SenderThread:31567 [sender.py:send_request_defer():389] handle sender defer: 6
+2024-12-28 15:08:22,069 INFO    SenderThread:31567 [dir_watcher.py:finish():353] shutting down directory watcher
+2024-12-28 15:08:22,069 INFO    MainThread:31541 [wandb_run.py:_on_finish():1991] got exit ret: file_counts {
+  wandb_count: 1
+  other_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 857
+  total_bytes: 857
+}
+
+2024-12-28 15:08:22,655 INFO    Thread-8  :31567 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_150752-uid_Anymal_28-15-07-47/files/config.yaml
+2024-12-28 15:08:22,655 INFO    SenderThread:31567 [dir_watcher.py:finish():383] scan: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_150752-uid_Anymal_28-15-07-47/files
+2024-12-28 15:08:22,655 INFO    SenderThread:31567 [dir_watcher.py:finish():397] scan save: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_150752-uid_Anymal_28-15-07-47/files/events.out.tfevents.1735369692.king-ROG-Zephyrus-M16-GU603ZM-GU603ZM events.out.tfevents.1735369692.king-ROG-Zephyrus-M16-GU603ZM-GU603ZM
+2024-12-28 15:08:22,655 INFO    SenderThread:31567 [dir_watcher.py:finish():397] scan save: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_150752-uid_Anymal_28-15-07-47/files/conda-environment.yaml conda-environment.yaml
+2024-12-28 15:08:22,655 INFO    SenderThread:31567 [dir_watcher.py:finish():397] scan save: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_150752-uid_Anymal_28-15-07-47/files/wandb-metadata.json wandb-metadata.json
+2024-12-28 15:08:22,655 INFO    SenderThread:31567 [dir_watcher.py:finish():397] scan save: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_150752-uid_Anymal_28-15-07-47/files/output.log output.log
+2024-12-28 15:08:22,655 INFO    SenderThread:31567 [dir_watcher.py:finish():397] scan save: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_150752-uid_Anymal_28-15-07-47/files/wandb-summary.json wandb-summary.json
+2024-12-28 15:08:22,655 INFO    SenderThread:31567 [dir_watcher.py:finish():397] scan save: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_150752-uid_Anymal_28-15-07-47/files/requirements.txt requirements.txt
+2024-12-28 15:08:22,655 INFO    SenderThread:31567 [dir_watcher.py:finish():397] scan save: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_150752-uid_Anymal_28-15-07-47/files/config.yaml config.yaml
+2024-12-28 15:08:22,656 INFO    SenderThread:31567 [sender.py:transition_state():393] send defer: 7
+2024-12-28 15:08:22,707 INFO    HandlerThread:31567 [handler.py:handle_request_defer():163] handle defer: 7
+2024-12-28 15:08:22,707 INFO    SenderThread:31567 [sender.py:send_request_defer():389] handle sender defer: 7
+2024-12-28 15:08:22,708 INFO    SenderThread:31567 [file_pusher.py:finish():171] shutting down file pusher
+2024-12-28 15:08:24,207 INFO    Thread-18 :31567 [upload_job.py:push():138] Uploaded file /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_150752-uid_Anymal_28-15-07-47/files/wandb-summary.json
+2024-12-28 15:08:24,216 INFO    Thread-16 :31567 [upload_job.py:push():138] Uploaded file /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_150752-uid_Anymal_28-15-07-47/files/conda-environment.yaml
+2024-12-28 15:08:24,226 INFO    Thread-17 :31567 [upload_job.py:push():138] Uploaded file /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_150752-uid_Anymal_28-15-07-47/files/output.log
+2024-12-28 15:08:24,235 INFO    Thread-19 :31567 [upload_job.py:push():138] Uploaded file /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_150752-uid_Anymal_28-15-07-47/files/requirements.txt
+2024-12-28 15:08:24,250 INFO    Thread-20 :31567 [upload_job.py:push():138] Uploaded file /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_150752-uid_Anymal_28-15-07-47/files/config.yaml
+2024-12-28 15:08:24,450 INFO    Thread-7  :31567 [sender.py:transition_state():393] send defer: 8
+2024-12-28 15:08:24,451 INFO    HandlerThread:31567 [handler.py:handle_request_defer():163] handle defer: 8
+2024-12-28 15:08:24,451 INFO    SenderThread:31567 [sender.py:send_request_defer():389] handle sender defer: 8
+2024-12-28 15:08:24,796 INFO    SenderThread:31567 [sender.py:transition_state():393] send defer: 9
+2024-12-28 15:08:24,797 INFO    HandlerThread:31567 [handler.py:handle_request_defer():163] handle defer: 9
+2024-12-28 15:08:24,797 INFO    SenderThread:31567 [sender.py:send_request_defer():389] handle sender defer: 9
+2024-12-28 15:08:24,797 INFO    SenderThread:31567 [sender.py:transition_state():393] send defer: 10
+2024-12-28 15:08:24,798 INFO    HandlerThread:31567 [handler.py:handle_request_defer():163] handle defer: 10
+2024-12-28 15:08:24,799 INFO    SenderThread:31567 [sender.py:send_request_defer():389] handle sender defer: 10
+2024-12-28 15:08:25,486 WARNING MainThread:31567 [internal.py:is_dead():388] Internal process exiting, parent pid 31541 disappeared
+2024-12-28 15:08:25,486 ERROR   MainThread:31567 [internal.py:wandb_internal():149] Internal process shutdown.
+2024-12-28 15:08:25,799 INFO    SenderThread:31567 [sender.py:finish():1114] shutting down sender
+2024-12-28 15:08:25,799 INFO    SenderThread:31567 [file_pusher.py:finish():171] shutting down file pusher
+2024-12-28 15:08:25,799 INFO    SenderThread:31567 [file_pusher.py:join():176] waiting for file pusher
+2024-12-28 15:08:25,799 INFO    WriterThread:31567 [datastore.py:close():279] close: /home/king/Isaac/IsaacGymEnvs/isaacgymenvs/wandb/run-20241228_150752-uid_Anymal_28-15-07-47/run-uid_Anymal_28-15-07-47.wandb
+2024-12-28 15:08:25,799 INFO    HandlerThread:31567 [handler.py:finish():806] shutting down handler

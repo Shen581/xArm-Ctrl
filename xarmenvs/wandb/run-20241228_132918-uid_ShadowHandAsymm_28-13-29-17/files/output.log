@@ -1,0 +1,8 @@
+Adding Central Value Network
+Obs type: openai
+Physics Engine: FleX
+Physics Device: cuda:0
+GPU Pipeline: enabled
+JointSpec type free not yet supported!
+/home/king/miniconda3/envs/rlgpu/lib/python3.7/site-packages/gym/spaces/box.py:84: UserWarning: [33mWARN: Box bound precision lowered by casting to float32
+  logger.warn(f"Box bound precision lowered by casting to {self.dtype}")

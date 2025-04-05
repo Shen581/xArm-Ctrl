@@ -1,0 +1,36 @@
+[93m[1m[Warning] [carb.gym.plugin] useGpu is set, forcing single scene (0 subscenes)
+Not connected to PVD
++++ Using GPU PhysX
+Physics Engine: PhysX
+Physics Device: cuda:0
+GPU Pipeline: enabled
+/home/king/miniconda3/envs/rlgpu/lib/python3.7/site-packages/gym/spaces/box.py:84: UserWarning: [33mWARN: Box bound precision lowered by casting to float32
+  logger.warn(f"Box bound precision lowered by casting to {self.dtype}")
+MESA-INTEL: warning: Performance support disabled, consider sysctl dev.i915.perf_stream_paranoid=0
+/home/king/Isaac/IsaacGymEnvs/isaacgymenvs/tasks/factory/factory_base.py:486: UserWarning: [33mWARN: Please be patient: SDFs may be generating, which may take a few minutes. Terminating prematurely may result in a corrupted SDF cache.
+  logger.warn('Please be patient: SDFs may be generating, which may take a few minutes. Terminating prematurely may result in a corrupted SDF cache.')
+Using SDF cache directory '/home/king/.isaacgym/sdf_V100'
+~!~!~! Loaded/Cooked SDF triangle mesh 0 @ 0x557733f81900, resolution=256, spacing=0.000108
+  ~!~! Bounds:  (-0.012000, 0.012000) (-0.013856, 0.013856) (0.016000, 0.029000)
+  ~!~! Extents: (0.024000, 0.027712, 0.013000)
+  ~!~! Resolution: (222, 256, 121)
+~!~!~! Loaded/Cooked SDF triangle mesh 1 @ 0x55773410a200, resolution=512, spacing=0.000080
+  ~!~! Bounds:  (-0.012000, 0.012000) (-0.012000, 0.012000) (0.000000, 0.041000)
+  ~!~! Extents: (0.024000, 0.024000, 0.041000)
+  ~!~! Resolution: (300, 300, 512)
+~!~!~! Loaded/Cooked SDF triangle mesh 2 @ 0x5576ee3d51b0, resolution=256, spacing=0.000108
+  ~!~! Bounds:  (-0.012000, 0.012000) (-0.013856, 0.013856) (0.016000, 0.029000)
+  ~!~! Extents: (0.024000, 0.027712, 0.013000)
+  ~!~! Resolution: (222, 256, 121)
+~!~!~! Loaded/Cooked SDF triangle mesh 3 @ 0x557736a530b0, resolution=512, spacing=0.000080
+  ~!~! Bounds:  (-0.012000, 0.012000) (-0.012000, 0.012000) (0.000000, 0.041000)
+  ~!~! Extents: (0.024000, 0.024000, 0.041000)
+  ~!~! Resolution: (300, 300, 512)
+Box(-1.0, 1.0, (12,), float32) Box(-inf, inf, (32,), float32)
+WARNING: seq_len is deprecated, use seq_length instead
+seq_length: 4
+current training device: cuda:0
+build mlp: 32
+RunningMeanStd:  (1,)
+RunningMeanStd:  (32,)
+/home/king/Isaac/IsaacGymEnvs/isaacgymenvs/tasks/factory/factory_control.py:146: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
