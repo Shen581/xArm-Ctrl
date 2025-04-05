@@ -1,1 +1,1 @@
-# xarm in Isaacgym
+# xarm6 in Isaacgym
