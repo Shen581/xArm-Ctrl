@@ -327,6 +327,9 @@ class Xarm(VecTask):
         u = j_eef_T @ torch.inverse(self.j_eef @ j_eef_T + lmbda) @ dpose
 
         #return u.squeeze(-1)  # [num_envs, 6]
+
+
+
         target_angles = self.dof_pos[:, :6] + u.squeeze(-1) * 0.05
         self.dof_pos[:, :6] = target_angles
         return target_angles
