@@ -305,12 +305,11 @@ class Xarm(VecTask):
         self.gym.refresh_rigid_body_state_tensor(self.sim)
 
         # 获取当前末端状态
-        hand_pos = self._get_ee_position()  # [num_envs, 3]
+        hand_pos = self._get_ee_position()
 
-        hand_rot = self._get_ee_orientation()  # [num_envs, 4]
+        hand_rot = self._get_ee_orientation()
 
-        # 计算位置误差，目标pos减去目前pos得到差值
-        pos_err = target_positions - hand_pos
+        pos_err = target_positions - hand_pos  # 计算位置误差，目标pos减去目前pos得到差值
 
         # 计算旋转误差（默认保持当前朝向）
         if target_orientations is None:
@@ -318,21 +317,18 @@ class Xarm(VecTask):
         else:
             orn_err = self.orientation_error(target_orientations, hand_rot)  # 没实现，没考虑这种情况
 
-        # 合并误差
-        dpose = torch.cat([pos_err, orn_err], dim=-1).unsqueeze(-1)  # [num_envs, 6, 1]
 
-        # Damped Least Squares 求解
-        j_eef_T = torch.transpose(self.j_eef, 1, 2)  # [num_envs, 6, 6]
+        dpose = torch.cat([pos_err, orn_err], dim=-1).unsqueeze(-1)  # 合并误差 [num_envs, 6, 1]
+
+        # Damped Least Squares 求解，j_eef_T[num_envs, 6, 6]
+        j_eef_T = torch.transpose(self.j_eef, 1, 2)
         lmbda = torch.eye(6, device=self.device) * (self.damping ** 2)
         u = j_eef_T @ torch.inverse(self.j_eef @ j_eef_T + lmbda) @ dpose
 
-        #return u.squeeze(-1)  # [num_envs, 6]
 
-
-
-        target_angles = self.dof_pos[:, :6] + u.squeeze(-1) * 0.05
-        self.dof_pos[:, :6] = target_angles
-        return target_angles
+        target_angle = self.dof_pos[:, :6] + u.squeeze(-1) * 0.05
+        self.dof_pos[:, :6] = target_angle
+        return target_angle
 
     def _get_ee_orientation(self):
         # 获取末端执行器朝向（四元数）
