@@ -172,13 +172,14 @@ $$
 总损失可以写成：
 
 $$
-L =
-\lambda_s L_{state}
-+ \lambda_p L_{progress}
-+ \lambda_{\Delta p} L_{\Delta p}
-+ \lambda_c L_{contact}
-+ \lambda_d L_{done}
-+ \lambda_r L_{reward}
+\begin{aligned}
+L ={}& \lambda_s L_{state} \\
+&+ \lambda_p L_{progress} \\
+&+ \lambda_{\Delta p} L_{\Delta p} \\
+&+ \lambda_c L_{contact} \\
+&+ \lambda_d L_{done} \\
+&+ \lambda_r L_{reward}
+\end{aligned}
 $$
 
 如果使用 latent dynamics，还可以加：
@@ -246,20 +247,23 @@ $$
 如果有目标状态 $s_{goal}$，最基础的 cost 是：
 
 $$
-J(A; s_0) = \sum_{k=1}^{H} \|\hat{s}_k - s_{goal}\|_Q^2
-+ \sum_{k=0}^{H-1} \|a_k\|_R^2
+\begin{aligned}
+J(A; s_0) ={}& \sum_{k=1}^{H} \|\hat{s}_k - s_{goal}\|_Q^2 \\
+&+ \sum_{k=0}^{H-1} \|a_k\|_R^2
+\end{aligned}
 $$
 
 但 screw 任务更建议用 task cost：
 
 $$
-J(A; s_0) =
-- w_p \sum_{k=0}^{H-1} \Delta \hat{p}_k
-- w_c \sum_{k=1}^{H} \hat{c}_k
-+ w_s \sum_{k=1}^{H} \hat{slip}_k
-+ w_d \sum_{k=1}^{H} \hat{done}_k
-+ w_a \sum_{k=0}^{H-1} \|a_k\|^2
-+ w_{smooth} \sum_{k=1}^{H-1} \|a_k - a_{k-1}\|^2
+\begin{aligned}
+J(A; s_0) ={}& - w_p \sum_{k=0}^{H-1} \Delta \hat{p}_k \\
+&- w_c \sum_{k=1}^{H} \hat{c}_k \\
+&+ w_s \sum_{k=1}^{H} \hat{slip}_k \\
+&+ w_d \sum_{k=1}^{H} \hat{done}_k \\
+&+ w_a \sum_{k=0}^{H-1} \|a_k\|^2 \\
+&+ w_{smooth} \sum_{k=1}^{H-1} \|a_k - a_{k-1}\|^2
+\end{aligned}
 $$
 
 含义：
@@ -352,12 +356,13 @@ $$
 3. 计算损失：
 
 $$
-L =
-\lambda_s L_{state}
-+ \lambda_p L_{progress}
-+ \lambda_c L_{contact}
-+ \lambda_d L_{done}
-+ \lambda_r L_{reward}
+\begin{aligned}
+L ={}& \lambda_s L_{state} \\
+&+ \lambda_p L_{progress} \\
+&+ \lambda_c L_{contact} \\
+&+ \lambda_d L_{done} \\
+&+ \lambda_r L_{reward}
+\end{aligned}
 $$
 
 4. 反向传播更新世界模型参数 $\theta$。
@@ -506,22 +511,24 @@ $$
 训练损失：
 
 $$
-L =
-\lambda_s \|\hat{s}_{t+1}^{prop} - s_{t+1}^{prop}\|^2
-+ \lambda_p \|\widehat{\Delta p_t} - (p_{t+1}-p_t)\|^2
-+ \lambda_c BCE(\hat{contact}_{t+1}, contact_{t+1})
-+ \lambda_d BCE(\hat{done}_{t+1}, done_{t+1})
+\begin{aligned}
+L ={}& \lambda_s \|\hat{s}_{t+1}^{prop} - s_{t+1}^{prop}\|^2 \\
+&+ \lambda_p \|\widehat{\Delta p_t} - (p_{t+1} - p_t)\|^2 \\
+&+ \lambda_c BCE(\hat{contact}_{t+1}, contact_{t+1}) \\
+&+ \lambda_d BCE(\hat{done}_{t+1}, done_{t+1})
+\end{aligned}
 $$
 
 planning cost：
 
 $$
-J =
-- w_p \sum_{k=0}^{H-1} \widehat{\Delta p_k}
-- w_c \sum_{k=1}^{H} \hat{contact}_k
-+ w_d \sum_{k=1}^{H} \hat{done}_k
-+ w_a \sum_{k=0}^{H-1} \|a_k\|^2
-+ w_{smooth} \sum_{k=1}^{H-1} \|a_k-a_{k-1}\|^2
+\begin{aligned}
+J ={}& - w_p \sum_{k=0}^{H-1} \widehat{\Delta p_k} \\
+&- w_c \sum_{k=1}^{H} \hat{contact}_k \\
+&+ w_d \sum_{k=1}^{H} \hat{done}_k \\
+&+ w_a \sum_{k=0}^{H-1} \|a_k\|^2 \\
+&+ w_{smooth} \sum_{k=1}^{H-1} \|a_k - a_{k-1}\|^2
+\end{aligned}
 $$
 
 推理时：
